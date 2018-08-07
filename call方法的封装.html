@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>call方法的封装</title>
+</head>
+<body>
+<script>
+    /**
+     * call方法的封装
+     */
+
+    Function.prototype.call = function(obj){
+        let ary = [];
+         for(var i = 1;i<arguments.length;i++){
+         ary.push(arguments[i]);
+         }
+        //console.log(this);//原型中的call方法的this指向实例
+        //obj  null == undefined 不传 undefined
+        if(obj == undefined){
+            eval('this('+ary.toString()+')')
+        }else{
+            //f3=>this就是f3
+            //让f3中的this变成obj
+            obj.__proto__.fn = this;
+            //eval('obj.fn('+ary.toString()+')');//就是this[f3]执行,f3中的this就是obj
+            //这种方式如果传进来的是字母,会把字母当成变量去找变量的值,如果变量未定义就会报错
+            delete obj.__proto__.fn;//删除对象中的某个属性用delete
+        }
+    };
+    let f3 = function (n,m,y) {
+        console.log(this);//this指向window
+        console.log(n, m, y);
+    };
+    let obj = {name:'珠峰'};
+    f3.call();
+    f3.call(null,1,2);
+    f3.call(undefined,1,2);
+    f3.call(obj,1,2);
+
+
+    Function.prototype.call = function (obj,...arg) {
+        if(obj == undefined){
+            this(...arg);
+        }else{
+            obj.__proto__.fn = this;
+            obj.fn(...arg);
+            delete obj.__proto__.fn;
+        }
+    }
+</script>
+</body>
+</html>
