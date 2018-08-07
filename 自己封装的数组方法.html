@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>自己封装的数组内置方法</title>
+</head>
+
+<body>
+<script>
+    // 1. 方法作用；
+    // 2. 方法的参数
+    // 3. 方法返回值
+    // 4. 原有的数组是否发生改变；
+
+    // 1.push
+    //    1): 向数组末尾新增一项；
+    //    2): 参数是新增的那一项;可以传多个；
+    //    3): 新数组的数组成员的个数；
+    //    4): 原有数组发生改变；
+    Array.prototype.myPush = function () {
+        for (var i = 0; i < arguments.length; i++) {
+            this[this.length] = arguments[i];
+        }
+        return this.length;
+    };
+
+    // 2.pop
+    //    1) : 删除数组的最后一项
+    //    2) : 不需要传参数
+    //    3) : 被删除的那一项
+    //    4) : 原有数组发生改变；
+    Array.prototype.myPop = function () {
+        var last = this[this.length - 1];
+        this.length -= 1;
+        return last;
+    };
+    var ary = [1, 2, 3, 4];
+    ary.myPop();
+    // 3:unshift
+    //    1): 向数组开头新增一项；
+    //    2): 需要传参数
+    //    3): 新数组的数组成员个数
+    //    4): 原有数组发生改变；
+    Array.prototype.myUnShift = function () {
+        var len = this.length+arguments.length;
+        var aLen = arguments.length;
+        var tLen = this.length;
+        for(var i = len-1;i>=0;i--){
+            if(i>=aLen){
+                this[i] = this[tLen-1];
+                tLen--;
+            }else{
+                this[aLen-1] = arguments[i];
+                aLen--;
+            }
+        }
+        return this.length;
+    };
+    // 4.shift
+    //    1): 删除数组的第一项
+    //    2): 不需要传参
+    //    3): 被删除的那一项
+    //    4): 原有数组的发生改变；
+    Array.prototype.myShift = function () {
+        var first = this[0];
+        for(var i = 0;i<this.length-1;i++){
+            this[i] = this[i+1];
+        }
+        this.length--;
+        return first;
+    };
+    // 5.slice
+    //    1) : 数组的截取
+    //    2) :slice(m,n): 从数组索引m开始，截取到索引n，但是不包含n;[前包后不包]
+    //    slice(m) : 从索引m开始，截取到末尾；
+    //    slice():数组的克隆  slice(0);
+    //    // 索引负数： 让当前length+负数；
+    //    3) : 返回值是截取的数组
+    //    4) : 原有数组不发生改变；
+    /**
+     * 首先：先分清楚slice有几种情况，slice的思想
+     * 传的参数可以是其他类型的数据，只要能转成有效数字就可以(所以参数的类型要求比较灵活)
+     * 其次，要注意的是只有第一个和第二个参数为有效参数，第三个及第三个以后的参数将对截取的结果不产生影响
+     *
+     * 对参数的处理：
+     * 我们暂且把第一个参数给变量start,第二个参数给变量end
+     * 1.当参数1、参数2同时为undefined或者其中一个为undefined的情况下
+     * 情况1：参数1为undefined时，直接取start=0
+     * 情况2：参数2为undefined时，直接取end=this.length
+     *
+     * 2.当参数1和参数2都不是undefined的情况下
+     * 情况1：当第一个参数为负数的情况下：start取this.length与参数中的最大值;当第一个参数大于等于0的情况下,start直接取自己
+     * 情况2：当第二个参数为负数的情况下，end取this.length与end的和;当参数大于0,end取this.length与end中的最小值
+     *
+     * 对区间长度的处理：设置size=end-start
+     * 情况1：当区间长度小于等于0的情况下，直接返回空数组
+     * 情况2：当区间长度大于0的情况下，不管对于字符串还是数组，创建一个长度为size的数组，依次从start到end，赋值给新的数组，将新数组返回
+     *
+     * @type {Array}
+     */
+    Array.prototype.mySlice = function (start,end) {
+        var newAry = [];//创建一个变量用来接收返回值
+        var len = this.length;//变量接收当前数组的长度
+        //先对参数为undefined的情况进行处理
+        start = (start !== undefined)?start:0;
+        end = (end !== undefined)?end:len;
+        //对于参数的处理，采用三目运算符,由于在与0判断的时候自动转换为数字再进行判断，所以直接与0比较即可
+        start = (start>=0)?start:Math.max(0,len+start);
+        end = (end>=0)?Math.min(end,len):len+end;
+        var size = end - start;//用一个变量接收截取区间的长度
+        if(size>0){
+            //当区间长度大于0时，实例化一个长度为size的数组，并赋值给newAry
+            newAry = new Array(size);
+            //遍历数组，将当前数组[start,end)区间上的值依次赋值给newAry
+            for(var i = 0;i<size;i++){
+                newAry[i] = this[i+start];
+            }
+        }else{
+            //当区间长度小于等于0的情况下，直接返回空数组
+            return newAry;
+        }
+        return newAry;
+    };
+
+    // 6.splice
+    //    1) : 删除数组中的某几项
+    //    2) : splice(m,n): 从索引开始，删除n个
+    //    splice(m) : 从索引m开始删除到末尾；
+    //    splice(0):
+    //    splice(m,x,n);替换从索引m开始，删除x个，用n替换；
+    //    3): 返回值；删除那几项，并且以数组返回
+    //    4) : 原有数组发生改变；
+    /**
+     * splice原理：参数的三个含义：开始修改的位置、删除的项数、添加进来的项
+     * 参数的情况：暂且把第一个参数设置为start、删除的项数为delNum
+     * 情况1：如果第一个参数为undefined或者则默认start从零开始，如果第一个参数为负数，则start=第一个参数加数组长度
+     * 情况2：如果删除的项数超过了剩余的项数，则只删除剩余的项数
+     * 情况3：第三个参数及以后，都是先删除了之后再把剩余的参数从start的位置开始添加进来
+     *
+     * splice实现的三个功能：
+     * 1、添加：
+     * 2、删除
+     * 3、替换：当删除0项的时候为替换
+     * 返回值：返回值是返回被删除的那几项，并以数组的形式返回
+     *
+     * 实现方法：
+     * 参数1和参数2，实现了删除，并且将删除的项存储到一个数组中返回
+     * 1、先创建一个空数组将要删除的项存储起来，
+     * 2、用两层循环(外层循环的次数是删除的项数)，内层循环是从start位置开始遍历this，每次循环都将后面一项赋值给前一项，内层循环结束之后，删除最后一项
+     * 参数3及后面的参数实现插入功能
+     * 1、同样创建一个空数组，从start位置开始先把this后面的项存储起来
+     * 2、将arguments第三项以后的值依次插入this中，
+     * 3、插入完成之后，再把刚才空数组中的项依次插入this的末尾
+     */
+
+    Array.prototype.mySplice = function (start,delNum) {
+        //先判断start是否为undefined，如果为undefined默认赋值为0，如果不是undefined，则取本身的值
+        start = (start === undefined)?0:start;
+        //再判断start是否为负数，如果为负数，则返回当前值与数组长度的和
+        start = (start<0)?(start+this.length):start;
+        //变量接收剩余的长度
+        var len = this.length - start;
+        //如果第二项没有传值的情况下，默认删除剩余的所有项,再判断delNum要删除的项数是否大于剩余的项数,如果大于则取当前数组剩余的项，如果条件不成立，取当前值
+        delNum = (delNum>len||delNum===undefined)?len:delNum;
+        //再判断有没有第三项及以后的项，即arguments的长度是否大于等于3
+
+        //创建一个空地址，用于接收被删除的项
+        var newAry = [];
+        //当delNum>0时，删除delNum项；当delNum<=0时不删除
+        if(delNum>0){
+            for(var i = start;i<delNum+start;i++){
+                newAry[i-start] = this[i];
+            }
+            for(var j = 0;j<delNum;j++){
+                for(var k = start;k<this.length-1;k++){
+                    this[k] = this[k+1];
+                }
+                this.length--;
+            }
+
+        }else {
+            newAry = [];
+            //delNum<=0时，不删除，返回空数组
+        }
+        //当arguments.length<=2时，不需要添加数组,直接删除即可
+        //当arguments.length>2时，即有第三个参数，全部插入当前数组中,在start索引的前一项开始插入
+        if(arguments.length>2){
+            //创建一个新数组先把从start到最后面的值，目的是先把值存储起来，等arguments中的值全部插入之后，再将ary1依次插入
+            var ary1 = [];
+            for(var p = start;p<this.length;p++){
+                ary1[p-start] = this[start];
+            }
+            for(var m = 2;m<arguments.length;m++){
+                //将arguments的剩余项从start开始依次添加进this中
+                this[start++] = arguments[m];
+            }
+            for(var q = 0;q<ary1.length;q++){
+                this[start++] = ary1[q];
+            }
+        }
+        return newAry;
+    };
+    // 7.sort
+    //    1) : 数组排序
+    //    2) :参数
+    //    1.sort() : 只能数组成员是相同位数的数组
+    //    2.sort(function(a,b){return a-b}) 从小到大排序
+    //    3.sort(function(a,b){return b-a})从大到小
+    //    3) : 是排序之后的数组
+    //    4) : 原有数组发生改变；
+    /**
+     * sort方法实现过程比较复杂：功能如下
+     * 情况1：无参实现对字符串数组的排序
+     * 情况2：无参实现对number类型的数组进行排序
+     * 情况3：无参实现对字符串、number等混合类型的数组的排序
+     * 情况4：带参实现对number类型的数值数据排序
+     * 情况5：带参sort()对简单对象List的自定义属性排序
+     * 情况6：带参实现对字符串、number混合类型的数组的排序
+     *
+     * 核心原理：不带参（以及带的参数不是函数）的情况下:默认升序排列
+     * 不带参的情况下，直接转字符串，逐个比较ASCII码的值
+     * 只要有一个是对象{}就不交换
+     *
+     * 带参数为函数的情况下：
+     * 根据函数的返回值进行比较；如果函数返回值大于0；则交换位置
+     *
+     * 参数的情况
+     * 情况1：如果参数不是函数，则不影响原来排序过程
+     * 情况2：如果参数是函数，则根据回调函数中的返回值进行排序。如果返回值大于0，则交换位置；如果返回值小于0，则不交换位置
+     * 如果返回值不是一个数字，则不交换位置
+     */
+    Array.prototype.mySort = function(fn){
+        if(Object.prototype.toString.call(fn)==='[object Function]'){
+            //如果传进来参数的是函数
+            for(var i = 0;i<this.length-1;i++){
+                //遍历数组,将前后两项作为实参传给fn
+                if(fn.call(this,this[i],this[i+1])>0){
+                    //如果fn执行之后的返回值大于0.就调用swap方法交换位置
+                    var a = this[i],b=this[i+1];
+                    this[i] = swap(a,b).a;
+                    this[i+1] = swap(a,b).b;
+                    //交换之后，如果当前项不是第一项，则当前项(索引为i的项)继续跟前面的项进行比较
+                    if(i>0){
+                        for(var j = i-1;j>=0;j--){
+                            if(fn.call(this,this[j],this[j+1])>0){
+                                var a = this[j],b=this[j+1];
+                                this[j] = swap(a,b).a;
+                                this[j+1] = swap(a,b).b;
+                            }
+                        }
+                    }
+                }
+            }
+        }else{
+            //如果不是函数，则按正常排序
+            //遍历数组，将前后两项进行比较
+            for(var i = 0;i<this.length-1;i++){
+                var cur = this[i];//当前项
+                var next = this[i+1];//下一项
+                if(comASCII(cur,next)){
+                    //当返回true的时候交换，并且交换完成之后，当前项继续往前比较
+                    this[i] = swap(cur,next).a;
+                    this[i+1] = swap(cur,next).b;
+                    //当前项继续向前比较
+                    if(i>0){
+                        for(var k = i-1;k>=0;k--){
+                            var cur = this[k];
+                            var next = this[k+1];
+                            if(comASCII(cur,next)){
+                                this[k] = swap(cur,next).a;
+                                this[k+1] = swap(cur,next).b;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        //封装一个交换位置的函数
+        function swap(a,b){
+            return {
+                a:b,
+                b:a
+            }
+        }
+        //如果不传参的情况下比较ASCII码
+        function comASCII(cur,next){
+            //全部转换为字符串、逐项比较ASCII码
+            cur = cur.toString();
+            next = next.toString();
+            //取长度最大值
+            var len = cur.length>next.length?next.length:cur.length;
+            //当前后两项都不是不是{}类型的数据时，进行比较
+            if(cur!=='[object Object]'&&next!=='[object Object]'){
+                for(var j = 0;j<len;j++){
+                    if(!isNaN(cur.charCodeAt(j))&&!isNaN(next.charCodeAt(j))){
+                        //如果二者的ASCII码都是有效数字
+                        if(cur.charCodeAt(j)>next.charCodeAt(j)){
+                            //如果前一项比后一项当前的ASCII码大，则返回true，交换位置
+                            return true;
+                        }else if(cur.charCodeAt(j)==next.charCodeAt(j)){
+                            continue;
+                        }else{
+                            return false;
+                        }
+                    }
+                }
+                if(!isNaN(cur.charCodeAt(len))&&isNaN(next.charCodeAt(len))&&(cur.charCodeAt(len-1)==next.charCodeAt(len-1))){
+                    //比较完之后，如果前一项ASCII还是有效数字，说明前项比后项大，交换
+                    return true;
+                }
+            }
+            //如果上述条件不满足，则不交换
+            return false;
+        }
+        //返回当前数组
+        return this;
+    };
+    // 8.reverse
+    //    1): 将数组颠倒过来
+    //    2): 不需要传参数
+    //    3): 数组成员顺序倒过来之后的数组
+    //    4): 原有数组发生改变；
+    Array.prototype.myReverse = function () {
+        //实例化一个长度为this.length的数组，
+        var len = this.length;
+        var newAry = new Array(len);
+        for(var i = 0;i<len;i++){
+            //this数组依次从后开始赋值给新数组newAry
+            newAry[i] = this[len-1-i];
+        }
+        //将newAry数组的值从前往后依次赋值给this
+        for(var j = 0;j<len;j++){
+            this[j] = newAry[j];
+        }
+        return newAry;
+    };
+    // 9.concat :
+    //    1) : 数组的拼接
+    //    2) :
+    //    1.不传参数： 数组的克隆
+    //    2.传参数，（数组、每一项）；把传入的实参拼接新的数组中；
+    //    3) : 拼接之后的新数组
+    //    4) : 原有数组不发生改变；
+    Array.prototype.myConcat = function (...arg) {
+        //创建一个数组，接收this的值和传进来的参数
+        /**
+         * 分为传参和不传参两种情况
+         * 传参又分为传入的是数字，还是数组
+         * 不传参直接返回当前实例this
+         */
+        var newAry = [];
+        //先遍历this，把this中的值赋值给newAry
+        for(var i = 0;i<this.length;i++){
+            newAry[i] = this[i];
+        }
+        //遍历实参判断实参是否是数组，如果是数组则遍历添加进去，如果不是数组，直接添加
+        for(var j = 0;j<arg.length;j++){
+            var cur = arg[j];//存储当前值
+            if(Object.prototype.toString.call(cur)==='[object Array]'){
+                //如果是数组,遍历该数组，添加进去
+                for(var k = 0;k<cur.length;k++){
+                    newAry[newAry.length] = cur[k];
+                }
+            }else{
+                //如果不是数组，则直接添加
+                newAry[newAry.length] = cur;
+            }
+        }
+        //返回拼接之后的数组
+        return newAry;
+    }
+    // 10.join
+    //    1) : 把数组成员按照特定的字符连接成一个字符串；
+    //    2) :
+    //    1.不传参数,会默认按照逗号分开
+    //    2.传参数，(特定的字符)
+    //    3) : 拼接之后的字符串
+    //    4) :原有数组不发生改变；
+    Array.prototype.myJoin = function(n){
+        //对形参n的处理，如果是undefined就默认的逗号拼接，如果传参了就按参数拼接
+        n = (n===undefined)?',': n.toString();
+        //遍历数组
+        var str = '';//声明一个空字符串
+        for(var i = 0;i<this.length;i++){
+            //存储当前项
+            var cur = this[i];
+            //如果不是最后一项就拼接上n，如果是最后一项就直接拼上当前项的值
+            if(i !== this.length-1){
+                str+=cur+n;
+            }else{
+                str+=cur;
+            }
+        }
+        return str;
+    };
+    // 11.indexOf
+    //    1) : 检测数组成员在数组中第一次出现的索引位置； 判断当前项是否在数组中存在；如果不存在，返回-1；
+    //    2): 需要参数
+    //    3): 返回在数组中第一次出现的索引；
+    //    4): 原有数组不发生改变；
+    Array.prototype.myIndexOf = function(n){
+        /**
+         * 功能：查找当前项在数组中第一次出现的索引，查找成功返回当前索引，失败返回-1
+         * 返回-1 的情况：
+         * n是undefined。即不传参
+         * n找不到
+         */
+        if(n){
+            for(var i = 0;i<this.length;i++){
+                var cur = this[i];
+                if(cur===n) {
+                    return i;//直接返回当前索引值
+                }
+            }
+            //如果遍历完数组还是找不到，返回-1；
+            return -1;
+        }
+        //如果n是undefined，返回-1
+        return -1;
+    };
+    // 12. lastIndexOf
+    //    1) : 检测数组成员在数组中最后一次出现的索引位置； 判断当前项是否在数组中存在；如果不存在，返回-1；
+    //    2): 需要参数
+    //    3): 返回在数组中最后一次出现的索引；
+    //    4): 原有数组不发生改变；
+    Array.prototype.myLastIndexOf = function(n){
+        /**
+         * 功能：查找当前项在数组中最后一次出现的索引，查找成功返回当前索引，失败返回-1
+         * 返回-1 的情况：
+         * n是undefined。即不传参
+         * n找不到
+         */
+        if(n){
+            for(var i = this.length-1;i>=0;i--){
+                var cur = this[i];
+                if(cur===n) {
+                    return i;//直接返回当前索引值
+                }
+            }
+            //如果遍历完数组还是找不到，返回-1；
+            return -1;
+        }
+        //如果n是undefined，返回-1
+        return -1;
+    };
+    // 13 .map
+    //    1) : 遍历数组和映射
+    //    2): 需要参数
+    //    3) : 映射之后的数组
+    //    4): 原有数组不发生改变；
+    Array.prototype.myMap = function(fn,c){
+        /**
+         * map遍历数组，传参有两个，第一个是回调函数，第二个参数可以改变回调函数中的this，
+         * 当第二个参数不传的时候，回调函数中的this非严格模式下指向undefined
+         * 回调函数中的第一个参数是当前项，第二个参数是当前项的索引，
+         * 有多少项回调函数就执行多少次，回调函数有返回值, 并存在一个数组中，当成map返回值返回
+         */
+        var newAry = [];
+        if(Object.prototype.toString.call(fn)==='[object Function]'){
+            //如果是一个函数，执行下面的的循环语句
+            for(var i = 0;i<this.length;i++){
+                newAry[i] = fn.call(c,this[i],i);
+            }
+        }else{
+            //如果不是函数，手动抛出异常
+            throw new Error(fn+' is not a function');
+        }
+        return newAry;
+        /*return newAry;*/
+    };
+    //14.forEach
+    //    1) : 遍历数组;没有返回值；
+    //    2) : 需要参数
+    //    3) : 返回值是undefined
+    //    4) : 原有数组不发生改变；
+    Array.prototype.myForEach = function(fn,c){
+        /**
+         * forEach遍历数组，传参有两个，第一个是回调函数，第二个参数可以改变回调函数中的this，
+         * 当第二个参数不传的时候，回调函数中的this非严格模式下指向undefined
+         * 回调函数中的第一个参数是当前项，第二个参数是当前项的索引，
+         * 有多少项回调函数就执行多少次，
+         * forEach没有返回值，返回值默认是undefined
+         */
+        //如果fn不是一个函数，则抛出异常
+        if(Object.prototype.toString.call(fn)==='[object Function]'){
+            for(var i = 0;i<this.length;i++){
+                fn.call(c,this[i],i);
+            }
+        }else{
+            //如果不是函数，手动抛出异常
+            throw new Error(fn+' is not a function');
+        }
+    };
+    // 15.toString
+    //    1) : 转字符串
+    //    2) : 不需要参数
+    //    3) : 返回一个去了中括号之后的字符串
+    //    4) : 原有数组不变；
+    Array.prototype.myToString = function(){
+        //用一个空字符串去拼接数组,每一项（除了最后一项）拼上一个逗号，
+        var str = '';
+        for(var i = 0;i<this.length;i++){
+            var cur = this[i];
+            if(i !== this.length-1){
+                str +=cur+',';
+            }else{
+                str+=cur;
+            }
+        }
+        return str;
+    };
+</script>
+</body>
+
+</html>
