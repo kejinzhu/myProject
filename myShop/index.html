@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+<div class="myShop">
+    <div id="header" class="header">
+        <span>排序:</span>
+        <a href="javascript:void(0)" sortMethod="time">
+            上架时间:
+            <i class="up"></i>
+            <i class="down"></i>
+        </a>
+        <a href="javascript:void(0)" sortMethod="hot">
+            热度:
+            <i class="up"></i>
+            <i class="down"></i>
+        </a>
+        <a href="javascript:void(0)" sortMethod="price">
+            价格:
+            <i class="up"></i>
+            <i class="down"></i>
+        </a>
+    </div>
+    <ul id="shopList" class="shopList">
+        <li>
+            <img src="img/1.jpg" alt="">
+            <p class="title">华为运动蓝牙耳机</p>
+            <p class="hot">热度:198</p>
+            <del>$9999</del>
+            <span class="price">￥499</span>
+            <p class="time">上架时间:2017-03-15</p>
+        </li>
+    </ul>
+</div>
+
+<script src="js/utils.js"></script>
+<script src="js/index.js"></script>
+</body>
+</html>

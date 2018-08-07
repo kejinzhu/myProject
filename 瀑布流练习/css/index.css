@@ -1,0 +1,44 @@
+/*清除默认样式*/
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    height:100%;
+    width:100%;
+    background: url("../img/bg.jpg");
+}
+#box{
+    width:100%;
+    margin:10px 100px;
+}
+a{
+    text-decoration: none;
+    font-family: "\5FAE\8F6F\96C5\9ED1", Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 30px;
+    color: #8c8a8a;
+}
+ul{
+    width:20%;
+    list-style: none;
+    float: left;
+    margin:0 10px 0 0;
+}
+ul li{
+    background: #fff;
+    width:95%;
+    text-align: center;
+    margin:0 5px 10px 5px;
+}
+ul li img{
+    cursor: pointer;
+    width:90%;
+    height:80%;
+    opacity: 0;
+    margin:10px 10px;
+    vertical-align: middle;
+}
+ul li:hover img{
+    margin-top:5px;
+}
