@@ -1,0 +1,494 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+/*副页*/
+#bigSideContainer{
+    max-width: 1920px;
+    min-width: 1002px;
+    /*height:100%;*/
+    margin:0 auto;
+    position: relative;
+    /*border: 1px solid #f00;*/
+}
+/*大容器*/
+#sideContainer{
+    background: url("../img/sideIndex-bg.jpg") no-repeat top center #fff;
+    /*position: relative;*/
+}
+/*主要部份*/
+#sideContainer .main{
+    background: url("../img/sideIndex-shadow.png") no-repeat top center;
+    width:1120px;
+    margin:0 auto;
+}
+/*主要内容*/
+#sideContainer .main .main-con{
+    width:1002px;
+    margin:0 auto;
+}
+/*---------------底部开始-----------------*/
+#bigSideContainer .side-footer{
+    width:100%;
+    height:40px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    line-height: 40px;
+    background: #454d58;
+}
+#bigSideContainer .side-footer p{
+    margin-left: 45%;
+    font-family: Arial;
+    font-size: 12px;
+    color: #fff;
+}
+#bigSideContainer .side-footer p a{
+    text-decoration: none;
+    font-family: Arial;
+    font-size: 12px;
+    color: #fff;
+}
+
+/*---------------左侧开始-----------------*/
+#sideContainer .main .main-con .side-left{
+    width:240px;
+    float: left;
+    padding-bottom: 300px;
+}
+/*右侧*/
+#sideContainer .main .main-con .side-right{
+    /*height:632px;*/
+    width:700px;
+    padding:75px 19px 75px 43px;
+    background: #fff;
+    float: left;
+    position: relative;
+}
+/*logo*/
+#sideContainer .main .main-con .side-left .logo{
+    padding-top:50px;
+    padding-bottom: 80px;
+}
+#sideContainer .main .main-con .side-left .logo a{
+    display: block;
+    text-decoration: none;
+}
+#sideContainer .main .main-con .side-left .logo img{
+    vertical-align: middle;
+}
+/*列表*/
+#sideContainer .main .main-con .side-left .list ul li{
+    height:44px;
+    line-height: 44px;
+    list-style: none;
+    border-top:1px solid #c2c1c1;
+}
+/*被选中的*/
+#sideContainer .main .main-con .side-left .list ul li .list-selected{
+    background: #ef8201;
+    color: #fff;
+}
+#sideContainer .main .main-con .side-left .list ul li a{
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    font-size: 14px;
+    color: #3e3a39;
+    font-family: 微软雅黑;
+
+}
+
+#sideContainer .main .main-con .side-left .list ul li a:hover{
+    background: #ef8201;
+    color: #fff;
+}
+
+/*-----------------左侧结束----------------*/
+
+/*-----------------右侧开始----------------*/
+/*集团概况*/
+#sideContainer .main .main-con .side-right .side-right-wrap1{
+    /*display: none;*/
+}
+/*标题*/
+#sideContainer .main .main-con .side-right .side-right-wrap1 .title{
+    margin-bottom: 26px;
+    height:36px;
+    line-height: 36px;
+}
+#sideContainer .main .main-con .side-right .side-right-wrap1 .title a img{
+    vertical-align: middle;
+}
+/*banner*/
+#sideContainer .main .main-con .side-right .side-right-wrap1 .banner{
+    height:140px;
+    width:680px;
+}
+/*导航条*/
+#sideContainer .main .main-con .side-right .side-right-wrap1 .nav{
+    margin-top: 22px;
+    border-bottom: 1px solid #c1bfc0;
+}
+#sideContainer .main .main-con .side-right .side-right-wrap1 .nav ul{
+    line-height: 44px;
+    height:44px;
+}
+#sideContainer .main .main-con .side-right .side-right-wrap1 .nav ul li{
+    width:110px;
+    float: left;
+    text-align: center;
+    list-style: none;
+    line-height: 44px;
+    height:44px;
+    position: relative;
+}
+#sideContainer .main .main-con .side-right .side-right-wrap1 .nav ul li a{
+    display: inline-block;
+    color: #3e3a39;
+    text-decoration: none;
+    font-family: 宋体;
+    font-size: 14px;
+    line-height: 44px;
+}
+#sideContainer .main .main-con .side-right .side-right-wrap1 .nav ul li span{
+    font-family: 宋体;
+    font-size: 14px;
+    line-height: 44px;
+    float: right;
+    color: #c1c0c0;
+}
+#sideContainer .main .main-con .side-right .side-right-wrap1 .nav ul li b{
+    display: none;
+    height:12px;
+    width:12px;
+    position: absolute;
+    border-top:1px solid #fff;
+    margin-top:-2px;
+    left: 50%;
+    background: url("../img/sideIndex-nav_select.jpg")  no-repeat;
+}
+/*!*没被选中的*!
+#sideContainer .main .main-con .side-right .side-right-wrap1 .nav ul .unselected a{
+    color: #3e3a39;
+}
+#sideContainer .main .main-con .side-right .side-right-wrap1 .nav ul .unselected b{
+    display: none;
+}*/
+/*被选中的*/
+#sideContainer .main .main-con .side-right .side-right-wrap1 .nav ul .selected a{
+    color: #ef8201;
+}
+#sideContainer .main .main-con .side-right .side-right-wrap1 .nav ul .selected b{
+    display: block;
+    height:12px;
+    width:12px;
+    position: absolute;
+    border-top:1px solid #fff;
+    margin-top:-2px;
+    left: 50%;
+    background: url("../img/sideIndex-nav_select.jpg")  no-repeat;
+}
+/*-------------------里面内容------------------*/
+
+/*--------------------集团简介开始----------------*/
+#sideContainer .main .main-con .side-right .side-right-wrap1 .con1{
+    width:693px;
+    display:block;
+}
+/*标题*/
+#sideContainer .main .main-con .side-right .side-right-wrap1 .con1 .con1-title{
+    font-family: 宋体;
+    font-size: 18px;
+    height:40px;
+    line-height: 40px;
+    font-weight: bold;
+    margin-top:30px;
+    text-align: center;
+    color: #f08300;
+}
+/*段落*/
+#sideContainer .main .main-con .side-right .side-right-wrap1 .con1 p{
+    text-indent: 2em;
+    font-size: 14px;
+    font-family: 宋体;
+    line-height: 30px;
+    margin-top:10px;
+    color: #3e3a39;
+}
+
+/*------------------集团简介结束--------------*/
+
+/*------------------董事长致辞开始--------------*/
+#sideContainer .main .main-con .side-right .side-right-wrap1 .con2{
+    width:693px;
+    display: none;
+}
+/*------------------董事长致辞结束-------------*/
+
+/*------------------发展足迹开始-------------*/
+#sideContainer .main .main-con .side-right .side-right-wrap1 .con3{
+    width:693px;
+    display: none;
+}
+/*标题*/
+#sideContainer .main .main-con .side-right .side-right-wrap1 .con3 .title{
+    font-family: 微软雅黑;
+    font-size: 18px;
+    height:40px;
+    line-height: 40px;
+    font-weight: bold;
+    margin-top:30px;
+    text-align: center;
+    color: #f08300;
+}
+/*足迹时间轴*/
+#sideContainer .main .main-con .side-right .side-right-wrap1 .con3 .timeLine{
+    width:535px;
+    margin:20px auto;
+    /* background: url("../img/sideIndex-timeLine.png") no-repeat 0 30px ;*/
+    position: relative;
+    /*margin-top:35px;*/
+}
+#sideContainer .main .main-con .side-right .side-right-wrap1 .con3 .timeLine img{
+    position: absolute;
+    top:30px;
+}
+#sideContainer .main .main-con .side-right .side-right-wrap1 .con3 .timeLine .left{
+    position: absolute;
+    z-index:10;
+    left:-12px;
+    top:21px;
+    width:13px;
+    height:19px;
+}
+#sideContainer .main .main-con .side-right .side-right-wrap1 .con3 .timeLine .left a{
+    display: block;
+    text-decoration: none;
+    width:100%;
+    height:100%;
+    background: url("../img/sideIndex-left.png");
+}
+#sideContainer .main .main-con .side-right .side-right-wrap1 .con3 .timeLine .time1{
+    position: absolute;
+    left: 95px;
+    width:36px;
+    height:36px;
+    top:0;
+    background: url("../img/sideIndex-time1.png") no-repeat center bottom;
+    text-align: center;
+    z-index:10;
+}
+#sideContainer .main .main-con .side-right .side-right-wrap1 .con3 .timeLine .time1 a{
+    font-size: 12px;
+    font-family: Arial;
+    color: #bfbfbf;
+    text-decoration: none;
+}
+#sideContainer .main .main-con .side-right .side-right-wrap1 .con3 .timeLine .time2{
+    position: absolute;
+    z-index:10;
+    left:246px;
+    top:-7px;
+    width:46px;
+    height:46px;
+    text-align: center;
+    background: url("../img/sideIndex-time2.png") no-repeat center bottom;
+}
+#sideContainer .main .main-con .side-right .side-right-wrap1 .con3 .timeLine .time2 a{
+    font-family: Arial;
+    font-size: 18px;
+    text-decoration: none;
+    color: #ef8101;
+}
+#sideContainer .main .main-con .side-right .side-right-wrap1 .con3 .timeLine .right{
+    position: absolute;
+    z-index:10;
+    right:-12px;
+    top:21px;
+    width:13px;
+    height:19px;
+}
+#sideContainer .main .main-con .side-right .side-right-wrap1 .con3 .timeLine .right a{
+    display: block;
+    width:100%;
+    height:100%;
+    text-decoration: none;
+    background: url("../img/sideIndex-right.png");
+}
+/*足迹列表*/
+#sideContainer .main .main-con .side-right .side-right-wrap1 .con3 .con3-list{
+    background: url("../img/sideIndex-con3-midLine.png") repeat-y 341px 0 ;
+    margin-top:100px;
+    width:680px;
+    margin-left: 5px;
+}
+#sideContainer .main .main-con .side-right .side-right-wrap1 .con3 .con3-list ul{
+    list-style: none;
+}
+#sideContainer .main .main-con .side-right .side-right-wrap1 .con3 .con3-list ul li{
+    height:180px;
+    line-height: 180px;
+    margin:35px auto;
+    background: url("../img/sideIndex-timeDot.png") no-repeat 325px 75px;
+}
+/*奇数行*/
+#sideContainer .main .main-con .side-right .side-right-wrap1 .con3 .con3-list ul li.odd .pic{
+    height:180px;
+    width:358px;
+    float:left;
+}
+#sideContainer .main .main-con .side-right .side-right-wrap1 .con3 .con3-list ul li.odd .pic img{
+    width:258px;
+    height:180px;
+    vertical-align: middle;
+}
+#sideContainer .main .main-con .side-right .side-right-wrap1 .con3 .con3-list ul li.odd .text{
+    width:228px;
+    height:128px;
+    float: left;
+    background: url("../img/sideIndex-con3-textLine.png") no-repeat 10px 96px;
+    line-height: 30px;
+    padding-top:55px;
+    padding-left:92px;
+}
+#sideContainer .main .main-con .side-right .side-right-wrap1 .con3 .con3-list ul li.odd .text .time{
+    font-size: 14px;
+    font-family: 微软雅黑;
+    color: #ef8201;
+}
+#sideContainer .main .main-con .side-right .side-right-wrap1 .con3 .con3-list ul li.odd .text span{
+    font-size: 14px;
+    font-family: 微软雅黑;
+    color: #000001;
+    text-align: right;
+}
+
+/*偶数行*/
+#sideContainer .main .main-con .side-right .side-right-wrap1 .con3 .con3-list ul li.even .pic{
+    height:180px;
+    width:258px;
+    float:right;
+}
+#sideContainer .main .main-con .side-right .side-right-wrap1 .con3 .con3-list ul li.even .pic img{
+    width:258px;
+    height:180px;
+    vertical-align: middle;
+}
+#sideContainer .main .main-con .side-right .side-right-wrap1 .con3 .con3-list ul li.even .text{
+    width:228px;
+    height:128px;
+    float: left;
+    text-align: right;
+    background: url("../img/sideIndex-con3-textLine.png") no-repeat 258px 96px;
+    line-height: 30px;
+    padding-top:55px;
+    padding-right:92px;
+    line-height: 30px;
+}
+#sideContainer .main .main-con .side-right .side-right-wrap1 .con3 .con3-list ul li.even .text .time{
+    font-size: 14px;
+    font-family: 微软雅黑;
+    color: #ef8201;
+}
+#sideContainer .main .main-con .side-right .side-right-wrap1 .con3 .con3-list ul li.even .text span{
+    font-size: 14px;
+    font-family: 微软雅黑;
+    color: #000001;
+}
+
+/*---------------------发展足迹结束--------------------*/
+
+/*---------------------企业文化开始--------------------*/
+#sideContainer .main .main-con .side-right .side-right-wrap1 .con4{
+    width:693px;
+    display: none;
+}
+#sideContainer .main .main-con .side-right .side-right-wrap1 .con4 .title{
+    font-family: 宋体;
+    color: #ef8201;
+    font-weight: bold;
+    font-size: 18px;
+    text-align: center;
+    margin-top:30px;
+    margin-bottom: 10px;
+    height:40px;
+    line-height: 40px;
+}
+#sideContainer .main .main-con .side-right .side-right-wrap1 .con4 .con4-content{
+    font-family: 宋体;
+    font-size: 14px;
+    line-height: 30px;
+    color: #3e3a39;
+    text-align: center;
+}
+#sideContainer .main .main-con .side-right .side-right-wrap1 .con4 .con4-content p b{
+    font-size: 14px;
+    font-family: 宋体;
+    color: #3e3a39;
+}
+
+/*---------------------企业文化结束------------------*/
+
+/*---------------------员工风采开始------------------*/
+#sideContainer .main .main-con .side-right .side-right-wrap1 .con5{
+    width:693px;
+    display: none;
+}
+#sideContainer .main .main-con .side-right .side-right-wrap1 .con5 .title{
+    font-family: 宋体;
+    color: #ef8201;
+    font-weight: bold;
+    font-size: 18px;
+    text-align: center;
+    margin-top:30px;
+    margin-bottom: 10px;
+    height:40px;
+    line-height: 40px;
+}
+#sideContainer .main .main-con .side-right .side-right-wrap1 .con5 .con5-content{
+    padding-left: 35px;
+}
+#sideContainer .main .main-con .side-right .side-right-wrap1 .con5 .con5-content ul li{
+    width:290px;
+    height:224px;
+    margin-left: 10px;
+    margin-right:10px;
+    list-style: none;
+    float: left;
+}
+#sideContainer .main .main-con .side-right .side-right-wrap1 .con5 .con5-content ul li img{
+    width:290px;
+    height:181px;
+}
+#sideContainer .main .main-con .side-right .side-right-wrap1 .con5 .con5-content ul li p{
+    font-family: 微软雅黑;
+    color: #2c2c2c;
+    text-align: center;
+    font-size: 14px;
+    line-height: 36px;
+    height: 36px;
+}
+#sideContainer .main .main-con .side-right .side-right-wrap1 .con5 .con5-content ul li p:hover{
+    color: #eb1e13;
+}
+/*---------------------员工风采结束-----------------*/
+
+/*---------------------集团架构开始-----------------*/
+#sideContainer .main .main-con .side-right .side-right-wrap1 .con6{
+    width:693px;
+    display: none;
+}
+#sideContainer .main .main-con .side-right .side-right-wrap1 .con6 .con6-content{
+    padding-top:10px;
+    margin:8px auto;
+}
+#sideContainer .main .main-con .side-right .side-right-wrap1 .con6 .con6-content img{
+    margin-top:10px;
+}
+/*---------------------集团架构结束-----------------*/
+
+/*---------------------里面内容结束-------------*/
+
+/*-------------------集团概况结束-------------*/

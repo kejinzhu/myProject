@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>旅发首页</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <meta name="keywords" content="旅发集团网站首页"/>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/video.css">
+</head>
+<body>
+    <div id="bigContainer">
+        <!--主内容-->
+        <div id="main">
+            <!--头部背景图片-->
+            <div id="header-bg"><img src="img/header-bg.png" alt=""></div>
+            <!--头部-->
+            <div id="header">
+                <!--头部内容-->
+                <div id="headMain">
+                    <!--logo部分-->
+                    <div class="logo">
+                        <a href="javascript:void(0);">
+                            <img src="img/logo.png" alt="">
+                        </a>
+                    </div>
+                    <!--导航条-->
+                    <div class="nav">
+                        <ul>
+                            <li class="first-page"><a class="selected" href="javascript:void(0);">首页</a></li>
+                            <li><a href="../集团概况/index.html">集团概况</a></li>
+                            <li><a href="../新闻动态/index.html">新闻动态</a></li>
+                            <li><a href="../集团业态/index.html">集团业态</a></li>
+                            <li><a href="../招商招聘/index.html">招商招聘</a></li>
+                            <li><a href="../联系我们/index.html">联系我们</a></li>
+                            <li><a href="../友情链接/index.html">友情链接</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!--主体图片内容-->
+            <div id="section-wrap">
+                <!--第一版-->
+                <div class="section section1">
+                    <div class="tableCell">
+                        <div class="text">
+                            <div class="big-text"></div>
+                            <div class="small-text"></div>
+                        </div>
+                        <a href="javascript:void(0);" class="goDown"></a>
+                    </div>
+                </div>
+                <!--第二版-->
+                <div class="section section2">
+                    <div class="tableCell">
+                        <div class="section2-box">
+                            <div class="videoHead"></div>
+                            <div id="videoImg" class="videoImg">
+                                <img src="img/video-bg1.jpg" alt="">
+                            </div>
+
+                            <div id="videoBox" class="videoBox">
+                                <!--视频屏幕-->
+                                <video poster="img/video-poster.png" class="myVideo" id="myVideo" style="width:100%;height:100%;cursor: pointer">
+                                    <!-- <source src="http://222.179.134.60:54817/30M.mp4"/>-->
+                                    <source src="Wildlife.mp4"/>
+                                    <source src="mov_bbb.mp4"/>
+                                    <source src="movie.mp4"/>
+                                </video>
+                                <!--控制条-->
+                                <div class="controlBar">
+                                    <!--播放按钮-->
+                                    <span id="v_play" class="v_play"></span>
+                                    <!--停止按钮-->
+                                    <span id="v_paused" class="v_paused"></span>
+                                    <!--进度条-->
+                                    <div class="barBox">
+                                        <!--进度条-->
+                                        <div id="v_range" class="v_range">
+                                            <span id="bufferBar" class="bufferBar"></span>
+                                            <span id="timeBar" class="timeBar"></span>
+                                        </div>
+                                        <!--播放时间-->
+                                        <div class="v_time">
+                                            <span id="current">00:00:00</span> &frasl;
+                                            <span id="duration">00:00:00</span>
+                                        </div>
+                                    </div>
+                                    <!--快进快退-->
+                                    <div class="speed">
+                                        <span id="slow_down" class="slow_down"></span>
+                                        <span id="speed_up" class="speed_up"></span>
+                                    </div>
+                                    <!--声音-->
+                                    <div class="v_volume" id="v_volume">
+                                        <div class="v_volume_pic" id="v_volume_pic">
+                                            <span id="n_muted" class="n_muted"></span>
+                                            <span id="y_muted" class="y_muted"></span>
+                                        </div>
+                                        <div class="v_volume_bar" id="v_volume_bar">
+                                            <span class="bufferBar"></span>
+                                            <span id = "volume_timerBar" class="timeBar"></span>
+                                        </div>
+                                    </div>
+                                    <!--全屏-->
+                                    <span class="v_fullScreen" id="v_fullScreen"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="javascript:void(0)" class="goDown"></a>
+                    </div>
+                </div>
+                <!--第三版-->
+                <div class="section section3">
+                    <div class="tableCell">
+                        <div class="section3-box">
+                            <a href="javascript:void(0)"><img src="img/ip3-f1.png" alt=""></a>
+                            <div class="section2-box-slider">
+                                <a onclick="slider_left()" id="left" href="javascript:void(0)" class="left"><img src="img/left.png" alt=""></a>
+                                <div id="slider" class="container">
+                                    <ul id="slider_ul">
+                                        <li class="slider" id="slider1">
+                                            <div class="inside-con">
+                                                <img src="img/slider-img1.jpg" alt="">
+                                                <p>
+                                                    日前，重庆市政府办公厅下发了《关于促进旅游投资和消费的实施意见》的红头文件，《关于促进旅游投资和消费的实施意见》有诸多促进旅游投资和消费的利好政策，特别是涉及我们集团正在拓展的“房车营地建设”、“乡村…
+                                                    <a href="javascript:void(0)">[详细]</a>
+                                                </p>
+                                            </div>
+                                        </li>
+                                        <li class="slider" id="slider2">
+                                            <div class="inside-con">
+                                                <img src="img/slider-img2.jpg" alt="">
+                                                <p>
+                                                    11月12日下午，重庆旅游融资担保有限公司与重庆粮食投资信息咨询有限公司签署《“金粮宝”业务合作协议》。...
+                                                    <a href="javascript:void(0)">详细</a>
+                                                </p>
+                                            </div>
+                                        </li>
+                                        <li class="slider" id="slider3">
+                                            <div class="inside-con">
+                                                <img src="img/slider-img3.jpg" alt="">
+                                                <p>
+                                                    8月6日下午，集团召开员工大会。集团公司董事长刘恒作重要讲话。他强调，全体员工进一步坚定发展信心，明确发展目标，凝聚发展力量，创造共同价值，推进稳步向前发展。...
+                                                    <a href="javascript:void(0)">详细</a>
+                                                </p>
+                                            </div>
+                                        </li>
+                                        <li class="slider" id="slider4">
+                                            <div class="inside-con">
+                                                <img src="img/slider-img4.jpg" alt="">
+                                                <p>
+                                                    7月28日至29日，今后拟瞄准上市的“重庆旅游卡”、“乡旅控股”、“博华生物”3项目先后在集团会议室进行集中路演，集团领导及受邀金控、证券公司负责人等参加路演及项目说明会。...
+                                                    <a href="javascript:void(0)">详细</a>
+                                                </p>
+                                            </div>
+                                        </li>
+                                        <li class="slider" id="slider5">
+                                            <div class="inside-con">
+                                                <img src="img/slider-img5.jpg" alt="">
+                                                <p>
+                                                    7月20日至23日，重庆旅游产业发展（集团）有限公司及部分子公司首批员工参与了集团国有股东方——重庆旅投集团推出的旅游产品“品黄金邮轮·赏三峡风光” 体验游活动。...
+                                                    <a href="javascript:void(0)">详细</a>
+                                                </p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <a onclick="slider_right()" id="right" href="javascript:void(0)" class="right"><img src="img/right.png" alt=""></a>
+                            </div>
+                        </div>
+                        <a href="javascript:void(0)" class="goDown"></a>
+                    </div>
+                </div>
+                <!--第四版-->
+                <div class="section section4">
+                    <div class="tableCell">
+                        <div class="section4-box">
+                            <div class="section4-box-tab">
+                                <div class="tab1">
+                                    <div>
+                                        <p>旅游金融板块</p>
+                                        <span>按照集团“产融融合”的整体发展战略，集团金融板块，以旅游金融服务为载体，通过投资管理和产业整合团队的建设，并与集团产业板块互为融合，互为支撑……详细></span>
+                                    </div>
+                                </div>
+                                <div class="tab2"></div>
+                            </div>
+                        </div>
+                        <a href="javascript:void(0)" class="goDown"></a>
+                    </div>
+                </div>
+                <!--第五版-->
+                <div class="section section5">
+                    <div class="tableCell">
+                        <div class="section5-box">
+                            <div class="section5-box-con">
+                                <span><img src="img/index-bg5-txt.png" alt=""></span>
+                            </div>
+                        </div>
+                        <div class="footer">Copyright 2011-2018 © TIDG Co.,Ltd. All rights reserved . Design by <a href="javascript:void(0)">JadeBox</a> . 渝ICP备15000587号-2 </div>
+                        <div class="rightCode">
+                            <div class="wb"><img src="img/index-bg5-wb.png" alt=""></div>
+                            <div class="wx"><img src="img/index-bg5-wx.png" alt=""></div>
+                            <div class="scanCode">
+                                <div><img src="img/index-bg5-scanCode.jpg" alt=""></div>
+                                <span>扫一扫<br>关注旅发集团</span>
+                            </div>
+                        </div>
+                        <a href="javascript:void(0)" class="goDown"></a>
+                    </div>
+                </div>
+            </div>
+            <!--右侧小圆点-->
+            <div id="page-dot-nav">
+                <ul>
+                    <li>
+                        <a style="background: #F48120;" href="javascript:void(0)" class="page"></a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)" class="page"></a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)" class="page"></a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)" class="page"></a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)" class="page"></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script src="js/jquery-1.12.4.js" type="text/javascript"></script>
+    <script src="js/index.js" type="text/javascript"></script>
+    <script src="js/video.js" type="text/javascript"></script>
+    <script src="js/slider.js" type="text/javascript"></script>
+</body>
+</html>
