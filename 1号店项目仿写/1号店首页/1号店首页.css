@@ -1,0 +1,2009 @@
+*{
+    margin:0;
+    padding:0;
+}
+html{
+    background: #f3f3f3;
+}
+/*设置容器宽度  居中*/
+body>div{
+    width:1228px;
+    margin:0 auto;
+}
+/*---------------------------------------头部广告部分的CSS样式----------------------------------------------*/
+/* 设置#ad宽高绝对定位和溢出隐藏，给高度加transition动画，0.5s线性变化，底部背景颜色要跟图片边缘一样*/
+#ad{
+    width:1366px;
+    height:80px;
+    position: relative;
+    left:-69px;
+    text-align: center;
+    background: #fd779c;
+    overflow: hidden;
+    transition: height 0.5s linear;
+}
+/* 给img1和img2添加relative定位，脱离父容器*/
+#ad_img1{
+    position: relative;
+}
+/* 在没有hover的时候将图片2定位在顶部，当#ad:hover的时候线性变化，图片1显示出来*/
+#ad_img2{
+    position: relative;
+    top:-253px;
+    transition: top 0.5s linear;
+}
+#ad:hover{
+    height:250px;
+}
+#ad:hover #ad_img2{
+    top:0;
+}
+/* 给#ad下的span标签添加宽度高度，并且将其变为块级标签，设置绝对定位*/
+#ad>span{
+    display: inline-block;
+    width:28px;
+    height:28px;
+    line-height: 28px;
+    font-size: 20px;
+    color: white;
+    position: absolute;
+    top:11px;
+    left:1256px;
+}
+/* 当#ad>span:hover的时候背景颜色发生改变 并且鼠标变为手指形状*/
+#ad>span:hover{
+    background: rgba(0,0,0,0.4);
+    cursor: pointer;
+}
+
+/*---------------------------------------------------------头部导航栏部分的CSS--------------------------------------------------------------------*/
+/* 给头部导航栏添加CSS样式，宽高的设置跟广告图一样，给ul,nav都设置绝对定位，
+然后添加transition当广告高度变大时，距离顶部的距离也随着变化*/
+nav{
+    width:1366px;
+    height:31px;
+    margin:0 auto;
+    background: #f3f3f3;
+    transition:top 0.5s linear;
+    position: relative;
+    left:-69px;
+}
+nav>ul{
+    width:1228px;
+    height:31px;
+    background: #f3f3f3;
+    margin-left:69px;
+    position:relative;
+}
+/*去除ul下的li排序样式*/
+nav>ul>li{
+    list-style: none;
+    float:left;
+    height:31px;
+    line-height: 31px;
+    text-align: center;
+}
+
+/*设置送货地址的左外边距，跟nav移动的距离大小一样*/
+#nav_ul_li_address{
+    cursor: pointer;
+    font-family: 宋体;
+    font-size: 13px;
+    color: rgba(0,0,0,0.6);
+    width:270px;
+    position: relative;
+}
+
+/*设置nav_ul_li_address下的地图坐标的宽高*/
+#nav_ul_li_address_map{
+    width:12px;
+    height:12px;
+}
+/*设置订单的图片宽高*/
+#nav_ul_li_img_order{
+    width:13px;
+    height:14px;
+}
+#ad:hover nav{
+    top:251px;
+}
+/*把a的下划线去除*/
+a{
+    font-family: 宋体;
+    font-size: 13px;
+    text-decoration: none;
+    color:rgba(0,0,0,0.7);
+}
+/*给a的注册标签设置CSS*/
+#nav_ul_li_a_register{
+    color:#a9a9a9;
+    margin-left:10px;
+}
+#nav_ul_li_a_register:hover{
+    color:red;
+}
+a:hover{
+    color:red;
+}
+/*设置客户服务的样式*/
+ul>li>ul>li{
+    list-style: none;
+    text-align: left;
+    text-indent: 3px;
+}
+/*找到li下的ul，设置CSS样式*/
+ul>li>ul{
+    display: none;
+    width:74px;
+    margin-left:-3px;
+    margin-top:-2px;
+    background: white;
+    border:1px solid rgba(0,0,0,0.2);
+    border-top:1px solid white;
+}
+/*设置企业服务的边框和鼠标悬停时候的背景颜色为白色*/
+nav>ul #company_service:hover{
+    background: white;
+    border: 1px solid rgba(0,0,0,0.2);
+}
+/*------------------------------------------------------------------------这是送货地址部分的CSS-------------------------------------------------------------------------*/
+/*给li下的div设置CSS，宽度721px，高度408px,边框*/
+#div_address{
+    width:721px;
+    height:408px;
+    border: 1px solid rgba(0,0,0,0.2);
+    display: none;
+    position: relative;
+    z-index: 3;
+    left:0;
+    top:31px;
+    background: white;
+}
+/*给div_address下面的input标签设置Css属性*/
+#div_address input{
+   /* margin-left: 10px;*/
+    height:25px;
+    width:200px;
+    border: 1px solid rgba(0,0,0,0.2);
+    text-indent: 25px;
+    background: url("img/search.png") no-repeat 3px 3px;
+}
+/*设置关闭符号的CSS样式*/
+#close_div_address{
+    position: absolute;
+    right:16px;
+    top:12px;
+    color:gray;
+    font-size: 20px;
+    display: block;
+    height:20px;
+    width:20px;
+    line-height: 20px;
+}
+/*设置城市p的样式*/
+#p_city{
+    position: relative;
+    left:3px;
+    width:683px;
+    height:60px;
+}
+/*设置城市中p下面的a标签CSS*/
+#p_city a{
+    margin:0 10px 0 2px;
+    display: inline-block;
+}
+/*给p下面的字母添加CSS样式*/
+#p_letter a{
+    display: inline-block;
+    width:21px;
+    height:21px;
+    line-height: 21px;
+    background: #ededed;
+    font-family: 宋体;
+    font-size: 14px;
+    color:rgba(0,0,0,0.5);
+}
+/*给p下面的字母添加CSS样式 当鼠标悬停的时候背景颜色变为红色，字体变为白色*/
+#p_letter a:hover{
+    background: red;
+    color:white;
+}
+/*给下面按字母查找的城市外边框添加溢出为滚动条样式，为设置宽高*/
+#div_address_city{
+    overflow-y: scroll;
+    margin-top:5px;
+    height:230px;
+    width:721px;
+}
+/*给字母设置CSS样式*/
+.letter{
+    display: inline-block;
+    height:20px;
+    width:20px;
+    font-family: 宋体;
+    font-size: 20px;
+    color: #cbcbcb;
+}
+#div_address_city p{
+    width:714px;
+}
+/*------------------------------------------这是按字母查找下面的城市布局部分----------------------------------------*/
+/*给div_address_city下面的所有P一个个添加CSS样式排版布局*/
+#letter_A a{
+    margin:0 19px 0 3px;
+}
+#letter_A{
+    height:60px;
+    margin-left:-27px;
+}
+#letter_B{
+    height:90px;
+    margin-left:-18px;
+}
+#letter_B a{
+    margin:0 16px 0 3px;
+}
+#letter_C {
+    height: 90px;
+    margin-left: -35px;
+}
+#letter_C a{
+    margin:0 16px 0 3px;
+}
+#letter_D{
+    height:60px;
+    margin-left:-33px;
+}
+#letter_D a{
+    margin:0 16px 0 3px;
+}
+#letter_E{
+    height:30px;
+    margin-left:-215px;
+}
+#letter_E a{
+    margin:0 16px 0 3px;
+}
+#letter_F{
+    height:30px;
+    margin-left:-86px;
+}
+#letter_F a{
+    margin:0 16px 0 3px;
+}
+#letter_G{
+    height:60px;
+    margin-top:-30px;
+    margin-left:-33px;
+}
+#letter_G a{
+    margin:0 16px 0 3px;
+}
+#letter_H{
+    height:120px;
+    margin-left:-26px;
+}
+#letter_H a{
+    margin:0 16px 0 3px;
+}
+#letter_J{
+    height:90px;
+    margin-left:-25px;
+    margin-top:-18px;
+}
+#letter_J a{
+    margin:0 16px 0 3px;
+}
+#letter_K{
+    height:30px;
+    margin-left:-90px;
+    margin-top:-30px;
+}
+#letter_K a{
+    margin:0 16px 0 3px;
+}
+#letter_L{
+    height:120px;
+    margin-top:-30px;
+    margin-left:-30px;
+}
+#letter_L a{
+    margin:0 16px 0 3px;
+}
+#letter_M{
+    height:30px;
+    margin-left:-116px;
+}
+#letter_M a{
+    margin:0 16px 0 3px;
+}
+#letter_N{
+    height:60px;
+    margin-left:-24px;
+}
+#letter_N a{
+    margin:0 16px 0 3px;
+}
+#letter_P{
+    height:30px;
+    margin-left:-51px;
+}
+#letter_P a{
+    margin:0 16px 0 3px;
+}
+#letter_Q{
+    height:60px;
+    margin-left:-10px;
+}
+#letter_Q a{
+    margin:0 16px 0 2px;
+}
+#letter_R{
+    height:30px;
+    margin-left:-246px;
+}
+#letter_R a{
+    margin:0 16px 0 3px;
+}
+#letter_S{
+    height:120px;
+    margin-left:-38px;
+}
+#letter_S a{
+    margin:0 16px 0 3px;
+}
+#letter_T{
+    height:60px;
+    margin-left:-18px;
+}
+#letter_T a{
+    margin:0 16px 0 3px;
+}
+#letter_W{
+    height:60px;
+    margin-left:-12px;
+}
+#letter_W a{
+    margin:0 16px 0 3px;
+}
+#letter_X{
+    height:90px;
+    margin-left:-31px;
+}
+#letter_X a{
+    margin:0 16px 0 3px;
+}
+#letter_Y{
+    height:90px;
+    margin-left:-31px;
+}
+#letter_Y a{
+    margin:0 16px 0 3px;
+}
+#letter_Z{
+    height:90px;
+    margin-left:-11px;
+}
+#letter_Z a{
+    margin:0 16px 0 3px;
+}
+
+
+/*----------------------------------------头部搜索框、logo以及购物车部分的CSS--------------------------------------*/
+/*头部容器部分*/
+#head_container{
+    width:1366px;
+    height:151px;
+    margin-left:-69px;
+    background: white;
+}
+/*去除所有的list-style、和设置宽高*/
+#head_container ul{
+    list-style: none;
+    width:1228px;
+    height:151px;
+    margin-left:69px;
+}
+/*左侧logo部分-----------------------------给logo部分设置宽高*/
+#head_container_left_logo{
+    height:151px;
+    width:206px;
+    line-height: 151px;
+    float: left;
+}
+/*--------------------------中间部分---------------------*/
+#head_container_center{
+    height:151px;
+    width:755px;
+    float: left;
+    margin-left:37px;
+}
+/*-----------------------搜索框----------------*/
+#head_container_center_search{
+    height:39px;
+    width:755px;
+    margin-top:33px;
+    position: relative;
+}
+#head_container_center_search input{
+    height:35px;
+    width:708px;
+    border: 2px solid red;
+    position: absolute;
+    left:0;
+    line-height: 35px;
+    text-indent: 15px;
+    font-family: 宋体;
+    font-size: 14px;
+    color:gray;
+}
+#head_container_center_search span{
+    display: inline-block;
+    height:39px;
+    width:45px;
+    background: url("img/head_container_center_search.png") no-repeat 8px 8px red;
+    position: absolute;
+    right:0;
+}
+/*----------------------------中间部分的中间文字部分---------------------*/
+#head_container_center_center{
+    height:39px;
+    width:755px;
+    line-height: 39px;
+}
+/*批量给a添加样式*/
+#head_container_center_center>a{
+    color: #a9a9a9;
+    font-family: 微软雅黑;
+    font-size: 14px;
+    margin:0 12px 0 0;
+}
+#head_container_center_center>a:hover{
+    color: red;
+}
+/*--------------------------------中间底部文字部分-----------------*/
+#head_container_center_bottom{
+    height:39px;
+    width:755px;
+    line-height: 39px;
+}
+#head_container_center_bottom>a{
+    font-family: 微软雅黑;
+    font-size: 17px;
+    color: black;
+    margin:0 14px 0 0;
+}
+#head_container_center_bottom>a:hover{
+    color:red;
+}
+/*---------------------------------头部容器右侧部分------------------*/
+#head_container_right{
+    height:151px;
+    width:185px;
+    float:left;
+    margin-left:38px;
+}
+#head_container_right_shopCar{
+    width:143px;
+    height:40px;
+    border: 1px solid gray;
+    margin:33px 41px 76px 35px;
+    background: url("img/head_container_right_shopCar.png") no-repeat 20px 10px;
+    cursor: pointer;
+}
+#head_container_right_shopCar>span{
+    font-family: 宋体;
+    font-size: 18px;
+    display: inline-block;
+    margin:10px 20px 0 62px;
+    color: #666666;
+    cursor: pointer;
+}
+
+/*------------------------------------中间主体菜单轮播图部分-------------------------*/
+#body_center{
+    height:402px;
+    width:1366px;
+    margin-left: -69px;
+}
+#body_center_container{
+    height:402px;
+    width:1228px;
+    margin-left: 69px;
+    position: relative;
+}
+/*-----------------------------------下面是左侧菜单部分-----------------------------------*/
+#body_center_container ul{
+    list-style: none;
+    background: #44373a;
+    width:207px;
+    height:402px;
+}
+#body_center_container ul>li{
+    height:34px;
+    width:207px;
+    color: white;
+    font-family: 华文中宋;
+    font-size: 14px;
+}
+#body_center_container>ul>li>img{
+    margin:0 10px -5px 10px;
+}
+#body_center_container ul>li>a{
+    color: #fdfdfe;
+    height:34px;
+    line-height: 34px;
+    display: inline-block;
+    font-family: 华文中宋;
+    font-size: 14px;
+}
+#body_center_container ul>li:hover{
+    color:gray;
+    background:  #fdfdfe;
+}
+#body_center_container ul>li:hover a{
+    color:gray;
+}
+#body_center_container_ul div{
+    height:402px;
+    width:1020px;
+    border: 1px solid gray;
+    border-left: none;
+    position: absolute;
+    left:206px;
+    top:0;
+    z-index:1;
+    background: white;
+    display: none;
+}
+#body_center_container_ul div p{
+    height:34px;
+    line-height: 34px;
+    width:777px;
+    margin-top:8px;
+}
+#body_center_container_ul div p span{
+    color: #666666;
+    margin-left:20px;
+}
+.body_center_container_ul_div_p_span{
+    display: inline-block;
+    width:641px;
+    height:34px;
+    line-height: 34px;
+    border-bottom: 1px dotted gray;
+    margin-left:10px;
+}
+.body_center_container_ul_div_p_span a{
+    color: rgba(0,0,0,0.6);
+    font-family: 华文中宋;
+    font-size: 14px;
+    margin:0 15px 0 3px;
+}
+.body_center_container_ul_div_p_span>a:hover{
+    color: red;
+}
+#body_center_container ul>li:hover div{
+    display: block;
+}
+#body_center_container_ul div>img{
+    height:402px;
+    width:248px;
+    float:right;
+    margin-left:777px;
+    margin-top:-379px;
+}
+/*----------------------------------------------------下面是中间轮播图部分-------------------------------*/
+#slide {
+    float: left;
+}
+
+#slide > div {
+    width: 1026px;
+    height: 402px;
+    position: relative;
+    margin-top:-402px;
+    margin-left:206px;
+}
+
+#slide > div > img {
+    position: absolute;
+    opacity: 0;
+    transition: opacity 0.5s linear;
+}
+
+#slide ul {
+    width: 182px;
+    height: 12px;
+    padding: 4px;
+    border-radius: 30px;
+    background: rgba(255, 255, 255, 0.3);
+    position: absolute;
+    bottom: 30px;
+    left: 37%;
+}
+
+#slide div ul li {
+    list-style: none;
+    width: 12px;
+    height: 12px;
+    background: white;
+    border-radius: 100%;
+    float: left;
+    margin-left: 10px;
+}
+
+#slide a {
+    display: none;
+    text-decoration: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    font-size: 30px;
+    color: white;
+    background: rgba(0, 0, 0, 0.3);
+    position: absolute;
+    top: 45%;
+}
+
+#slide .aLeft {
+    left: 0;
+}
+
+#slide .aRight {
+    right: 263px;
+}
+
+#slide a:hover {
+    background: rgba(0, 0, 0, 0.7);
+}
+/*-------------------------------下面是登录注册部分----------------------*/
+#login_register {
+    height: 264px;
+    width: 238px;
+    position: absolute;
+    right: 20px;
+    top: 58px;
+}
+#login_register p{
+    color: gray;
+    font-family: 华文中宋;
+    font-size: 16px;
+    text-align: center;
+    position: absolute;
+    top:50px;
+    left:88px;
+}
+#login_register>div{
+    height:72px;
+    width:72px;
+    border-radius: 50%;
+    position: absolute;
+    background: #f2eeeb url("img/login_register_home.png") no-repeat 10px 13px ;
+    border: 1px solid #dddee4;
+    top:-35px;
+    left:80px;
+}
+.login_register{
+    display: inline-block;
+    height:27px;
+    width:71px;
+    border: 1px solid red;
+    border-radius: 20px;
+    line-height: 27px;
+    text-align: center;
+    font-family: 华文中宋;
+    font-size: 16px;
+    color: red;
+}
+.login_register:hover{
+    background: red;
+    color: white;
+}
+#login_register a{
+    display: inline-block;
+    height:18px;
+    width:206px;
+    text-indent: 10px;
+    font-family: 华文中宋;
+    font-size: 14px;
+    margin-top:5px ;
+}
+/*-------------------------------------------------------------下面是倒计时部分--------------------------------------*/
+#countDown{
+    width:1366px;
+    height:152px;
+    background: #f4f4f4;
+    margin-left: -69px;
+}
+#countDown_container{
+    width:1228px;
+    height:142px;
+    margin-left:69px;
+}
+/*倒计时下面的ul设置样式*/
+#countDown_container>ul{
+    list-style: none;
+    clear:left;
+}
+/*给ul下的所有li设置CSS样式*/
+#countDown_container>ul>li{
+    background: white;
+    height:142px;
+    width:254px;
+    float:left;
+    margin-top:10px;
+    position: relative;
+}
+/*给倒计时的三个span设置CSS样式*/
+.countDown_container_ul_li_time{
+    height:28px;
+    width:38px;
+    display: inline-block;
+    background: #392801;
+    float:left;
+    color:white;
+    line-height: 28px;
+    font-family: 华文中宋;
+    font-size: 18px;
+    text-align: center;
+}
+/*查看更多设定CSS样式*/
+#countDown_container_ul_li_a{
+    color:white;
+    font-family: 华文中宋;
+    font-size: 16px;
+    text-decoration: none;
+    margin-left:75px;
+}
+/*查看更多hover的时候出现下划线*/
+#countDown_container_ul_li_a:hover{
+    text-decoration: underline;
+}
+/*div*/
+#countDown_container>ul>li>div{
+    float:left;
+    height:141px;
+    width:109px;
+}
+/*div下的图片*/
+#countDown_container>ul>li>div>img{
+    height:97px;
+    width:100px;
+    top:20px;
+    left:135px;
+    position: absolute;
+    transition: left 0.5s linear;
+}
+/*图片鼠标悬停的时候左移*/
+#countDown_container>ul>li>div>img:hover{
+     left:125px;
+}
+/*标题*/
+.countDown_container_ul_li_div_title{
+    font-family: 华文中宋;
+    font-size: 15px;
+    color: #a0a0a0;
+    margin-left:10px;
+    margin-top:10px;
+    display: inline-block;
+}
+/*价格*/
+.countDown_container_ul_li_div_money{
+    font-family: 华文中宋;
+    font-size: 15px;
+    color:red;
+    display: inline-block;
+    margin-left: 10px;
+    margin-top:10px;
+}
+/*参考价*/
+.countDown_container_ul_li_div_refMoney{
+    font-family: 华文中宋;
+    font-size: 14px;
+    color: #ababab;
+    margin-left: 10px;
+    margin-top:10px;
+}
+.countDown_container_ul_li_div_span{
+    display:inline-block;
+    height:37px;width:40px;
+    font-family: 华文中宋;
+    font-size: 12px;
+    color:white;
+    padding:2px 0 0 2px;
+    position: absolute;
+    right:-1px;
+    top:0;
+    background: url("img/已售背景.png") no-repeat;
+}
+
+/*---------------------------------------------------------------------------------下面是吸顶式导航条部分-----------------------------------------*/
+#topSuction_nav{
+    height:62px;
+    width:1366px;
+    background: white;
+    /*margin-left:-69px;*/
+    clear: both;
+    /* margin-top:10px;*/
+    position: absolute;
+    z-index: -2;
+    left:-69px;
+    top:720px;
+}
+#topSuction_nav>img{
+    height:62px;
+    width:183px;
+    margin-left:92px;
+    float: left;
+}
+#topSuction_nav>div{
+    float:left;
+    margin-left:30px;
+    position: relative;
+    width:762px;
+    height:40px;
+    margin-top:15px;
+}
+#topSuction_nav>div>input{
+    height:36px;
+    width:704px;
+    border: 2px solid red;
+    text-indent: 15px;
+    /*position: absolute;*/
+}
+#topSuction_nav>div>span{
+    display: inline-block;
+    width:54px;
+    height:40px;
+    position: absolute;
+    right:0;
+    background: url("img/head_container_center_search.png") no-repeat red 13px 10px;
+    cursor: pointer;
+}
+
+/*----------------------------------------------------------下面是1号闪购模块-----------------------------------------------*/
+#firstShopping{
+    width:1366px;
+    height:410px;
+    background: #f4f4f4;
+    margin-left: -69px;
+    clear: left;
+    margin-top:24px;
+    /*padding-top: 24px;*/
+}
+/*中间内容框*/
+#firstShopping_container{
+    width:1228px;
+    height:402px;
+    margin-left: 69px;
+    position: relative;
+}
+/*团购和排行版*/
+#firstShopping_container>ul{
+    width:463px;
+    height:402px;
+    float: left;
+    margin-left:14px;
+    list-style:none;
+    position: relative;
+    background: white;
+    border-top:1px solid red;
+}
+#firstShopping_container>ul>li>p{
+    width:201px;
+    height:101px;
+    position: absolute;
+    left:33px;
+    bottom: 36px;
+    background: white;
+    opacity: 0.6;
+}
+#firstShopping_container>ul>li>p:hover{
+    opacity: 0.8;
+}
+.firstShopping_container_ul_li_title{
+    height:32px;
+    width:140px;
+    position: absolute;
+    left:160px;
+    top:-5px;
+}
+.firstShopping_container_ul_li_title>img{
+    left:30px;
+    top:3px;
+    position: absolute;
+}
+.firstShopping_container_ul_li_title>span{
+    left:55px;
+    top:0;
+    position: absolute;
+    color:white;
+    font-family: 华文中宋;
+    font-size: 20px;
+}
+.firstShopping_container_ul_li_title i{
+    position: absolute;
+    border: 2px solid #f3f3f3;
+}
+#firstShopping_container_ul_li_group{
+    width:202px;
+    height:198px;
+    border-bottom:1px solid rgba(0,0,0,0.2);
+    position: absolute;
+    right:0;
+    top:39px;
+}
+#firstShopping_container_ul_li_group img{
+    height:99px;
+    width:91px;
+    margin:8px 27px 0 100px;
+    transition: margin-left 0.5s linear;
+}
+#firstShopping_container_ul_li_group img:hover{
+    margin-left:90px;
+}
+/*休闲食品*/
+#firstShopping_container_ul_li_food{
+    width:202px;
+    height:144px;
+    position: absolute;
+    right:0;
+    top:239px;
+}
+#firstShopping_container_ul_li_food img{
+    height:99px;
+    width:91px;
+    margin:-8px 27px 0 100px;
+    transition: margin-left 0.5s linear;
+}
+#firstShopping_container_ul_li_food img:hover{
+    margin-left:90px;
+}
+#firstShopping_container>ul>a{
+    color:rgba(0,0,0,0.3);
+    position: absolute;
+    right:12px;
+    top:23px;
+    font-size: 14px;
+    font-family: 华文中宋;
+}
+#firstShopping_container>ul a:hover{
+    color:red;
+}
+#firstShopping_container>ul>li>a{
+    display: inline-block;
+    width:75px;
+    height:32px;
+    line-height: 32px;
+    text-indent: 8px;
+    font-family: 华文中宋;
+    font-size: 16px;
+}
+/*#firstShopping_container>ul>li>a:hover{
+    border-bottom: 1px solid #fd0001;
+}*/
+/*排行版下面tab页的内容*/
+#firstShopping_container_ranking_tab div{
+    height:325px;
+    width:435px;
+    display: none;
+    list-style: none;
+    position: absolute;
+    top:79px;
+    left:20px;
+}
+#firstShopping_container_ranking_tab div>p{
+    position: relative;
+    float:left;
+    width:117px;
+    height:146px;
+    margin-right: 0;
+    margin-left:20px;
+}
+#firstShopping_container_ranking_tab div>p img{
+    height:115px;
+    width:97px;
+}
+#firstShopping_container_ranking_tab div>p i{
+    display: inline-block;
+    height:17px;
+    width:42px;
+    background: #f96233;
+    font-family: 华文中宋;
+    font-size: 14px;
+    position: absolute;
+    bottom: 30px;
+    left:10px;
+    color:white;
+}
+#firstShopping_container_ranking_tab div>p a{
+    font-family: 华文中宋;
+    font-size: 14px;
+}
+/*----------------------------------------------------------------下面是全球进口部分-------------------------------------------------------*/
+#global_import{
+    height: 450px;
+    margin-top: 20px;
+}
+#global_import_1,#global_import_2,#global_import_3{
+    float: left;
+}
+#global_import_1{
+    height: 450px;
+    width: 315px;
+    position: relative;
+}
+#global_import_1>img{
+    height: 450px;
+    width: 315px;
+}
+#global_import_1 ul{
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+}
+#global_import_1 li{
+    float: left;
+    background: rgba(255, 243, 248, 0.33);
+    width: 83px;
+    height: 28px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    line-height: 28px;
+    border: 1px solid rgba(255, 243, 248, 0.4);
+    list-style: none;
+}
+#global_import_1 li>a{
+    color: white;
+}
+
+#global_import_2{
+    width: 610px;
+    height: 440px;
+    border-right: 5px solid #AA1C22;
+    border-top: 5px solid #AA1C22;
+    border-bottom: 5px solid #AA1C22;
+}
+#global_import_2>div{
+    float: left;
+    width: 201px;
+    height: 218px;
+    border: 1px solid #AA1C22;
+}
+#global_import_2>#global_import_2_1{
+    width: 404px;
+}
+#global_import_2>#global_import_2_1>div{
+    width: 404px;
+}
+#global_import_2>#global_import_2_1>div>img{
+    width: 404px;
+    height: 218px;
+    bottom:0;
+    right: 0;
+}
+#global_import_2>div>div{
+    background: white;
+    width: 201px;
+    height: 218px;
+    position: relative;
+    transform: scale(1);
+    transition: transform 0.4s linear;
+}
+#global_import_2>div>div>span{
+    font-family: 华文中宋;
+    font-size: 16px;
+    color:rgba(0,0,0,0.8);
+}
+#global_import_2>div>div>span>span{
+    font-family: 华文中宋;
+    font-size: 14px;
+    color:rgba(0,0,0,0.4);
+}
+#global_import_2>div>div>img{
+    width: 140px;
+    height: 140px;
+    position: absolute;
+    bottom:5px;
+    right: 5px;
+}
+#global_import_2>div:hover>div{
+    z-index: 9;
+    border: 1px solid gray;
+    box-shadow: 0 0 3px gray;
+    transform: scale(1.2);
+
+}
+
+#global_import_3{
+    width: 298px;
+}
+#global_import_3>div{
+    width: 149px;
+    height: 150px;
+    float: left;
+    position: relative;
+}
+#global_import_3>div>img{
+    width: 110px;
+    height: 110px;
+    position: absolute;
+    right: 0;
+    bottom: 5px;
+    transition: right 0.4s linear;
+}
+#global_import_3>div:hover>img{
+    right: 10px;
+}
+#global_import_3 p{
+    color: gray;
+    font-size: 14px;
+    margin: 15px 0 5px 15px;
+}
+#global_import_3 span{
+    display: block;
+    font-size: 12px;
+    margin: 0px 0 5px 15px;
+}
+#global_import_3>div>b {
+    display: block;
+    width: 15px;
+    height: 3px;
+    background: red;
+    margin-left: 15px;
+}
+/*------------------------------------------------下面是母婴玩具、厨卫部分-------------------------------*/
+#infant_toys_kitchen{
+    height:431px;
+    width:1228px;
+    margin-top:58px;
+}
+#infant_toys{
+    height:431px;
+    width:609px;
+    background: white;
+    float: left;
+}
+#infant_toys_head{
+    height:50px;
+    width:609px;
+    background: #fd8989;
+}
+#infant_toys_head>span{
+    font-family: 华文中宋;
+    font-size: 22px;
+    background: url("img/big1.png") no-repeat 103px 15px;
+    display: inline-block;
+    height:50px;
+    width:140px;
+    line-height: 50px;
+    text-indent: 10px;
+    color: white;
+    float: left;
+    cursor: pointer;
+}
+#infant_toys_head>ul{
+    list-style: none;
+    float:left;
+    margin-left:211px;
+    height:50px;
+    line-height: 50px;
+}
+#infant_toys_head>ul>li{
+    float: left;
+    color: white;
+    font-family: 华文中宋;
+    font-size:14px;
+    margin-left: 2px;
+}
+.infant_toys_head_ul_li{
+    cursor: pointer;
+}
+.infant_toys_head_ul_li:hover{
+    font-weight: 700;
+}
+#infant_toys_left{
+    width:235px;
+    height:382px;
+    float: left;
+    cursor: pointer;
+    position: relative;
+}
+#infant_toys_left_slider1,#infant_toys_left_slider2,#infant_toys_left_slider3{
+    width:238px;
+    height:383px;
+    opacity: 0;
+    position: absolute;
+}
+#infant_toys_left_slider1>p,#infant_toys_left_slider2>p,#infant_toys_left_slider3>p{
+    color: #fc8181;
+    font-size: 22px;
+    position: absolute;
+    top:20px;
+    left:16px;
+    font-family: 华文中宋;
+    cursor: pointer;
+}
+#infant_toys_left_slider1>span,#infant_toys_left_slider2>span,#infant_toys_left_slider3>span{
+    position: absolute;
+    top:55px;
+    left:18px;
+    color: #a49898;
+    font-size: 14px;
+    font-family: 华文中宋;
+    cursor: pointer;
+}
+#infant_toys_left_slider1>img,#infant_toys_left_slider2>img,#infant_toys_left_slider3>img{
+    height:256px;
+    width:178px;
+    padding:0 15px 10px -3px;
+    position: absolute;
+    right:-10px;
+    bottom: 2px;
+    cursor: pointer;
+    transition: right 0.5s linear;
+}
+#infant_toys_left:hover #infant_toys_left_slider1>img{
+    right:0;
+}
+#infant_toys_left:hover #infant_toys_left_slider2>img{
+    right:0;
+}
+#infant_toys_left:hover #infant_toys_left_slider3>img{
+    right:0;
+}
+#infant_toys_left>ul{
+    list-style: none;
+    position: absolute;
+    top:101px;
+    left:19px;
+    cursor: pointer;
+}
+#infant_toys_left>ul>li{
+    float:left;
+    height:4px;
+    width:24px;
+    margin-right:5px;
+    background: #cbcbcb;
+    cursor: pointer;
+}
+#infant_toys_right{
+    height:382px;
+    width:373px;
+    float:left;
+    border-left:1px solid rgba(0,0,0,0.1);
+    position: relative;
+    z-index:2;
+    background: white;
+}
+#infant_toys_right li{
+    height:191px;
+    width:160px;
+    list-style: none;
+    float: left;
+    padding-left:20px;
+}
+#infant_toys_right p{
+    font-family: 华文中宋;
+    font-size: 16px;
+    color: rgba(0,0,0,0.8);
+}
+#infant_toys_right span{
+    font-family: 华文中宋;
+    font-size: 16px;
+    color: #fc81a0;
+}
+#infant_toys_right img{
+    height:100px;
+    width:116px;
+    margin-left:40px;
+    margin-top:35px;
+    transition:margin-left 0.5s linear;
+}
+#infant_toys_right img:hover{
+    margin-left:25px;
+}
+#kitchen{
+    height:431px;
+    width:609px;
+    background: white;
+    float: left;
+    margin-left:10px;
+}
+#kitchen_head{
+    height:50px;
+    width:609px;
+    background: #71cefe;
+}
+#kitchen_head>span{
+    font-family: 华文中宋;
+    font-size: 22px;
+    background: url("img/big1.png") no-repeat 103px 15px;
+    display: inline-block;
+    height:50px;
+    width:140px;
+    line-height: 50px;
+    text-indent: 10px;
+    color: white;
+    float: left;
+    cursor: pointer;
+}
+#kitchen_head>ul{
+    list-style: none;
+    float:left;
+    margin-left:230px;
+    margin-top:-50px;
+    height:50px;
+    line-height: 50px;
+}
+#kitchen_head>ul>li{
+    float: left;
+    color: white;
+    font-family: 华文中宋;
+    font-size:14px;
+    margin-left: 2px;
+}
+.kitchen_head_ul_li{
+    cursor: pointer;
+}
+.kitchen_head_ul_li:hover{
+    font-weight: 700;
+}
+#kitchen_left{
+    width:235px;
+    height:382px;
+    float: left;
+    position: relative;
+    cursor: pointer;
+}
+#kitchen_left_slider1,#kitchen_left_slider2,#kitchen_left_slider3{
+    width:238px;
+    height:383px;
+    position:absolute;
+    opacity: 0;
+}
+#kitchen_left_slider1>p,#kitchen_left_slider2>p,#kitchen_left_slider3>p{
+    color: #6ac4fe;
+    font-size: 22px;
+    position: absolute;
+    top:20px;
+    left:16px;
+    font-family: 华文中宋;
+    cursor: pointer;
+}
+#kitchen_left_slider1>span,#kitchen_left_slider2>span,#kitchen_left_slider3>span{
+    position: absolute;
+    top:55px;
+    left:18px;
+    color: #a49898;
+    font-size: 14px;
+    font-family: 华文中宋;
+    cursor: pointer;
+}
+#kitchen_left_slider1>img,#kitchen_left_slider2>img,#kitchen_left_slider3>img{
+    height:256px;
+    width:178px;
+    padding:0 15px 10px -3px;
+    position: absolute;
+    right:-10px;
+    bottom: 2px;
+    cursor: pointer;
+    transition: right 0.5s linear;
+}
+#kitchen_left:hover #kitchen_left_slider1>img{
+    right:0;
+}
+#kitchen_left:hover #kitchen_left_slider2>img{
+    right:0;
+}
+#kitchen_left:hover #kitchen_left_slider3>img{
+    right:0;
+}
+#kitchen_left>ul{
+    list-style: none;
+    position: absolute;
+    top:101px;
+    left:19px;
+    cursor: pointer;
+}
+#kitchen_left>ul>li{
+    float:left;
+    height:4px;
+    width:24px;
+    margin-right:5px;
+    background: #cacaca;
+    cursor: pointer;
+}
+#kitchen_right{
+    height:382px;
+    width:373px;
+    float:left;
+    border-left:1px solid rgba(0,0,0,0.1);
+    position: relative;
+    z-index:2;
+    background: white;
+}
+#kitchen_right li{
+    height:191px;
+    width:160px;
+    list-style: none;
+    float: left;
+    padding-left:20px;
+}
+#kitchen_right span{
+    font-family: 华文中宋;
+    font-size: 16px;
+    color:#6ac4fe;
+}
+#kitchen_right p{
+    font-family: 华文中宋;
+    font-size: 16px;
+    color: rgba(0,0,0,0.8);
+}
+#kitchen_right img{
+    height:100px;
+    width:116px;
+    margin-left:40px;
+    margin-top:35px;
+    transition:margin-left 0.5s linear;
+}
+#kitchen_right img:hover{
+    margin-left:25px;
+}
+/*--------------------------------------------------------下面是家居生活部分--------------------------------------*/
+#home_life{
+    height: 430px;
+    margin-top: 22px;
+    background: white;
+}
+#home_life_1,#home_life_2,#home_life_3{
+    float: left;
+}
+#home_life_1{
+    height: 430px;
+    width: 236px;
+    background: #a47561;
+    position: relative;
+}
+#home_life_1>h3{
+    height:44px;
+    width:123px;
+    font-family: 华文中宋;
+    font-size: 20px;
+    margin-left:60px;
+    line-height:44px;
+    text-indent: 15px;
+    font-weight: 300;
+    color: white;
+    border-bottom: 1px solid white;
+    background: url("img/家居生活_大于号.png") no-repeat 100px 13px;
+}
+#home_life_1>h4{
+    height:27px;
+    width:123px;
+    font-family: 华文中宋;
+    font-size: 16px;
+    margin-left:65px;
+    line-height: 27px;
+    text-align: center;
+    color: white;
+    font-weight: 300;
+}
+#home_life_1>.img1,#home_life_1>.img2,#home_life_1>.img3{
+    height:225px;
+    width:195px;
+    background: white;
+    position: absolute;
+    border-radius:5px;
+    text-align: center;
+    left:21px;
+    transition: transform 0.4s linear,top 0.4s linear,opacity 0.4s linear;
+}
+#home_life_1>.img1{
+    top:112px;
+    z-index:2;
+    transform: scale(1,1);
+    opacity: 1;
+}
+#home_life_1>.img2{
+    top:102px;
+    opacity: 0.9;
+    z-index: 1;
+    transform: scale(0.9,1);
+}
+#home_life_1>.img3{
+    top:92px;
+    opacity: 0.8;
+    z-index:0;
+    transform: scale(0.8,1);
+}
+#home_life_1>.img1>img,#home_life_1>.img2>img,#home_life_1>.img3>img{
+    width:80%;
+    position: absolute;
+    left:25px;
+    bottom: 1px;
+}
+#home_life_1>.img1>p,#home_life_1>.img2>p,#home_life_1>.img3>p{
+    font-family: 华文中宋;
+    text-align: center;
+    color: #915740;
+    font-size: 18px;
+    font-weight: lighter;
+    margin-top:22px;
+    margin-bottom: 2px;
+}
+#home_life_1>.img1>span,#home_life_1>.img2>span,#home_life_1>.img3>span{
+    font-family: 华文中宋;
+    text-align: center;
+    color: #666666;
+    font-size: 16px;
+    font-weight: lighter;
+}
+#home_life_1>ul{
+    color: white;
+    list-style: none;
+    position: absolute;
+    left:76px;
+    bottom: 60px;
+}
+#home_life_1>ul>li{
+    float:left;
+    font-family: 华文中宋;
+    font-size: 14px;
+    height:15px;
+}
+#left{
+    background: url("img/家居生活_左箭头.png") no-repeat 0 0;
+    height:15px;
+    width:15px;
+    cursor: pointer;
+    margin-right:15px;
+    margin-top:2px;
+}
+#right{
+    background: url("img/家居生活_右箭头.png") no-repeat 0 0;
+    height:15px;
+    width:15px;
+    cursor: pointer;
+    margin-left:15px;
+    margin-top:2px;
+}
+#home_life_1_div{
+    position: absolute;
+    bottom: 0;
+    height: 42px;
+    width:100%;
+    background:url("img/消息.png") no-repeat 12px 12px rgba(255, 255, 255, 0.32);
+    line-height: 42px;
+}
+#home_life_1_div_div{
+    position: relative;
+    height:26px;
+    line-height: 26px;
+    top:10px;
+    left:35px;
+    width:198px;
+    overflow: hidden;
+}
+#home_life_1_div_div_ul{
+    color:white;
+    font-family: 华文中宋;
+    font-size: 14px;
+    height: 26px;
+    line-height: 26px;
+    text-indent: 10px;
+    list-style: none;
+    cursor: pointer;
+    position: absolute;
+    top:0;
+    width:198px;
+}
+#home_life_1_div_ul>li{
+    height: 26px;
+    line-height: 26px;
+}
+#home_life_1_div_div_div{
+    position: absolute;
+    border-left:1px solid white;
+    height: 26px;
+}
+#home_life_2{
+    width: 744px;
+    height: 430px;
+}
+#home_life_2>ul{
+    height: 20px;
+    padding: 10px 0;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    border-right: 1px solid rgba(0,0,0,0.1);
+}
+#home_life_2>ul>li{
+    float: left;
+    width: 81px;
+    text-align: center;
+    font-size: 14px;
+    height: 20px;
+    line-height: 20px;
+    list-style: none;
+    font-family: 华文中宋;
+    color: rgba(169, 169, 169, 0.5);
+}
+#home_life_2>ul>.not{
+    width: 1px;
+}
+#home_life_2>ul>.hov{
+    color: #a9a9a9;
+    cursor: pointer;
+}
+#home_life_2>ul>.hov:hover{
+    color: #915740;
+    font-weight: 600;
+}
+#home_life_2>div{
+    float: left;
+    width: 247px;
+    height: 195px;
+    position: relative;
+    border-right: 1px solid rgba(0,0,0, 0.1);
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+#home_life_2>.notBorder{
+    border-bottom:none
+}
+#home_life_2>div>img{
+    width: 130px;
+    height: 130px;
+    position: absolute;
+    bottom: 5px;
+    right: 10px;
+    transition: right 0.4s linear;
+}
+#home_life_2>div:hover>img{
+    right: 20px;
+}
+#home_life_2>div>p{
+    margin: 20px 0 5px 20px;
+    font-family: 华文宋体;
+    font-size: 20px;
+    color: #333;
+    cursor: pointer;
+}
+#home_life_2>div>span{
+    margin-left:20px;
+    color: #A77B68;
+    font-family: 华文宋体;
+    font-size: 14px;
+    cursor: pointer;
+}
+#home_life_2>div>p,#home_life_2>div>span{
+    font-size: 14px;
+}
+#home_life_3{
+    width: 248px;
+    height: 430px;
+}
+#home_life_3>h4{
+    height: 20px;
+    padding: 10px 0;
+    text-align: center;
+    font-size: 14px;
+    color: gray;
+}
+#home_life_3>ul>li{
+    height: 60px;
+    margin: 18px 0;
+    position: relative;
+    list-style: none;
+}
+#home_life_3>ul>li>img{
+    width: 60px;
+    height: 60px;
+}
+#home_life_3>ul>li>a{
+    position: absolute;
+    top:0;
+    font-size: 14px;
+    font-family: 华文中宋;
+    padding-left: 10px;
+    padding-right: 20px;
+    color: rgba(0,0,0,0.7);
+}
+#home_life_3>ul>li>span{
+    padding-left: 10px;
+    color: red;
+    font-size: 14px;
+}
+#home_life_3>ul>li:hover>a{
+    color: red;
+}
+/*--------------------------------------------下面是懂你想要部分-------------------------------------------------*/
+#known_you_want{
+    width:1228px;
+    height:6080px;
+    margin-top:42px;
+}
+#known_you_want>p{
+    height:20px;
+    line-height: 20px;
+    text-align: center;
+    margin-top:-22px;
+    font-family: 华文中宋;
+    font-size: 16px;
+}
+#known_you_want>p>img{
+    margin-top:-32px;
+}
+#known_you_want ul{
+    list-style: none;
+    width:1228px;
+}
+#known_you_want ul li{
+    height:294px;
+    width:232px;
+    background: white;
+    padding:12px 0 12px 2px;
+    float:left;
+    margin-right:14px;
+    margin-bottom:13px;
+}
+#known_you_want ul li div{
+    height:292px;
+    width:230px;
+    padding:12px 0 12px 2px;
+    margin-top:-12px;
+    margin-left:-2px;
+}
+#known_you_want ul li div:hover{
+    border: 1px solid red;
+}
+#known_you_want ul li div img{
+    height:223px;
+    width:214px;
+
+}
+#known_you_want ul li div p{
+    width:230px;
+    font-family: 华文中宋;
+    font-size: 10px;
+    color: rgba(51, 51, 51, 0.7);
+    margin-top:5px;
+    text-align: center;
+}
+#known_you_want ul li div span{
+    text-align: center;
+    width:214px;
+    height:30px;
+    font-family: 华文中宋;
+    font-size: 12px;
+    color: #f02c6a;
+    display: inline-block;
+    line-height: 30px;
+    margin-top:5px;
+}
+/*----------------------------------------------下面是底部-----------------------------------------------*/
+#footer_outer{
+    width:1366px;
+    height:521px;
+    background: white;
+    margin-left:-69px;
+    clear:both;
+}
+#footer{
+    width:1228px;
+    height:521px;
+    clear:both;
+    margin-left:69px;
+}
+#footer>p{
+    width:1366px;
+    height:54px;
+    line-height: 54px;
+    text-align: center;
+    font-family: 华文中宋;
+    font-size: 20px;
+    margin-bottom: 20px;
+    margin-left:-69px;
+    background: #f2f2f2;
+}
+#footer>p>i{
+    width:114px;
+    height:1px;
+    line-height: 1px;
+    display: inline-block;
+    background:rgba(0,0,0,0.2) ;
+    margin-top:-4px;
+}
+#footer_container{
+    height:451px;
+    width:1228px;
+}
+/*-------中间图标部分-------*/
+#footer_container_pic{
+    height:128px;
+    width:1228px;
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+}
+#footer_container_pic ul{
+    list-style: none;
+    height:128px;
+    width:1228px;
+    line-height: 128px;
+}
+#footer_container_pic ul li{
+    float:left;
+    height:128px;
+    width:130px;
+    line-height: 128px;
+    position: relative;
+}
+#footer_container_pic ul li>img{
+    height:69px;
+    width:67px;
+    position: absolute;
+    margin:25px 25px 25px 45px;
+}
+#footer_container_pic ul li>p{
+    font-family: 华文中宋;
+    font-size: 22px;
+    margin-top:-20px;
+    color: #333333;
+    width:120px;
+    position: absolute;
+}
+#footer_container_pic ul li>span{
+    display: inline-block;
+    font-family: 华文中宋;
+    font-size: 15px;
+    width:128px;
+    color: rgba(0,0,0,0.2);
+    margin-top:10px;
+    position: absolute;
+}
+/*-------底部文字部分-----*/
+#footer_container_letter{
+    width: 1228px;
+    height:198px;
+}
+#footer_container_letter ul{
+    list-style: none;
+    clear: both;
+}
+#footer_container_letter ul li{
+    height:198px;
+    width:149px;
+    float: left;
+    margin-left:50px;
+    margin-top:29px;
+}
+#footer_container_letter ul li>p{
+    font-family: 华文中宋;
+    font-size: 20px;
+}
+#footer_container_letter ul li>span{
+    font-family: 华文中宋;
+    font-size: 14px;
+    margin-top:8px;
+    color:rgba(0,0,0,0.3);
+    display: inline-block;
+}
+#footer_container_footer{
+    text-align: center;
+    clear: both;
+}
+#footer_container_footer>a{
+    font-family: 华文中宋;
+    font-size: 14px;
+    color: #666666;
+}
+#footer_container_footer>a:hover{
+    color: #c71623;
+}
+#footer_container_footer>span{
+    font-family: 华文中宋;
+    font-size: 14px;
+    color: #666666;
+}
+#footer_container_footer>p{
+    margin-top:15px;
+}
+/*-------------------------------------------------------------------------------下面是左侧楼层跳跃部分-----------------------------------------------*/
+#floor{
+    height:203px;
+    width:38px;
+    position: fixed;
+    left:5px;
+    top:300px;
+    display: none;
+    z-index:10;
+}
+#floor ul{
+    list-style: none;
+}
+#floor ul>li{
+    width:38px;
+    font-family: 华文中宋;
+    font-size: 14px;
+    height:45px;
+    margin-bottom: 7px;
+    color: #666666;
+    background: #fdfdfe;
+    text-align: center;
+    cursor: pointer;
+}
+/*-----------------------------------------------------------------------------下面是右侧导航栏部分---------------------------------------*/
+#right_nav{
+    height:618px;
+    width:36px;
+    position: fixed;
+    right:0;
+    top:0;
+    z-index:10;
+}
+#right_nav ul{
+    list-style: none;
+    background: #303030;;
+}
+#right_nav ul li{
+    cursor: pointer;
+    color:white;
+    font-family: 华文中宋;
+    font-size: 14px;
+    position: relative;
+}
+#right_nav ul li>div{
+    display: none;
+    position: absolute;
+    right:36px;
+    top:0;
+    width:62px;
+    height:34px;
+    line-height: 34px;
+    text-indent: 5px;
+}
+#right_nav ul li>div>span{
+    font-family: 华文中宋;
+    font-size: 16px;
+    display: inline-block;
+    margin-top:20px;
+    width:118px;
+    color: rgba(0,0,0,0.8);
+    text-align: center;
+    margin-left:6px;
+}
+#right_nav ul li>div>img{
+    height:98px;
+    width:93px;
+    margin:-30px 30px 18px 30px;
+}
+#right_nav ul li:hover{
+    background: #fd5c4d;
+}
+#right_nav ul li:hover div{
+    display: block;
+    background: #fd5c4d;
+}
+.right_nav_shopCar{
+    background: #454545;
+}
+#right_nav ul li span{
+    /*margin-left:5px;*/
+    font-family: 华文中宋;
+    font-size: 16px;
+    color:white;
+    margin-right:25px;
+    text-align: center;
+    display: inline-block;
+    width:36px;
+    height:75px;
+}
+#right_nav ul li>img{
+    margin-top:5px;
+    margin-left:5px;
+}
+
+
+

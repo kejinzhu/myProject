@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>1号店注册界面</title>
+    <link rel="stylesheet" href="1号店注册界面.css" type="text/css">
+</head>
+<body>
+<!--下面是注册界面的头部-->
+<div id = "register_head">
+    <img src="img/register_logo.jpg" alt="logo">
+    <ul>
+        <li id = "register_head_ul_li_1">你好，欢迎光临1号店！</li>
+        <li id = "register_head_ul_li_2">请登录</li>
+        <li id = "register_head_ul_li_3">
+            <span>帮助中心</span>
+            <img src="img/register_pic_help_list.png" alt="">
+            <ul>
+                <li>包裹跟踪</li>
+                <li>常见问题</li>
+                <li>在线退换货</li>
+                <li>在线投诉</li>
+            </ul>
+        </li>
+    </ul>
+</div>
+<!--下面是注册界面的主体内容部分-->
+<div id = "register_wrap">
+    <!--背景图标-->
+    <div id = "r_icon1"></div>
+    <div id = "r_icon2"></div>
+    <div id = "r_icon3"></div>
+    <div id = "r_icon4"></div>
+    <div id = "r_icon5"></div>
+    <!--主体内容-->
+    <div id = "register_content">
+        <h4 id = "register_content_title">1号店注册</h4>
+        <div id = "register_content_form">
+            <ul>
+                <!--用户名-->
+                <li>
+                    <div onclick="moveLabel_01(0)" class="register_content_form_item">
+                        <input class="register_content_form_input" type="text" id = "userName" value = "">
+                        <span class="register_content_form_label">用户名</span>
+                    </div>
+                    <div class="register_content_form_tip">
+                        <div class="register_content_form_tip_con">
+                            <i></i>
+                            <p class="register_content_form_tip_con_words">4-20位字符，可由中文、英文、数字或符号"_"组成</p>
+                        </div>
+                    </div>
+                    <div class="register_content_form_tip_02" >
+                        <div class="register_content_form_tip_con_02">
+                            <i></i>
+                            <p class="register_content_form_tip_con_words_02">用户名不能为空</p>
+                        </div>
+                    </div>
+                    <div class="register_content_form_tip_03" >
+                        <div class="register_content_form_tip_con_03">
+                            <i></i>
+                            <p class="register_content_form_tip_con_words_03">格式错误，请输入正确的用户名</p>
+                        </div>
+                    </div>
+                    <b></b>
+                </li>
+                <!--手机号-->
+                <li>
+                    <div onclick="moveLabel_02(1)" class="register_content_form_item">
+                        <input class="register_content_form_input" type="text" id = "phone" value = "">
+                        <span class="register_content_form_label">手机号</span>
+                    </div>
+                    <div class="register_content_form_tip">
+                        <div class="register_content_form_tip_con">
+                            <i></i>
+                            <p class="register_content_form_tip_con_words">请填写正确的手机号码，以便 接收订单通知，找回密码等</p>
+                        </div>
+                    </div>
+                    <div class="register_content_form_tip_02">
+                        <div class="register_content_form_tip_con_02">
+                            <i></i>
+                            <p class="register_content_form_tip_con_words_02">格式错误，请输入正确的手机号码</p>
+                        </div>
+                    </div>
+                    <b></b>
+                </li>
+                <!--短信验证码-->
+                <li id = "msgCodeWrap">
+                    <div onclick="moveLabel_03(2)" class="f register_content_form_item_short">
+                        <input class="register_content_form_input" type="text" value = "" id = "msgCode">
+                        <span class="register_content_form_label">短信验证码</span>
+                    </div>
+                    <a onclick="receive_msgCode_on_01()" class="f receive_msgCode" id = "receive_msgCode_01" href="javascript:void(0)">获取验证码</a>
+                    <a onclick="receive_msgCode_on_02()" class="f receive_msgCode_02"  id = "receive_msgCode_02" href="javascript:void(0);">2354</a>
+                    <div class="register_content_form_tip">
+                        <div class="register_content_form_tip_con">
+                            <i></i>
+                            <p class="register_content_form_tip_con_words">如无法接收验证码，请重启手机并确认短信未被拦截！4G用户请关闭网络进行接收</p>
+                        </div>
+                    </div>
+                    <div class="register_content_form_tip">
+                        <div class="register_content_form_tip_con">
+                            <i></i>
+                            <p class="register_content_form_tip_con_words">请输入验证码</p>
+                        </div>
+                    </div>
+                    <div class="register_content_form_tip_02">
+                        <div class="register_content_form_tip_con_02">
+                            <i></i>
+                            <p class="register_content_form_tip_con_words_02">请输入正确的验证码</p>
+                        </div>
+                    </div>
+                    <div style="clear: both"></div>
+                </li>
+                <!--设置密码-->
+                <li>
+                    <div  onclick="moveLabel_04(3)" class="register_content_form_item">
+                        <input class="register_content_form_input" type="password" value = "" id = "pwd_01">
+                        <span class="register_content_form_label">设置密码</span>
+                    </div>
+                    <div class="register_content_form_tip">
+                        <div class="register_content_form_tip_con">
+                            <i></i>
+                            <p class="register_content_form_tip_con_words">6-20个大小写英文字母、符号或数字的组合</p>
+                        </div>
+                    </div>
+                    <div class="register_content_form_tip_02" >
+                        <div class="register_content_form_tip_con_02">
+                            <i></i>
+                            <p class="register_content_form_tip_con_words_02">密码不能为空</p>
+                        </div>
+                    </div>
+                    <div class="register_content_form_tip_02" >
+                        <div class="register_content_form_tip_con_02">
+                            <i></i>
+                            <p class="register_content_form_tip_con_words_02">密码不能全为数字</p>
+                        </div>
+                    </div>
+                    <div class="register_content_form_tip_02" >
+                        <div class="register_content_form_tip_con_02">
+                            <i></i>
+                            <p class="register_content_form_tip_con_words_02">密码不能全为字母，请包含至少1个数字或符号</p>
+                        </div>
+                    </div>
+                    <div class="register_content_form_tip_keyword strength_l">
+                        <div class="register_content_form_tip_con">
+                            <i></i>
+                            <p class="register_content_form_tip_con_words register_content_form_tip_con_words_key">
+                                <b id="red_01"></b>
+                                <b></b>
+                                <b></b>
+                                <span class="span_word">低</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="register_content_form_tip_keyword strength_m">
+                        <div class="register_content_form_tip_con">
+                            <i></i>
+                            <p class="register_content_form_tip_con_words register_content_form_tip_con_words_key">
+                                <b id="yellow_01"></b>
+                                <b id="yellow_02"></b>
+                                <b></b>
+                                <span class="span_word">中</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="register_content_form_tip_keyword strength_h">
+                        <div class="register_content_form_tip_con">
+                            <i></i>
+                            <p class="register_content_form_tip_con_words register_content_form_tip_con_words_key">
+                                <b id="green_01"></b>
+                                <b id="green_02"></b>
+                                <b id="green_03"></b>
+                                <span class="span_word">高</span>
+                            </p>
+                        </div>
+                    </div>
+                </li>
+                <!--确认密码-->
+                <li>
+                    <div onclick="moveLabel_05(4)" class="register_content_form_item">
+                        <input class="register_content_form_input" type="password" value = "" id = "pwd_02">
+                        <span class="register_content_form_label">确认密码</span>
+                    </div>
+                    <div class="register_content_form_tip" >
+                        <div class="register_content_form_tip_con">
+                            <i style="position: absolute;top:35%;"></i>
+                            <p class="register_content_form_tip_con_words">
+                                请再次输入密码
+                            </p>
+                        </div>
+                    </div>
+                    <div class="register_content_form_tip_02" >
+                        <div class="register_content_form_tip_con_02">
+                            <i></i>
+                            <p class="register_content_form_tip_con_words_02">两次密码不一致</p>
+                        </div>
+                    </div>
+                    <b></b>
+                </li>
+                <!--同意注册-->
+                <li>
+                    <div class="register_content_form_agreement">
+                        点击注册，表示您同意1号店
+                        <a href="javascript:void(0);">《服务协议及隐私声明》</a>
+                    </div>
+                    <a onclick="agreementBtn()" class="register_content_form_agreement_btn" href="javascript:void(0)">同意协议并注册</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!--底部页脚部分-->
+<div id = "footer">
+    <span style="cursor: pointer" class="footer_span">沪ICP备16050468号</span>
+    <span>|</span>
+    <span class="footer_span">沪B2-20170039</span>
+    <span>|</span>
+    <span style="cursor: pointer" class="footer_span">营业执照</span><br/>
+    <span style="color: #333333;">Copyright © 1号店网上超市 2007-2017，All Rights Reserved</span>
+</div>
+<script src = "1号店注册界面.js" type="text/javascript" language="JavaScript"></script>
+</body>
+</html>

@@ -1,0 +1,1192 @@
+*{
+    margin:0;
+    padding:0;
+}
+/*-----------------------------------------------------------------------下面是详情页的头部--------------------------------------------------*/
+/*左侧的首页*/
+#detail_page_head{
+    width:1366px;
+    height:30px;
+    line-height: 30px;
+    background: #f3f3f3;
+}
+#detail_page_head>a{
+    float:left;
+    display: block;
+    height:30px;
+    line-height: 30px;
+    padding:0 10px;
+    border-left:1px solid #f4f4f4;
+    border-right:1px solid #f4f4f4;
+    color:#666;
+    text-decoration: none;
+    background: url("img/detail_home_page.png") no-repeat 6px 6px;
+    margin-left:69px;
+}
+#detail_page_head>a>span{
+    font-family: 宋体;
+    font-size: 12px;
+    margin-left:15px;
+}
+#detail_page_head>a:hover span{
+    color:red;
+}
+/*右侧*/
+#detail_page_head>ul{
+    list-style: none;
+    width:388px;
+    height:30px;
+    float:right;
+    margin-right:84px;
+}
+#detail_page_head>ul>li{
+    float:left;
+}
+
+/*请登录*/
+#detail_page_head_login{
+    color:#ff4040;
+    font-family: 宋体;
+    font-size: 12px;
+}
+#detail_page_head_login>a{
+    text-decoration: none;
+    color:#ff4040;
+    font-family: 宋体;
+    font-size: 12px;
+}
+
+/*注册*/
+#detail_page_head_register>a{
+    font-family: 宋体;
+    font-size: 13px;
+    color:#aaa;
+    text-decoration: none;
+}
+#detail_page_head_register>a:hover{
+    color:#ff4040;
+}
+
+/*我的订单*/
+#detail_page_head_myOrder{
+    background: url("img/detail_page_myOrder.png") no-repeat 5px 8px;
+    margin-left: 20px;
+    text-indent: 20px;
+}
+#detail_page_head_myOrder>a{
+    color:#666;
+    font-family: 宋体;
+    font-size: 13px;
+    text-decoration: none;
+}
+
+/*客户服务*/
+#detail_page_head_customerServer{
+    margin-left:20px;
+    width:89px;
+    height:93px;
+    text-indent: 10px;
+    position: relative;
+    z-index: 2;
+}
+#detail_page_head_customerServer>a{
+    color:#666;
+    font-family: 宋体;
+    font-size: 13px;
+    text-decoration: none;
+}
+#detail_page_head_customerServer>img{
+    margin-left:-4px;
+}
+#detail_page_head_customerServer>ul{
+    list-style: none;
+    display: none;
+}
+#detail_page_head_customerServer>ul>li>a{
+    font-family: 宋体;
+    font-size: 13px;
+    text-decoration: none;
+    color: #333333;
+}
+#detail_page_head_customerServer:hover{
+    background: white;
+    border: 1px solid #dadada;
+}
+#detail_page_head_customerServer:hover ul{
+    display: block;
+}
+
+/*企业服务*/
+#detail_page_head_enterpriseServer{
+    width:89px;
+    height:40px;
+    text-indent: 10px;
+}
+#detail_page_head_enterpriseServer>a{
+    color:#666;
+    font-family: 宋体;
+    font-size: 13px;
+    text-decoration: none;
+}
+#detail_page_head_enterpriseServer:hover{
+    background: white;
+    border: 1px solid #dadada;
+}
+#detail_page_head a:hover{
+    color:#ff4040;
+}
+/*------------------------------------------------------------头部结束-------------------------------------------------------*/
+
+/*---------------------------------------下面是比价部分的轮播图-------------------------*/
+#detail_page_compare_price{
+    height:484px;
+    /*border:1px solid rgba(0,0,0,0.01);*/
+    width:104px;
+    top:71px;
+    margin-left:10px;
+    box-shadow: rgba(0,0,0,0.04);
+    position: absolute;
+    font-family: 微软雅黑;
+    font-size: 12px;
+    z-index:9999999;
+    /*border: 1px solid red;*/
+}
+#detail_page_compare_price_all{
+    position: absolute;
+    left:0;
+    width:104px;
+    height:484px;
+    font-size: 12px;
+    color:rgb(105,105,105);
+    padding-bottom: 5px;
+    display: none;
+    text-align: center;
+    border: 1px solid #e5e5e5;
+    background: white;
+    border-radius: 5px;
+}
+/*主体图片内容*/
+#detail_page_compare_price_all_content{
+    /*position: relative;*/
+    height:440px;
+    margin-top:10px;
+    overflow: hidden;
+    /*z-index: 999999;*/
+}
+#detail_page_compare_price_all_content>ul{
+    margin:0;
+    padding:0;
+    list-style: none;
+    display: none;
+    position: absolute;
+}
+#detail_page_compare_price_all_content>ul>li{
+    position: relative;
+    padding-right:0;
+    margin-left:12px;
+    z-index: 9999999;
+    height:110px;
+}
+#detail_page_compare_price_all_content>ul>li .img_link{
+    display: block;
+    width:80px;
+    height:80px;
+}
+#detail_page_compare_price_all_content>ul>li .img_link>img{
+    width:80px;
+    height:80px;
+}
+#detail_page_compare_price_all_content>ul>li .price_link{
+    display: inline-block;
+    margin-top:6px;
+    font-size: 12px;
+    line-height: 12px;
+    color:rgb(221,39,39);
+    font-family: 微软雅黑;
+
+}
+#detail_page_compare_price_all a{
+    text-decoration: none;
+}
+
+/*圆点*/
+#detail_page_compare_price_all_dot{
+    margin-left: 46px;
+    list-style: none;
+}
+#detail_page_compare_price_all_dot>li{
+    float: left;
+    width:4px;
+    height:4px;
+    margin-top:4px;
+    cursor: pointer;
+    background: rgba(0,0,0,0.2);
+    border-radius: 20px;
+    list-style: none;
+    border: 1px solid #fff;
+}
+
+/*圆按钮*/
+#detail_page_compare_price_btn{
+    z-index: 99999999;
+    cursor: pointer;
+    background: rgb(196,0,0);
+    display: block;
+    position: fixed;
+    left:81px;
+    top:56px;
+    width:55px;
+    height:55px;
+    line-height: 55px;
+    font-size: 18px;
+    font-family: 微软雅黑;
+    text-align: center;
+    color: #fff;
+    box-shadow:rgba(0,0,0,0.2);
+    border-radius: 40px;
+}
+/*右侧关闭按钮*/
+#detail_page_compare_price_all>a{
+    text-decoration:none;
+    margin-left:88px;
+    width:17px;
+    height:17px;
+    display: block;
+    background: url("img/error.png") no-repeat 4px 4px;
+}
+
+/*---------------------------------------比价部分的轮播图结束-----------------------------*/
+
+/*-------------------------------------------------------------下面是导航、购物车部分---------------------------------------*/
+
+#detail_page_nav{
+    width:1366px;
+    height:151px;
+    border-bottom:2px solid #ff4040 ;
+    position: relative;
+}
+/*左侧*/
+#detail_page_nav_left{
+    width:210px;
+    height:151px;
+    margin-left: 69px;
+    float: left;
+}
+#detail_page_nav_left>img{
+    height: 110px;
+    width:210px;
+    cursor: pointer;
+}
+#detail_page_nav_left_allSort_wrap{
+    width:210px;
+    height:40px;
+}
+#detail_page_nav_left_allSort_wrap>p{
+    width:210px;
+    height:40px;
+    background:#ff4040;
+    line-height: 40px;
+    text-align: center;
+    font-weight: bold;;
+    font-size: 14px;
+    color:#fff;
+    font-family: 宋体;
+    cursor: pointer;
+}
+#detail_page_nav_left_allSort_wrap>p>img{
+    margin-bottom:-2px;
+}
+#detail_page_nav_left_allSort{
+    display: none;
+    width:210px;
+    background: rgba(48,48,48,0.9);
+    position: absolute;
+    z-index:103;
+    height:400px;
+    left:69px;
+    clear:left;
+}
+#detail_page_nav_left_allSort>ul{
+    list-style: none;
+    padding-top:0;
+    margin:0;
+}
+#detail_page_nav_left_allSort>ul>li{
+    margin-bottom: 1px;
+}
+#detail_page_nav_left_allSort>ul>li>h3{
+    height:32px;
+    line-height: 32px;
+    /*overflow: hidden;*/
+    padding:0 10px 0 0;
+    color:#fff;
+    font-weight: normal;
+    font-size: 14px;
+    transition: all 0.1s ease-out 0s;
+}
+#detail_page_nav_left_allSort>ul>li>h3>img{
+    width:20px;
+    height:20px;
+    line-height: 20px;
+    margin:2px 8px -2px 8px;
+    text-align: right;
+    /*margin-bottom:-3px;*/
+}
+#detail_page_nav_left_allSort>ul>li>h3 a{
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    white-space: nowrap;
+    font-family: 微软雅黑;
+    color:#fff;
+    margin-top:5px;
+    margin-bottom: -10px;
+    margin-right:5px;
+}
+#detail_page_nav_left_allSort_wrap:hover #detail_page_nav_left_allSort{
+    display:block;
+}
+
+/*中间*/
+#detail_page_nav_center{
+    margin-left: 32px;
+    height:151px;
+    width:755px;
+    float: left;
+}
+#detail_page_nav_center_search{
+    width:755px;
+    height:41px;
+    line-height: 41px;
+    margin-top:30px;
+    border: 2px solid #fd4040;
+    position: relative;
+}
+#detail_page_nav_center_search>input{
+    position: absolute;
+    left:0;
+    top:10px;
+    width:702px;
+    height:21px;
+    line-height: 21px;
+    border: none;
+    outline: none;
+    background: 0;
+    text-indent: 20px;
+    font-size: 14px;
+}
+#detail_page_nav_center_search>span{
+    display: inline-block;
+    height:41px;
+    width:54px;
+    background: url("img/detail_home_nav_search.png") no-repeat 12px 8px #fd4040;
+    position: absolute;
+    right:0;
+    cursor: pointer;
+}
+#detail_page_nav_center>p{
+    width:586px;
+    height:36px;
+    line-height: 36px;
+}
+#detail_page_nav_center>p>a{
+    text-decoration: none;
+    font-size: 14px;
+    color: #a9a9a9;
+    margin-right:5px;
+}
+#detail_page_nav_center>p>a:hover{
+    color: #fd4040;
+}
+/*中间的下面*/
+#detail_page_nav_center_bottom{
+    width:755px;
+    height:40px;
+    line-height: 40px;
+}
+#detail_page_nav_center_bottom>a{
+    text-decoration: none;
+    color: #333333;
+    font-size: 16px;
+    margin-right: 22px;
+}
+#detail_page_nav_center_bottom>a:hover{
+    color: #cb0001;
+}
+/*右侧购物车部分*/
+#detail_page_nav_right_shopCar{
+    background: red;
+    position: absolute;
+    float:left;
+    height:41px;
+    width:133px;
+    right:100px;
+    top:30px;
+    /*margin-left: 89px;*/
+    font-size: 16px;
+    line-height: 41px;
+    color: #666666;
+    text-indent: 50px;
+    border:1px solid #d6d6d6;
+    cursor: pointer;
+    background: url("img/detail_page_nav_right_shopCar.png") no-repeat 20px 8px;
+}
+/*-------------------------------------------------------logo导航栏部分结束-----------------------------------------*/
+
+
+/*---------------------------下面是点击加入购车车按钮之后出现的背景-------------*/
+/*主背景*/
+#shopCar_onclick_background{
+    width:100%;
+    height:10570px;
+    position: absolute;
+    top:0;
+    left:0;
+    bottom:0;
+    right:0;
+    z-index: 9999999999;
+    background: rgba(0,0,0,0.4);
+    display: none;
+}
+/*外容器*/
+#shopCar_onclick_background_wrap{
+    width:489px;
+    height:197px;
+    left:431px;
+    top:50%;
+    bottom:auto;
+    margin-top:-92px;
+    position: fixed;
+    display: block;
+    float:left;
+    background: #fff;
+    border:5px solid rgba(0,0,0,0.2);
+}
+/*里面内容*/
+#shopCar_onclick_background_content{
+    position: relative;
+    width:487px;
+    height:125px;
+    border:1px solid #b1b1b1;
+    background: #fff;
+    padding:50px 0 20px 0;
+}
+/*p标签*/
+#shopCar_onclick_background_content>p{
+    font-size: 18px;
+    font-family: 微软雅黑;
+    font-weight: bold;
+    line-height: 23px;
+    height:23px;
+    text-align: center;
+}
+#shopCar_onclick_background_content>p>i{
+    display: inline-block;
+    width:23px;
+    height:23px;
+    margin-right:14px;
+    background: url("img/indexhead_sprite_new.png") no-repeat -460px -70px;
+    margin-bottom: -6px;
+}
+/*继续购物、查看购物车*/
+#shopCar_onclick_background_content_continue_look{
+    width:385px;
+    margin:0 auto;
+    padding:18px 0 25px 0;
+    text-align: center;
+}
+/*继续购物*/
+#shopCar_onclick_background_content_continue{
+    border:1px solid #ddd;
+    color:#666;
+    background: #fcfcfc;
+    display: inline-block;
+    width:123px;
+    height:41px;
+    margin:0 5px;
+    line-height: 41px;
+    font-size: 14px;
+    text-align: center;
+    font-family: 微软雅黑;
+    text-decoration:none;
+}
+/*查看购物车*/
+#shopCar_onclick_background_content_look{
+    display: inline-block;
+    border:1px solid #ff4141;
+    background: #ff5c4d;
+    color:#fff;
+    text-decoration: none;
+    text-align: center;
+    font-family: 微软雅黑;
+    font-size: 14px;
+    width:123px;
+    height:41px;
+    line-height: 41px;
+    margin:0 5px;
+}
+/*关闭按钮*/
+#shopCar_onclick_background_content>span{
+    position: absolute;
+    right:10px;
+    top:10px;
+    width:10px;
+    height:10px;
+    display: block;
+    cursor: pointer;
+    background: url("img/indexhead_sprite_new.png") no-repeat -260px -95px;
+}
+
+
+/*-----------------点击加入购物车按钮出现背景结束--------------------------------*/
+
+
+/*-----------------------------------------------------------------------------下面是右侧导航栏部分---------------------------------------*/
+#detail_page_right_nav{
+    position: fixed;
+    top:0;
+    right:0;
+    z-index: 910;
+    width:34px;
+    height:100%;
+    background: #303030;
+}
+/*头部*/
+#detail_page_right_nav_top{
+    position: absolute;
+    top:0;
+    right:0;
+    cursor: pointer;
+}
+/*中间*/
+#detail_page_right_nav_center{
+    position: absolute;
+    top:160px;
+    right: 0;
+    width: 34px;
+    text-align: center;
+}
+
+/*中间部分的个人中心部分*/
+#detail_page_right_nav_center_people{
+    position: relative;
+    margin-top: 5px;
+    height:32px;
+    width:34px;
+    cursor: pointer;
+}
+#detail_page_right_nav_center_people>img{
+    margin-top:5px;
+}
+#detail_page_right_nav_center_people>span{
+    position: absolute;
+    z-index: 9;
+    top:0;
+    right: -70px;
+    height:32px;
+    padding:0 6px;
+    background: #3f3c3c;
+    line-height: 32px;
+    color:#fff;
+    font-family: 宋体;
+    font-size: 12px;
+    white-space: nowrap;
+    transition: right 0.3s ease-in-out 0.1s;
+    cursor: pointer;
+}
+#detail_page_right_nav_center_people:hover{
+    background: #fd5c4d;
+}
+#detail_page_right_nav_center_people:hover span{
+    right:34px;
+    background: #fd5c4d;
+}
+
+/*中间购物车部分*/
+#detail_page_right_nav_center_people_shopCar{
+    background: #454545;
+    padding: 12px 0;
+    text-align: center;
+    cursor: pointer;
+}
+#detail_page_right_nav_center_people_shopCar>div>span{
+    display: block;
+    font-family: 宋体;
+    font-size: 12px;
+    color:#fff;
+    text-align: center;
+    padding:12px 12px 0;
+    height:50px;
+    width:12px;
+}
+#detail_page_right_nav_center_people_shopCar:hover{
+    background: #fd5c4d;
+}
+
+/*中间抵用券部分*/
+#detail_page_right_nav_center_people_voucher{
+    position: relative;
+    margin-top: 5px;
+    height:32px;
+    width:34px;
+    cursor: pointer;
+}
+#detail_page_right_nav_center_people_voucher>img{
+    margin-top:5px;
+}
+#detail_page_right_nav_center_people_voucher>span{
+    position:absolute ;
+    z-index:9;
+    top:0;
+    right:-70px;
+    height:32px;
+    padding:0 6px;
+    background: #3f3c3c;
+    line-height: 32px;
+    color:#fff;
+    font-family: 宋体;
+    font-size: 12px;
+    white-space:nowrap;
+    cursor: pointer;
+    transition: 0.3s ease-in-out 0.1s;
+}
+#detail_page_right_nav_center_people_voucher:hover{
+    background:  #fd5c4d;
+}
+#detail_page_right_nav_center_people_voucher:hover span{
+    right:34px;
+    background:  #fd5c4d;
+}
+
+/*底部*/
+#detail_page_right_nav_bottom{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width:34px;
+    text-align: center;
+}
+
+/*用户反馈部分*/
+#detail_page_right_nav_bottom_feedback{
+    position: relative;
+    margin-top:5px;
+    cursor: pointer;
+    height:32px;
+    line-height: 32px;
+}
+#detail_page_right_nav_bottom_feedback>img{
+    margin-top:5px;
+}
+#detail_page_right_nav_bottom_feedback>span{
+    position: absolute;
+    z-index:9;
+    top:0;
+    right:-70px;
+    height:32px;
+    padding:0 6px;
+    background: #3f3c3c;
+    line-height: 32px;
+    color:#fff;
+    font-family: 宋体;
+    font-size: 12px;
+    white-space: nowrap;
+    transition: 0.3s ease-in-out 0.1s;
+    cursor: pointer;
+}
+#detail_page_right_nav_bottom_feedback:hover{
+    background:  #fd5c4d;
+}
+#detail_page_right_nav_bottom_feedback:hover span{
+    right:34px;
+    background:  #fd5c4d;
+}
+
+/*二维码*/
+#detail_page_right_nav_bottom_code{
+    position: relative;
+    margin-top:5px;
+    cursor: pointer;
+    height:35px;
+    line-height: 32px;
+}
+#detail_page_right_nav_bottom_code>a{
+    text-decoration: none;
+    color:#333;
+    display: block;
+}
+#detail_page_right_nav_bottom_code>a>img{
+    margin-top:5px;
+}
+#detail_page_right_nav_bottom_code>a>span{
+    position: absolute;
+    z-index:9;
+    top:0;
+    right:-70px;
+    height:32px;
+    padding:0 6px;
+    background: #3f3c3c;
+    line-height: 32px;
+    color:#fff;
+    white-space: nowrap;
+    transition: 0.3s ease-in-out 0.1s;
+    cursor: pointer;
+    display: none;
+}
+#detail_page_right_nav_bottom_code_hidden{
+    left:-168px;
+    top:-122px;
+    width:130px;
+    padding:15px 10px;
+    line-height: 24px;
+    font-family: 微软雅黑;
+    font-size: 14px;
+    text-align: center;
+    position: absolute;
+    box-shadow: 0 0 0 2px rgba(0,0,0,0.5);
+    border:1px solid #ccc;
+    background: #fff;
+    color:#333;
+    display: none;
+}
+#detail_page_right_nav_bottom_code_hidden>p{
+    text-align: center;
+}
+#detail_page_right_nav_bottom_code:hover{
+    background:  #fd5c4d;
+}
+#detail_page_right_nav_bottom_code:hover #detail_page_right_nav_bottom_code_hidden{
+    display: block;
+}
+
+/*返回顶部部分*/
+#detail_page_right_nav_bottom_back{
+    position: relative;
+    margin-top:5px;
+    cursor: pointer;
+    height:32px;
+    line-height: 32px;
+}
+#detail_page_right_nav_bottom_back>img{
+    margin-top:5px;
+}
+#detail_page_right_nav_bottom_back>span{
+    position: absolute;
+    z-index:9;
+    font-family: 宋体;
+    font-size: 12px;
+    top:0;
+    right:-70px;
+    height:32px;
+    padding:0 6px;
+    background: #3f3c3c;
+    line-height: 32px;
+    color:#fff;
+    white-space: nowrap;
+    transition: 0.3s ease-in-out 0.1s;
+    cursor: pointer;
+}
+#detail_page_right_nav_bottom_back:hover{
+    background:  #fd5c4d;
+}
+#detail_page_right_nav_bottom_back:hover>span{
+    background:  #fd5c4d;
+    right:34px;
+}
+
+/*---------------------------------------------------------------------------右侧导航栏部分结束------------------------------------*/
+
+/*--------------------------------------------------------------------------下面是底部页脚部分------------------------------------*/
+#detail_page_footer{
+    height:440px;
+    width:100%;
+    /*position: relative;
+    bottom:0;*/
+    background: white;
+}
+/*售后服务的上面部分*/
+#detail_page_footer_service{
+    padding:30px 0;
+    border: 1px solid #ebebeb;
+    margin:0 auto;
+    height:100px;
+    line-height: 140px;
+    /*position: absolute;
+    top:0;*/
+}
+#detail_page_footer_service a{
+    cursor: default;
+    float:left;
+    display: block;
+    width:205px;
+    overflow: hidden;
+    text-decoration: none;
+    margin-left:101px;
+    margin-top:40px;
+}
+#detail_page_footer_service a img{
+    float:left;
+}
+#detail_page_footer_service a b{
+    font-weight: bold;
+    font-family: 微软雅黑;
+    font-size: 16px;
+    font-style: normal;
+    line-height:21px;
+    height:21px;
+    float:left;
+    margin-top:10px;
+    margin-left:15px;
+    color:#333;
+}
+#detail_page_footer_service a span{
+    font-family: 微软雅黑;
+    font-size: 14px;
+    color:#999;
+    height:26px;
+    line-height:26px;
+    display: block;
+    float:left;
+    margin-left:15px;
+}
+
+/*售后服务的链接部分*/
+#detail_page_footer_service_link{
+    width:100%;
+    padding:20px 0 20px;
+    overflow: hidden;
+    margin:0 auto;
+}
+/*菜单列表部分*/
+#detail_page_footer_service_link_list{
+    float: left;
+    width:830px;
+    padding-left: 15px;
+}
+#detail_page_footer_service_link_list dl{
+    float:left;
+    display: block;
+}
+#detail_page_footer_service_link_list dl dt{
+    height:32px;
+    width:110px;
+    margin-left:62px;
+    padding:0 8px;
+    font-size: 14px;
+    color:#666;
+    line-height: 32px;
+    overflow: hidden;
+    font-family: 微软雅黑;
+    font-weight: bold;
+
+}
+#detail_page_footer_service_link_list dl dd{
+    height:24px;
+    padding:0 8px;
+    line-height: 24px;
+    white-space:normal;
+    font-size: 12px;
+    margin-left:62px;
+}
+#detail_page_footer_service_link_list dl dd a{
+    color:#666;
+    text-decoration: none;
+}
+#detail_page_footer_service_link_list dl dd a:hover{
+    color: #e50012;
+}
+
+/*二维码部分*/
+#detail_page_footer_service_link_code{
+    width:340px;
+    overflow: hidden;
+    float:left;
+    text-align: center;
+}
+.detail_page_footer_service_link_code{
+    float:left;;
+    margin-right:57px;
+}
+.detail_page_footer_service_link_code>p{
+    line-height: 42px;
+    height:42px;
+    font-family: 微软雅黑;
+    font-size: 14px;
+    font-weight: bold;
+    color:#666;
+    text-align: left;
+}
+.detail_page_footer_service_link_code>img{
+    width:90px;
+    height:90px;
+}
+
+/*底部商标版部分*/
+.detail_page_footer_service_bottom_top_p{
+    color:#666;
+    text-align: center;
+    text-indent: 0;
+    line-height: 100%;
+    margin:15px 0;
+    padding:0;
+}
+.detail_page_footer_service_bottom_top_p a{
+    color:#666;
+    margin:0 4px;
+    font-size: 12px;
+    text-decoration: none;
+}
+.detail_page_footer_service_bottom_top_p a:hover{
+    color: #e50012;
+}
+.detail_page_footer_service_bottom_bottom_p{
+    color:#666;
+    text-align: center;
+    text-indent: 0;
+    line-height: 100%;
+    font-size: 12px;
+    padding:0;
+}
+#detail_page_footer_service_bottom_pic{
+    padding: 10px 0 20px;
+    text-align: center;
+    font-size: 0;
+}
+#detail_page_footer_service_bottom_pic a{
+    display: inline-block;
+    text-decoration: none;
+    margin:0 4px;
+}
+
+/*-------------------------------------------------底部页脚部分结束---------------------------------------*/
+
+
+/*-----------------------------------------------下面开始吸顶式导航条部分----------------------------*/
+
+/*第一个*/
+#top_nav_bar_wrap{
+    display: none;
+    position: fixed;
+    top:0;
+    left:0;
+    z-index: 999999;
+    width:1366px;
+    height:40px;
+    background: #fafafa;
+    border-bottom: 1px solid #eeeeee;
+    /*box-shadow: 0 0 4px 4px;*/
+}
+#top_nav_bar_wrap>div>div{
+    width:1200px;
+    margin:0 auto;
+    padding:0;
+    z-index:99999;
+}
+/*左侧*/
+#top_nav_bar_wrap_left{
+    margin-right:12px;
+    padding-left:10px;
+    width:198px;
+    height:40px;
+    float: left;
+}
+#top_nav_bar_wrap_left>div>p{
+    float: left;
+    width:110px;
+    font-size: 14px;
+    line-height: 40px;
+    font-family: 微软雅黑;
+}
+#top_nav_bar_wrap_left>div>p>a{
+    text-decoration: none;
+    color:#333;
+}
+#top_nav_bar_wrap_left>div>i{
+    width:28px;
+    float: left;
+    display: block;
+    height:16px;
+    background: url("img/detail_sprit24.png") no-repeat -175px -544px;
+    font-style: normal;
+    margin-top: 10px;
+    margin-left:5px;
+}
+/*右侧*/
+#top_nav_bar_wrap_right{
+    width:980px;
+    border:0;
+    float: left;
+}
+#top_nav_bar_wrap_right .tab{
+    /*border:1px solid #e1e1e1;*/
+    float: left;
+    background: #fafafa;
+}
+#top_nav_bar_wrap_right .tab>a{
+    text-decoration: none;
+    width:110px;
+    position: relative;
+    left:-1px;
+    top:-1px;
+    float: left;
+    text-align: center;
+    line-height: 40px;
+    border-right:1px solid #e1e1e1;
+    color:#333;
+    font-family: 微软雅黑;
+    font-size: 14px;
+    z-index:20;
+}
+#top_nav_bar_wrap_right>li{
+    height:100%;
+    line-height: 50px;
+    color:#333;;
+    list-style: none;
+    font-size: 14px;
+}
+#top_nav_bar_wrap_right .tab>a>span{
+    color:#ff3c3c;
+    font-family: Tahoma;
+    font-size: 12px;
+}
+#top_nav_bar_wrap_right .tab_right{
+    float: right;
+    width:224px;
+    line-height: 16px;
+    margin-right:-50px;
+}
+#top_nav_bar_wrap_right .tab_right>div{
+    position: relative;
+    padding:0 10px;
+    width:120px;
+}
+#top_nav_bar_wrap_right .tab_right>div>div{
+    padding-top:6px;
+}
+#top_nav_bar_wrap_right .tab_right>div>div>a{
+    padding-left:10px;
+    background: url("img/detail_sprit24.png") no-repeat 0 -613px;
+    height:28px;
+    display: inline-block;
+   /* cursor: pointer;*/
+    color:#fff;
+    width:107px;
+    text-decoration: none;
+}
+#top_nav_bar_wrap_right .tab_right>div>div>a>span{
+    width:100%;
+    text-align: center;
+    padding-right:10px;
+    margin-right:-3px;
+    height:28px;
+    line-height: 28px;
+    font-weight: bold;
+    color:#fff;
+    display: inline-block;
+    background: url("img/detail_sprit24.png") no-repeat 88% -613px;
+}
+
+/*------------------------第一个吸顶式导航条结束--------------*/
+
+/*-------------------------开始第二个吸顶式导航条-----------------*/
+/*外容器*/
+#top_nav_bar_wrap_two{
+    display: none;
+    height:40px;
+    padding-top:0;
+    position: fixed;
+    top:0;
+    left:0;
+    z-index:9999999;
+    width:1366px;
+    border-bottom: 1px solid #cecece;
+    background: #f5f5f5;
+}
+#top_nav_bar_wrap_two>div{
+    height:40px;
+    padding-top:0;
+    background: #f5f5f5;
+    width:980px;
+}
+#top_nav_bar_wrap_two>div>div{
+    position: relative;
+}
+#top_nav_bar_wrap_two_content{
+    position: absolute;
+    left:0;
+    top:0;
+    float: left;
+}
+#top_nav_bar_wrap_two_content>a{
+    text-decoration: none;
+    background: #f5f5f5;
+    color:#333;
+    font-weight:normal ;
+    display: block;
+    width:210px;
+    margin-left:69px;
+    height:40px;
+    line-height: 40px;
+    text-align: center;
+    font-size: 14px;
+    font-family: Arial;
+}
+#top_nav_bar_wrap_two_content>a>i{
+    display: inline-block;
+    width:6px;
+    height:6px;
+    font-size: 14px;
+    margin-left:3px;
+    background: url("img/detail_sprit24.png") no-repeat -24px -958px;
+}
+/*隐藏部分的全部商品分类*/
+.top_nav_bar_wrap_two_show{
+    display: none;
+    width:210px;
+    background: rgba(48,48,48,0.9);
+    position: absolute;
+    z-index:103;
+    height:400px;
+    left:69px;
+    clear:left;
+}
+.top_nav_bar_wrap_two_show>ul{
+    list-style: none;
+    padding-top:0;
+    margin:0;
+}
+.top_nav_bar_wrap_two_show>ul>li{
+    margin-bottom: 1px;
+}
+.top_nav_bar_wrap_two_show>ul>li>h3{
+    height:32px;
+    line-height: 32px;
+    /*overflow: hidden;*/
+    padding:0 10px 0 0;
+    color:#fff;
+    font-weight: normal;
+    font-size: 14px;
+    transition: all 0.1s ease-out 0s;
+}
+.top_nav_bar_wrap_two_show>ul>li>h3>img{
+    width:20px;
+    height:20px;
+    line-height: 20px;
+    margin:2px 8px -2px 8px;
+    text-align: right;
+    /*margin-bottom:-3px;*/
+}
+.top_nav_bar_wrap_two_show>ul>li>h3 a{
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    white-space: nowrap;
+    font-family: 微软雅黑;
+    color:#fff;
+    margin-top:5px;
+    margin-bottom: -10px;
+    margin-right:5px;
+}
+#top_nav_bar_wrap_two_content:hover .top_nav_bar_wrap_two_show{
+    display: block;
+}

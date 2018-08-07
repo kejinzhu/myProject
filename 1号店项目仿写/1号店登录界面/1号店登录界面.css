@@ -1,0 +1,360 @@
+*{
+    padding:0;
+    margin:0;
+}
+body{
+    background: url("img/login_pic_left.jpg") no-repeat 194px 154px #fafbfb;
+}
+/*----------------------------头部CSS---------------------------*/
+#login_head{
+    width:1366px;
+    height:82px;
+    line-height: 82px;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    position: relative;
+    background: white;
+}
+/*头部logo*/
+#login_head>img{
+    margin-left:82px;
+    margin-top:17px;
+    position: absolute;
+}
+/*-----------------------------头部右侧的ul------------------------------------*/
+#login_head>ul{
+    list-style: none;
+    height:36px;
+    line-height: 36px;
+    margin-top:10px;
+    width:311px;
+    position: absolute;
+    left:982px;
+}
+#login_head>ul>li{
+    float: left;
+}
+
+/*-------------------------------你好，欢迎光临1号店部分-----------------------*/
+#login_head_ul_li_1{
+    font-family: 宋体;
+    font-size: 12px;
+    color: #989898;
+}
+/*-------------------------------你好，欢迎光临部分结束------------------------------------*/
+
+/*-------------------------------请登录部分----------------------------------------*/
+#login_head_ul_li_2{
+    font-family: 宋体;
+    font-size: 12px;
+    color: #0066cb;
+    margin-left:6px;
+    cursor: pointer;
+}
+#login_head_ul_li_2:hover{
+    color: #fd6601;
+}
+/*--------------------------------请登录部分结束----------------------------------*/
+
+/*-----------------------------帮助中心部分--------------------------*/
+#login_head_ul_li_3{
+    font-family: 宋体;
+    font-size: 12px;
+    margin-left:30px;
+    text-indent: 22px;
+    background: url("img/login_pic_help.png") no-repeat 0 8px white;
+    cursor: pointer;
+}
+#login_head_ul_li_3>img{
+    margin-bottom:-5px;
+}
+#login_head_ul_li_3>ul{
+    list-style: none;
+    display: none;
+}
+#login_head_ul_li_3>ul>li{
+    border-top:1px dashed rgba(0,0,0,0.2);
+    height:26px;
+    line-height: 26px;
+}
+#login_head_ul_li_3:hover{
+    border: 1px solid rgba(0,0,0,0.2);
+}
+#login_head_ul_li_3>span:hover{
+    color:red;
+}
+#login_head_ul_li_3:hover ul{
+    display: block;
+}
+#login_head_ul_li_3>ul>li:hover{
+    color:red;
+}
+/*--------------------------------帮助中心部分结束------------------------------*/
+/*-------------------------------头部右侧ul部分结束---------------------------*/
+/*------------------------------头部CSS结束----------------------*/
+
+/*-------------------------------登录内容部分---------*/
+#login_content{
+    width:400px;
+    /*height:404px;*/
+    /*height:456px;*/
+    position: relative;
+    left:772px;
+    top:28px;
+    padding-bottom:20px;
+    background: white;
+}
+
+/*提示文字部分*/
+#tip{
+    height:33px;
+    width:330px;
+    line-height: 37px;
+    position: relative;
+    left:37px;
+    top:10px;
+    font-family: 宋体;
+    font-size: 12px;
+    color:#666;
+    text-indent: 35px;
+    background: url("img/tip.png") no-repeat 10px 10px #fdf6d0;
+    display: none;
+}
+#errorInput{
+    height:33px;
+    width:330px;
+    line-height: 37px;
+    position: relative;
+    left:37px;
+    top:10px;
+    font-family: 宋体;
+    font-size: 12px;
+    color:#666;
+    text-indent: 35px;
+    background: url("img/tip.png") no-repeat 10px 10px #fdf6d0;
+    display: none;
+}
+#loginSuccess{
+    height:33px;
+    width:330px;
+    line-height: 37px;
+    position: relative;
+    left:37px;
+    top:10px;
+    font-weight: bold;
+    text-align: center;
+    font-family: 宋体;
+    font-size: 18px;
+    color:#f00;
+    background: #fdf6d0;
+    display: none;
+}
+/*标题头部部分*/
+#login_content>p{
+    position: relative;
+    width:330px;
+    height:36px;
+    line-height: 36px;
+    top:11px;
+    left:37px;
+}
+#login_content>p>span{
+    font-family: 宋体;
+    font-size: 14px;
+    color: #666;
+    position: absolute;
+    left:0;
+    font-weight: bold;
+}
+#login_content>p>a{
+    text-decoration: none;
+    position: absolute;
+    right:0;
+    font-family: 宋体;
+    font-size: 12px;
+    color: #0066cb;
+}
+#login_content>p>a:hover{
+    color: #fd6601;
+}
+
+/*登录内容用户名、密码部分*/
+.login_content_wrap{
+    height:224px;
+    width:330px;
+    position: relative;
+    left:37px;
+    top:10px;
+}
+#login_content_wrap_user,#login_content_wrap_pwd{
+    height:54px;
+    width:330px;
+    line-height: 54px;
+    /*position: absolute;*/
+    margin-bottom: 12px;
+    border:1px solid rgba(0,0,0,0.4);
+}
+#login_content_wrap_user:hover,#login_content_wrap_pwd:hover{
+    border: 1px solid rgba(0,0,0,0.6);
+}
+#login_content_wrap_user{
+     background: url("img/login_pic_right_user.png") no-repeat 22px 18px;
+}
+#login_content_wrap_pwd{
+    background: url("img/login_pic_right_pwd.png") no-repeat 22px 18px;
+}
+#login_content_wrap_user>input,#login_content_wrap_pwd>input{
+    height:21px;
+    margin-left:70px;
+    font-family: 微软雅黑;
+    font-size: 14px;
+    outline: none;
+    width:251px;
+    border: none;
+}
+
+/*自动登录，忘记密码部分*/
+#login_content_wrap_autoLogin{
+    width:330px;
+    height:20px;
+    position: relative;
+    top:5px;
+}
+#login_content_wrap_autoLogin a{
+    font-family: 宋体;
+    font-size: 12px;
+    color: #989898;
+    text-decoration: none;
+}
+#autoLogin{
+    position: absolute;
+    left:0;
+}
+.autoLogin_choose{
+    display: inline-block;
+    position: absolute;
+    width:50px;
+    top:0;
+    left:20px;
+}
+#autoLogin_choose{
+    display: inline-block;
+    height:12px;
+    width:12px;
+    background: none;
+    text-align: left;
+    border:1px solid #989898;
+   /* background: #fd6601;*/
+}
+#autoLogin_choose:hover{
+    border:1px solid #fd6601;
+}
+#autoLogin_choose>img{
+    height:12px;
+    width:12px;
+    display: none;
+}
+#autoLogin_choose_hidden{
+    font-family: 宋体;
+    font-size: 12px;
+    color: #fd0001;
+    position: absolute;
+    left:74px;
+    display: none;
+}
+#forgetPwd{
+    position: absolute;
+    right:0;
+}
+
+/*下面是登录框部分*/
+.login_content_wrap>button{
+    position: relative;
+    top:10px;
+    font-family: 微软雅黑;
+    font-size: 16px;
+    color:white;
+    cursor: pointer;
+    background: #ff3c3c;
+    width:330px;
+    height:52px;
+    line-height: 52px;
+    border-radius: 3px;
+    text-shadow: 1px 1px 1px #ff7373;
+    border:0 none;
+}
+
+/*下面是更多合作网站部分*/
+#more_op_web{
+    height:90px;
+    width:330px;
+    position: relative;
+    top:15px;
+    left:37px;
+}
+#more_op_web>p{
+    color:#666;
+    font-family: 宋体;
+    font-size: 12px;
+}
+#more_op_web>ul{
+    list-style: none;
+    width:330px;
+}
+#more_op_web>ul>li{
+    height:69px;
+    line-height: 69px;
+    float:left;
+    cursor: pointer;
+}
+#more_op_web>ul>li>span{
+    font-family: 宋体;
+    font-size: 12px;
+    color:#999;
+}
+#more_op_web_unfold_content{
+    height:63px;
+    width:330px;
+    position: relative;
+    top:-5px;
+    left:40px;
+    display: none;
+}
+#more_op_web_unfold_content>ul{
+    height:63px;
+    line-height: 63px;
+    list-style: none;
+}
+#more_op_web_unfold_content>ul>li{
+    width:82px;
+    height:23px;
+    font-family: 宋体;
+    font-size: 12px;
+    color:#999;
+    float:left;
+    cursor: pointer;
+}
+#more_op_web_unfold_content>ul>li>span{
+    position: relative;
+    top:-7px;
+    left:2px;
+    display: inline-block;
+}
+
+/*-----------------------------------下面是底下页脚部分-----------------*/
+#footer{
+    text-align: center;
+    margin-top:30px;
+}
+#footer>span{
+    font-family: 宋体;
+    font-size: 12px;
+    margin-right:2px;
+}
+.footer_span{
+    font-family: 宋体;
+    font-size: 12px;
+    color: #333333;
+}
+.footer_span:hover{
+    color: #cb0001;
+}

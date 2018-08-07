@@ -1,0 +1,3623 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>1号店首页</title>
+    <link rel="stylesheet" href="1号店首页.css" type="text/css">
+</head>
+<body id = "body">
+<div>
+    <!--头部广告部分-->
+    <div id = "ad">
+        <!--将两张图片包含在a标签内点击跳转-->
+        <a href="">
+            <img id = "ad_img1" src="img/top_ad_hidden.jpg" alt="广告大图">
+            <img id = "ad_img2" src="img/top_ad_appear.jpg" alt="广告小图">
+        </a>
+        <span>
+            &times;
+        </span>
+    </div>
+
+    <!--送货地址导航栏-->
+    <nav>
+        <ul>
+            <li id = "nav_ul_li_address">
+                <a href="javascript:void(0);" style="display: inline-block;height:31px;position: absolute;left:0;z-index:4">
+                    <img id = "nav_ul_li_address_map" src="img/nav_ul_li_address_map.png" alt="">
+                    送货地址&ensp;：<span id = "nav_ul_li_address_span">上海</span>&ensp;
+                </a>
+                <div id = "div_address">
+                    <p style="margin:15px 0 0 -200px; width:721px;">
+                        <b>搜索城市：</b>
+                        <input id = "div_address_input" type="text" placeholder="请输入城市名称" value = "" list="list1">
+                        <datalist id = "list1">
+                            <option value = "阿勒泰地区"></option>
+                            <option value="安顺市"></option>
+                            <option value="安庆市"></option>
+                            <option value="鞍山市"></option>
+                            <option value="阿坝州"></option>
+                            <option value="阿克苏地区"></option>
+                            <option value="安泰市"></option>
+                            <option value="阿拉善盟"></option>
+                            <option value="阿里地区"></option>
+                            <option value="安阳市"></option>
+                            <option value="阿拉布市"></option>
+                            <option value="北京"></option>
+                            <option value="滨州市"></option>
+                            <option value="博尔塔拉州"></option>
+                            <option value="毕节市"></option>
+                            <option value="蚌埠市"></option>
+                            <option value="巴音郭楞州"></option>
+                            <option value="保山市"></option>
+                            <option value="本溪市"></option>
+                            <option value="白沙县"></option>
+                            <option value="白城市"></option>
+                            <option value="保亭县"></option>
+                            <option value="北海市"></option>
+                            <option value="白山市"></option>
+                            <option value="保定市"></option>
+                            <option value="亳州市"></option>
+                            <option value="包头市"></option>
+                            <option value="白银市"></option>
+                            <option value="巴彦淖尔市"></option>
+                            <option value="百色市"></option>
+                            <option value="巴州市"></option>
+                            <option value="宝鸡市"></option>
+                            <option value="重庆"></option>
+                            <option value="昌吉市"></option>
+                            <option value="朝阳市"></option>
+                            <option value="长春市"></option>
+                            <option value="郴州市"></option>
+                            <option value="昌江县"></option>
+                            <option value="澄迈县"></option>
+                            <option value="昌都地区"></option>
+                            <option value="崇左市"></option>
+                            <option value="滁州市"></option>
+                            <option value="潮州市"></option>
+                            <option value="长治市"></option>
+                            <option value="承德市"></option>
+                            <option value="池州市"></option>
+                            <option value="长沙市"></option>
+                            <option value="楚雄州"></option>
+                            <option value="常德市"></option>
+                            <option value="常州市"></option>
+                            <option value="成都市"></option>
+                            <option value="大连市"></option>
+                            <option value="东莞市"></option>
+                            <option value="东营市"></option>
+                            <option value="德州市"></option>
+                            <option value="丹东市"></option>
+                            <option value="定安县"></option>
+                            <option value="东方市"></option>
+                            <option value="大庆市"></option>
+                            <option value="定西市"></option>
+                            <option value="大同市"></option>
+                            <option value="迪庆州"></option>
+                            <option value="大兴安岭地区"></option>
+                            <option value="儋州市"></option>
+                            <option value="达州市"></option>
+                            <option value="大理市"></option>
+                            <option value="德宏州"></option>
+                            <option value="德阳市"></option>
+                            <option value="鄂尔多斯市"></option>
+                            <option value="鄂州市"></option>
+                            <option value="恩施州"></option>
+                            <option value="阜新市"></option>
+                            <option value="抚顺市"></option>
+                            <option value="防城港市"></option>
+                            <option value="阜阳市"></option>
+                            <option value="佛山市"></option>
+                            <option value="抚州市"></option>
+                            <option value="福州市"></option>
+                            <option value="广州市"></option>
+                            <option value="果洛市"></option>
+                            <option value="甘南市"></option>
+                            <option value="甘孜市"></option>
+                            <option value="贵港市"></option>
+                            <option value="桂林市"></option>
+                            <option value="固原市"></option>
+                            <option value="贵阳市"></option>
+                            <option value="赣州市"></option>
+                            <option value="广安市"></option>
+                            <option value="广安市"></option>
+                            <option value="惠州市"></option>
+                            <option value="菏泽市"></option>
+                            <option value="合肥市"></option>
+                            <option value="淮北市"></option>
+                            <option value="淮南市"></option>
+                            <option value="黄山市"></option>
+                            <option value="河源市"></option>
+                            <option value="怀化市"></option>
+                            <option value="葫芦岛市"></option>
+                            <option value="海西市"></option>
+                            <option value="黄南州"></option>
+                            <option value="哈尔滨市"></option>
+                            <option value="海北市"></option>
+                            <option value="邯郸市"></option>
+                            <option value="海南州"></option>
+                            <option value="海东地区"></option>
+                            <option value="哈密地区"></option>
+                            <option value="和田地区"></option>
+                            <option value="海口市"></option>
+                            <option value="杭州市"></option>
+                            <option value="鹤岗市"></option>
+                            <option value="衡水市"></option>
+                            <option value="汉中市"></option>
+                            <option value="呼和浩特市"></option>
+                            <option value="黄石市"></option>
+                            <option value="黑河市"></option>
+                            <option value="呼伦贝尔市"></option>
+                            <option value="河池市"></option>
+                            <option value="贺州市"></option>
+                            <option value="衡阳市"></option>
+                            <option value="红河州"></option>
+                            <option value="淮安市"></option>
+                            <option value="鹤壁市"></option>
+                            <option value="黄冈市"></option>
+                            <option value="江门市"></option>
+                            <option value="济源市"></option>
+                            <option value="锦州市"></option>
+                            <option value="嘉兴市"></option>
+                            <option value="金华市"></option>
+                            <option value="吉林市"></option>
+                            <option value="鸡西市"></option>
+                            <option value="揭阳市"></option>
+                            <option value="佳木斯市"></option>
+                            <option value="吉安市"></option>
+                            <option value="金昌市"></option>
+                            <option value="嘉峪关市"></option>
+                            <option value="晋中市"></option>
+                            <option value="九江市"></option>
+                            <option value="晋城市"></option>
+                            <option value="景德镇市"></option>
+                            <option value="酒泉市"></option>
+                            <option value="荆门市"></option>
+                            <option value="焦作市"></option>
+                            <option value="济南市"></option>
+                            <option value="荆州市"></option>
+                            <option value="济宁市"></option>
+                            <option value="昆明市"></option>
+                            <option value="克孜勒苏柯尔克孜自治州"></option>
+                            <option value="喀什地区"></option>
+                            <option value="克拉玛依市"></option>
+                            <option value="开封市"></option>
+                            <option value="辽阳市"></option>
+                            <option value="娄底市"></option>
+                            <option value="莱芜市"></option>
+                            <option value="临沧市"></option>
+                            <option value="聊城市"></option>
+                            <option value="聊城市"></option>
+                            <option value="乐东县"></option>
+                            <option value="陵水县"></option>
+                            <option value="临高县"></option>
+                            <option value="凉州市"></option>
+                            <option value="临夏县"></option>
+                            <option value="柳州市"></option>
+                            <option value="六盘水市"></option>
+                            <option value="六安市"></option>
+                            <option value="廊坊市"></option>
+                            <option value="龙岩市"></option>
+                            <option value="辽源市"></option>
+                            <option value="拉萨市"></option>
+                            <option value="兰州市"></option>
+                            <option value="来宾市"></option>
+                            <option value="丽水市"></option>
+                            <option value="林芝地区"></option>
+                            <option value="吕梁市"></option>
+                            <option value="陇南市"></option>
+                            <option value="临汾市"></option>
+                            <option value="丽江市"></option>
+                            <option value="连云港市"></option>
+                            <option value="洛阳市"></option>
+                            <option value="乐山市"></option>
+                            <option value="泸州市"></option>
+                            <option value="漯河市"></option>
+                            <option value="梅州市"></option>
+                            <option value="马鞍山市"></option>
+                            <option value="眉山市"></option>
+                            <option value="牡丹江市"></option>
+                            <option value="茂名市"></option>
+                            <option value="绵阳市"></option>
+                            <option value="宁波市"></option>
+                            <option value="南宁市"></option>
+                            <option value="那曲地区"></option>
+                            <option value="宁德市"></option>
+                            <option value="南平市"></option>
+                            <option value="南昌市"></option>
+                            <option value="南充市"></option>
+                            <option value="南京市"></option>
+                            <option value="内江市"></option>
+                            <option value="怒江市"></option>
+                            <option value="南阳市"></option>
+                            <option value="南通市"></option>
+                            <option value="盘锦市"></option>
+                            <option value="普洱市"></option>
+                            <option value="萍乡市"></option>
+                            <option value="平凉市"></option>
+                            <option value="莆田市"></option>
+                            <option value="平顶山市"></option>
+                            <option value="濮阳市"></option>
+                            <option value="攀枝花市"></option>
+                            <option value="黔东南州"></option>
+                            <option value="黔西南州"></option>
+                            <option value="黔南州"></option>
+                            <option value="曲靖市"></option>
+                            <option value="琼中县"></option>
+                            <option value="钦州市"></option>
+                            <option value="衢州市"></option>
+                            <option value="清远市"></option>
+                            <option value="齐齐哈尔市"></option>
+                            <option value="琼海市"></option>
+                            <option value="秦皇岛市"></option>
+                            <option value="七台河市"></option>
+                            <option value="庆阳市"></option>
+                            <option value="泉州市"></option>
+                            <option value="潜江市"></option>
+                            <option value="青岛市"></option>
+                            <option value="日照市"></option>
+                            <option value="日喀则地区"></option>
+                            <option value="上海"></option>
+                            <option value="沈阳"></option>
+                            <option value="汕尾市"></option>
+                            <option value="商丘市"></option>
+                            <option value="汕头市"></option>
+                            <option value="深圳市"></option>
+                            <option value="韶关市"></option>
+                            <option value="三沙市"></option>
+                            <option value="石家庄市"></option>
+                            <option value="松原市"></option>
+                            <option value="神农架林区"></option>
+                            <option value="三亚市"></option>
+                            <option value="绍兴市"></option>
+                            <option value="四平市"></option>
+                            <option value="石河子市"></option>
+                            <option value="宿州市"></option>
+                            <option value="山南地区"></option>
+                            <option value="双鸭山市"></option>
+                            <option value="石嘴山市"></option>
+                            <option value="十堰市"></option>
+                            <option value="商洛市"></option>
+                            <option value="绥化市"></option>
+                            <option value="上饶市"></option>
+                            <option value="朔州市"></option>
+                            <option value="厦门市"></option>
+                            <option value="三明市"></option>
+                            <option value="随州市"></option>
+                            <option value="宿迁市"></option>
+                            <option value="邵阳市"></option>
+                            <option value="遂宁市"></option>
+                            <option value="苏州市"></option>
+                            <option value="三门峡市"></option>
+                            <option value="天津"></option>
+                            <option value="泰安市"></option>
+                            <option value="铜陵市"></option>
+                            <option value="屯昌县"></option>
+                            <option value="通化市"></option>
+                            <option value="吐鲁番地区"></option>
+                            <option value="铜仁市"></option>
+                            <option value="天门市"></option>
+                            <option value="唐山市"></option>
+                            <option value="太原市"></option>
+                            <option value="天水市"></option>
+                            <option value="台州市"></option>
+                            <option value="铁岭市"></option>
+                            <option value="泰州市"></option>
+                            <option value="通辽市"></option>
+                            <option value="图木舒克市"></option>
+                            <option value="铜川市"></option>
+                            <option value="芜湖市"></option>
+                            <option value="潍坊市"></option>
+                            <option value="威海市"></option>
+                            <option value="五指山市"></option>
+                            <option value="文昌市"></option>
+                            <option value="温州市"></option>
+                            <option value="万宁市"></option>
+                            <option value="梧州市"></option>
+                            <option value="乌鲁木齐市"></option>
+                            <option value="吴忠市"></option>
+                            <option value="乌兰察布市"></option>
+                            <option value="乌海市"></option>
+                            <option value="五家渠市"></option>
+                            <option value="武汉市"></option>
+                            <option value="武威市"></option>
+                            <option value="文州市"></option>
+                            <option value="无锡市"></option>
+                            <option value="渭南市"></option>
+                            <option value="信阳市"></option>
+                            <option value="湘西州"></option>
+                            <option value="西宁市"></option>
+                            <option value="邢台市"></option>
+                            <option value="仙桃市"></option>
+                            <option value="襄阳市"></option>
+                            <option value="宣城市"></option>
+                            <option value="忻州市"></option>
+                            <option value="兴安盟"></option>
+                            <option value="新余市"></option>
+                            <option value="锡林郭勒盟"></option>
+                            <option value="湘潭市"></option>
+                            <option value="西双版纳州"></option>
+                            <option value="徐州市"></option>
+                            <option value="孝感市"></option>
+                            <option value="西安市"></option>
+                            <option value="新乡市"></option>
+                            <option value="咸宁市"></option>
+                            <option value="咸阳市"></option>
+                            <option value="许昌市"></option>
+                            <option value="伊犁州"></option>
+                            <option value="营口市"></option>
+                            <option value="玉溪市"></option>
+                            <option value="烟台市"></option>
+                            <option value="永州市"></option>
+                            <option value="益阳市"></option>
+                            <option value="延边州"></option>
+                            <option value="玉林市"></option>
+                            <option value="玉树州"></option>
+                            <option value="云浮市"></option>
+                            <option value="伊春市"></option>
+                            <option value="阳江市"></option>
+                            <option value="银川市"></option>
+                            <option value="榆林市"></option>
+                            <option value="伊春市"></option>
+                            <option value="阳泉市"></option>
+                            <option value="鹰潭市"></option>
+                            <option value="扬州市"></option>
+                            <option value="雅安市"></option>
+                            <option value="运城市"></option>
+                            <option value="盐城市"></option>
+                            <option value="岳阳市"></option>
+                            <option value="宜宾市"></option>
+                            <option value="宜昌市"></option>
+                            <option value="延安市"></option>
+                            <option value="中山市"></option>
+                            <option value="珠海市"></option>
+                            <option value="周口市"></option>
+                            <option value="驻马店市"></option>
+                            <option value="邵通市"></option>
+                            <option value="张家界市"></option>
+                            <option value="资阳市"></option>
+                            <option value="湛江市"></option>
+                            <option value="张家口市"></option>
+                            <option value="遵义市"></option>
+                            <option value="肇庆市"></option>
+                            <option value="舟山市"></option>
+                            <option value="中卫市"></option>
+                            <option value="漳州市"></option>
+                            <option value="张掖市"></option>
+                            <option value="株洲市"></option>
+                            <option value="郑州市"></option>
+                            <option value="淄博市"></option>
+                            <option value="枣庄市"></option>
+                            <option value="自贡市"></option>
+                            <option value="镇江市"></option>
+                            <option value="上海市"></option>
+                            <option value="北京市"></option>
+                            <option value="重庆市"></option>
+                            <option value="天津市"></option>
+                        </datalist>
+                    </p>
+                    <p id = "p_city">
+                        <b>热门城市：</b>
+                        <a href="javascript:void(0);">上海市</a>
+                        <a href="javascript:void(0);">北京市</a>
+                        <a href="javascript:void(0);">广州市</a>
+                        <a href="javascript:void(0);">深圳市</a>
+                        <a href="javascript:void(0);">南京市</a>
+                        <a href="javascript:void(0);">杭州市</a>
+                        <a href="javascript:void(0);">武汉市</a>
+                        <a href="javascript:void(0);">成都市</a>
+                        <a href="javascript:void(0);">重庆市</a>
+                        <a href="javascript:void(0);">苏州市</a><br/>
+                        <a style="margin-left:-153px; " href="javascript:void(0);">天津市</a>
+                        <a href="javascript:void(0);">合肥市</a>
+                        <a href="javascript:void(0);">温州市</a>
+                        <a href="javascript:void(0);">无锡市</a>
+                        <a href="javascript:void(0);">宁波市</a>
+                        <a href="javascript:void(0);">常州市</a>
+                    </p>
+                    <p id = "p_letter" style="width:699px;margin:10px 0 0 18px;border-top: 1px dotted rgba(0,0,0,0.2);">
+                        <b style="margin-left:-18px;">按字母查找</b>
+                        <a href="javascript:void(0);">A</a>
+                        <a href="javascript:void(0);">B</a>
+                        <a href="javascript:void(0);">C</a>
+                        <a href="javascript:void(0);">D</a>
+                        <a href="javascript:void(0);">E</a>
+                        <a href="javascript:void(0);">F</a>
+                        <a href="javascript:void(0);">G</a>
+                        <a href="javascript:void(0);">H</a>
+                        <a href="javascript:void(0);">J</a>
+                        <a href="javascript:void(0);">K</a>
+                        <a href="javascript:void(0);">L</a>
+                        <a href="javascript:void(0);">M</a>
+                        <a href="javascript:void(0);">N</a>
+                        <a href="javascript:void(0);">P</a>
+                        <a href="javascript:void(0);">Q</a>
+                        <a href="javascript:void(0);">R</a>
+                        <a href="javascript:void(0);">S</a>
+                        <a href="javascript:void(0);">T</a>
+                        <a href="javascript:void(0);">W</a>
+                        <a href="javascript:void(0);">X</a>
+                        <a href="javascript:void(0);">Y</a>
+                        <a href="javascript:void(0);">Z</a>
+                    </p>
+                    <div id = "div_address_city">
+                        <!--A-->
+                        <p id = "letter_A">
+                            <span class="letter">A</span>
+                            <a href="javascript:void(0);">阿勒泰地区</a>
+                            <a href="javascript:void(0);">安顺市</a>
+                            <a href="javascript:void(0);">安庆市</a>
+                            <a href="javascript:void(0);">鞍山市</a>
+                            <a href="javascript:void(0);">阿坝州</a>
+                            <a href="javascript:void(0);">阿克苏地区</a>
+                            <a href="javascript:void(0);">安泰市</a>
+                            <a href="javascript:void(0);">阿拉善盟</a><br/>
+                            <a style="margin-left:-346px;" href="javascript:void(0);">阿里地区</a>
+                            <a href="javascript:void(0);">安阳市</a>
+                            <a href="javascript:void(0);">阿拉布市</a>
+                        </p>
+                        <!--B-->
+                        <p id = "letter_B">
+                            <span class="letter">B</span>
+                            <a href="javascript:void(0);">北京</a>
+                            <a href="javascript:void(0);">滨州市</a>
+                            <a href="javascript:void(0);">博尔塔拉州</a>
+                            <a href="javascript:void(0);">毕节市</a>
+                            <a href="javascript:void(0);">蚌埠市</a>
+                            <a href="javascript:void(0);">巴音郭楞州</a>
+                            <a href="javascript:void(0);">保山市</a>
+                            <a href="javascript:void(0);">本溪市</a>
+                            <a href="javascript:void(0);">白沙县</a><br/>
+                            <a style="margin:0 16px 0 17px;" href="javascript:void(0);">白城市</a>
+                            <a href="javascript:void(0);">保亭县</a>
+                            <a href="javascript:void(0);">北海市</a>
+                            <a href="javascript:void(0);">白山市</a>
+                            <a href="javascript:void(0);">保定市</a>
+                            <a href="javascript:void(0);">亳州市</a>
+                            <a href="javascript:void(0);">包头市</a>
+                            <a href="javascript:void(0);">白银市</a>
+                            <a href="javascript:void(0);">巴彦淖尔市</a><br/>
+                            <a style="margin-left:-397px;" href="javascript:void(0);">百色市</a>
+                            <a href="javascript:void(0);">巴州市</a>
+                            <a href="javascript:void(0);">宝鸡市</a>
+                        </p>
+                        <!--C-->
+                        <p id = "letter_C">
+                            <span class="letter">C</span>
+                            <a href="javascript:void(0);">重庆</a>
+                            <a href="javascript:void(0);">昌吉市</a>
+                            <a href="javascript:void(0);">朝阳市</a>
+                            <a href="javascript:void(0);">长春市</a>
+                            <a href="javascript:void(0);">郴州市</a>
+                            <a href="javascript:void(0);">昌江县</a>
+                            <a href="javascript:void(0);">澄迈县</a>
+                            <a href="javascript:void(0);">昌都地区</a>
+                            <a href="javascript:void(0);">崇左市</a><br/>
+                            <a style="margin-left: 31px" href="javascript:void(0);">滁州市</a>
+                            <a href="javascript:void(0);">潮州市</a>
+                            <a href="javascript:void(0);">长治市</a>
+                            <a href="javascript:void(0);">承德市</a>
+                            <a href="javascript:void(0);">池州市</a>
+                            <a href="javascript:void(0);">赤峰市</a>
+                            <a href="javascript:void(0);">沧州市</a>
+                            <a href="javascript:void(0);">长沙市</a>
+                            <a href="javascript:void(0);">楚雄州</a><br/>
+                            <a style="margin-left:-357px;" href="javascript:void(0);">常德市</a>
+                            <a href="javascript:void(0);">常州市</a>
+                            <a href="javascript:void(0);">成都市</a>
+                        </p>
+                        <!--D-->
+                        <p id = "letter_D">
+                            <span class="letter">D</span>
+                            <a href="javascript:void(0);">大连市</a>
+                            <a href="javascript:void(0);">东莞市</a>
+                            <a href="javascript:void(0);">东营市</a>
+                            <a href="javascript:void(0);">德州市</a>
+                            <a href="javascript:void(0);">丹东市</a>
+                            <a href="javascript:void(0);">定安县</a>
+                            <a href="javascript:void(0);">东方市</a>
+                            <a href="javascript:void(0);">大庆市</a>
+                            <a href="javascript:void(0);">定西市</a><br/>
+                            <a style="margin-left: 14px;" href="javascript:void(0);">大同市</a>
+                            <a href="javascript:void(0);">迪庆州</a>
+                            <a href="javascript:void(0);">大兴安岭地区</a>
+                            <a href="javascript:void(0);">儋州市</a>
+                            <a href="javascript:void(0);">达州市</a>
+                            <a href="javascript:void(0);">大理市</a>
+                            <a href="javascript:void(0);">德宏州</a>
+                            <a href="javascript:void(0);">德阳市</a>
+                        </p>
+                        <!--E-->
+                        <p id = "letter_E">
+                            <span class="letter">E</span>
+                            <a href="javascript:void(0);">鄂尔多斯市</a>
+                            <a href="javascript:void(0);">鄂州市</a>
+                            <a href="javascript:void(0);">恩施州</a>
+                        </p>
+                        <!--F-->
+                        <p id = "letter_F">
+                            <span class="letter">F</span>
+                            <a href="javascript:void(0);">阜新市</a>
+                            <a href="javascript:void(0);">抚顺市</a>
+                            <a href="javascript:void(0);">防城港市</a>
+                            <a href="javascript:void(0);">阜阳市</a>
+                            <a href="javascript:void(0);">佛山市</a>
+                            <a href="javascript:void(0);">抚州市</a>
+                            <a href="javascript:void(0);">福州市</a>
+                        </p>
+                        <!-- G-->
+                        <p id = "letter_G">
+                        <span class="letter">G</span>
+                        <a href="javascript:void(0);">广州市</a>
+                        <a href="javascript:void(0);">果洛市</a>
+                        <a href="javascript:void(0);">甘南市</a>
+                        <a href="javascript:void(0);">甘孜市</a>
+                        <a href="javascript:void(0);">贵港市</a>
+                        <a href="javascript:void(0);">桂林市</a>
+                        <a href="javascript:void(0);">固原市</a>
+                        <a href="javascript:void(0);">贵阳市</a>
+                        <a href="javascript:void(0);">赣州市</a><br/>
+                        <a style="margin-left:-424px;" href="javascript:void(0);">广安市</a>
+                        <a href="javascript:void(0);">广元市</a>
+                    </p>
+                        <!--H-->
+                        <p id = "letter_H">
+                            <span class="letter">H</span>
+                            <a href="javascript:void(0);">惠州市</a>
+                            <a href="javascript:void(0);">菏泽市</a>
+                            <a href="javascript:void(0);">合肥市</a>
+                            <a href="javascript:void(0);">淮北市</a>
+                            <a href="javascript:void(0);">淮南市</a>
+                            <a href="javascript:void(0);">黄山市</a>
+                            <a href="javascript:void(0);">河源市</a>
+                            <a href="javascript:void(0);">怀化市</a>
+                            <a href="javascript:void(0);">葫芦岛市</a><br/>
+                            <a style="margin-left: -7px;" href="javascript:void(0);">海西市</a>
+                            <a href="javascript:void(0);">黄南州</a>
+                            <a href="javascript:void(0);">哈尔滨市</a>
+                            <a href="javascript:void(0);">海北市</a>
+                            <a href="javascript:void(0);">邯郸市</a>
+                            <a href="javascript:void(0);">海南州</a>
+                            <a href="javascript:void(0);">海东地区</a>
+                            <a href="javascript:void(0);">哈密地区</a><br/>
+                            <a style="margin:0 1px 0 40px;" href="javascript:void(0);">和田地区</a>
+                            <a href="javascript:void(0);">海口市</a>
+                            <a href="javascript:void(0);">杭州市</a>
+                            <a href="javascript:void(0);">鹤岗市</a>
+                            <a href="javascript:void(0);">衡水市</a>
+                            <a href="javascript:void(0);">汉中市</a>
+                            <a href="javascript:void(0);">呼和浩特市</a>
+                            <a href="javascript:void(0);">黄石市</a>
+                            <a href="javascript:void(0);">黑河市</a><br/>
+                            <a style="margin-left: -15px;" href="javascript:void(0);">呼伦贝尔市</a>
+                            <a href="javascript:void(0);">河池市</a>
+                            <a href="javascript:void(0);">贺州市</a>
+                            <a href="javascript:void(0);">衡阳市</a>
+                            <a href="javascript:void(0);">红河州</a>
+                            <a href="javascript:void(0);">淮安市</a>
+                            <a href="javascript:void(0);">鹤壁市</a>
+                            <a href="javascript:void(0);">黄冈市</a>
+                        </p>
+                        <!--J-->
+                        <p id = "letter_J">
+                        <span class="letter">J</span>
+                        <a href="javascript:void(0);">江门市</a>
+                        <a href="javascript:void(0);">济源市</a>
+                        <a href="javascript:void(0);">锦州市</a>
+                        <a href="javascript:void(0);">嘉兴市</a>
+                        <a href="javascript:void(0);">金华市</a>
+                        <a href="javascript:void(0);">吉林市</a>
+                        <a href="javascript:void(0);">鸡西市</a>
+                        <a href="javascript:void(0);">揭阳市</a>
+                        <a href="javascript:void(0);">佳木斯市</a><br/>
+                        <a style="margin-left: 41px;" href="javascript:void(0);">吉安市</a>
+                        <a href="javascript:void(0);">金昌市</a>
+                        <a href="javascript:void(0);">嘉峪关市</a>
+                        <a href="javascript:void(0);">晋中市</a>
+                        <a href="javascript:void(0);">九江市</a>
+                        <a href="javascript:void(0);">晋城市</a>
+                        <a href="javascript:void(0);">景德镇市</a>
+                        <a href="javascript:void(0);">酒泉市</a>
+                        <a href="javascript:void(0);">荆门市</a><br/>
+                        <a style="margin-left: -312px;" href="javascript:void(0);">焦作市</a>
+                        <a href="javascript:void(0);">济南市</a>
+                        <a href="javascript:void(0);">荆州市</a>
+                        <a href="javascript:void(0);">济宁市</a>
+                    </p>
+                        <!--K-->
+                        <p id = "letter_K">
+                        <span class="letter">K</span>
+                        <a href="javascript:void(0);">昆明市</a>
+                        <a href="javascript:void(0);">克孜勒苏柯尔克孜自治州</a>
+                        <a href="javascript:void(0);">喀什地区</a>
+                        <a href="javascript:void(0);">克拉玛依市</a>
+                        <a href="javascript:void(0);">开封市</a>
+                    </p>
+                        <!--L-->
+                        <p id = "letter_L">
+                        <span class="letter">L</span>
+                        <a href="javascript:void(0);">辽阳市</a>
+                        <a href="javascript:void(0);">娄底市</a>
+                        <a href="javascript:void(0);">莱芜市</a>
+                        <a href="javascript:void(0);">临沧市</a>
+                        <a href="javascript:void(0);">聊城市</a>
+                        <a href="javascript:void(0);">临沂市</a>
+                        <a href="javascript:void(0);">乐东县</a>
+                        <a href="javascript:void(0);">陵水县</a>
+                        <a href="javascript:void(0);">临高县</a><br/>
+                        <a style="margin-left: 40px;" href="javascript:void(0);">凉州市</a>
+                        <a href="javascript:void(0);">临夏县</a>
+                        <a href="javascript:void(0);">柳州市</a>
+                        <a href="javascript:void(0);">六盘水市</a>
+                        <a href="javascript:void(0);">六安市</a>
+                        <a href="javascript:void(0);">廊坊市</a>
+                        <a href="javascript:void(0);">龙岩市</a>
+                        <a href="javascript:void(0);">辽源市</a>
+                        <a href="javascript:void(0);">拉萨市</a><br/>
+                        <a style="margin-left: 52px;" href="javascript:void(0);">兰州市</a>
+                        <a href="javascript:void(0);">来宾市</a>
+                        <a href="javascript:void(0);">丽水市</a>
+                        <a href="javascript:void(0);">林芝地区</a>
+                        <a href="javascript:void(0);">吕梁市</a>
+                        <a href="javascript:void(0);">陇南市</a>
+                        <a href="javascript:void(0);">临汾市</a>
+                        <a href="javascript:void(0);">丽江市</a>
+                        <a href="javascript:void(0);">连云港市</a><br/>
+                        <a style="margin-left: -298px;" href="javascript:void(0);">洛阳市</a>
+                        <a href="javascript:void(0);">乐山市</a>
+                        <a href="javascript:void(0);">泸州市</a>
+                        <a href="javascript:void(0);">漯河市</a>
+                    </p>
+                        <!--M-->
+                        <p id = "letter_M">
+                            <span class="letter">M</span>
+                            <a href="javascript:void(0);">梅州市</a>
+                            <a href="javascript:void(0);">马鞍山市</a>
+                            <a href="javascript:void(0);">眉山市</a>
+                            <a href="javascript:void(0);">牡丹江市</a>
+                            <a href="javascript:void(0);">茂名市</a>
+                            <a href="javascript:void(0);">绵阳市</a>
+                        </p>
+                        <!--N-->
+                        <p id = "letter_N">
+                            <span class="letter">N</span>
+                            <a href="javascript:void(0);">宁波市</a>
+                            <a href="javascript:void(0);">南宁市</a>
+                            <a href="javascript:void(0);">那曲地区</a>
+                            <a href="javascript:void(0);">宁德市</a>
+                            <a href="javascript:void(0);">南平市</a>
+                            <a href="javascript:void(0);">南昌市</a>
+                            <a href="javascript:void(0);">南充市</a>
+                            <a href="javascript:void(0);">南京市</a>
+                            <a href="javascript:void(0);">内江市</a><br/>
+                            <a style="margin-left:-373px;" href="javascript:void(0);">怒江市</a>
+                            <a href="javascript:void(0);">南阳市</a>
+                            <a href="javascript:void(0);">南通市</a>
+                        </p>
+                        <!--P-->
+                        <p id = "letter_P">
+                            <span class="letter">P</span>
+                            <a href="javascript:void(0);">盘锦市</a>
+                            <a href="javascript:void(0);">普洱市</a>
+                            <a href="javascript:void(0);">萍乡市</a>
+                            <a href="javascript:void(0);">平凉市</a>
+                            <a href="javascript:void(0);">莆田市</a>
+                            <a href="javascript:void(0);">平顶山市</a>
+                            <a href="javascript:void(0);">濮阳市</a>
+                            <a href="javascript:void(0);">攀枝花市</a>
+                        </p>
+                        <!--Q-->
+                        <p id = "letter_Q">
+                            <span class="letter">Q</span>
+                            <a href="javascript:void(0);">黔东南州</a>
+                            <a href="javascript:void(0);">黔西南州</a>
+                            <a href="javascript:void(0);">黔南州</a>
+                            <a href="javascript:void(0);">曲靖市</a>
+                            <a href="javascript:void(0);">琼中县</a>
+                            <a href="javascript:void(0);">钦州市</a>
+                            <a href="javascript:void(0);">衢州市</a>
+                            <a href="javascript:void(0);">清远市</a>
+                            <a href="javascript:void(0);">齐齐哈尔市</a><br/>
+                            <a style="margin-left:-124px;" href="javascript:void(0);">琼海市</a>
+                            <a href="javascript:void(0);">秦皇岛市</a>
+                            <a href="javascript:void(0);">七台河市</a>
+                            <a href="javascript:void(0);">庆阳市</a>
+                            <a href="javascript:void(0);">泉州市</a>
+                            <a href="javascript:void(0);">潜江市</a>
+                            <a href="javascript:void(0);">青岛市</a>
+                        </p>
+                        <!--R-->
+                        <p id = "letter_R">
+                            <span class="letter">R</span>
+                            <a href="javascript:void(0);">日照市</a>
+                            <a href="javascript:void(0);">日喀则地区</a>
+                        </p>
+                        <!--S-->
+                        <p id = "letter_S">
+                            <span class="letter">S</span>
+                            <a href="javascript:void(0);">上海</a>
+                            <a href="javascript:void(0);">沈阳</a>
+                            <a href="javascript:void(0);">汕尾市</a>
+                            <a href="javascript:void(0);">商丘市</a>
+                            <a href="javascript:void(0);">汕头市</a>
+                            <a href="javascript:void(0);">深圳市</a>
+                            <a href="javascript:void(0);">韶关市</a>
+                            <a href="javascript:void(0);">三沙市</a>
+                            <a href="javascript:void(0);">石家庄市</a><br/>
+                            <a style="margin-left: 27px;" href="javascript:void(0);">松原市</a>
+                            <a href="javascript:void(0);">神农架林区</a>
+                            <a href="javascript:void(0);">三亚市</a>
+                            <a href="javascript:void(0);">绍兴市</a>
+                            <a href="javascript:void(0);">四平市</a>
+                            <a href="javascript:void(0);">石河子市</a>
+                            <a href="javascript:void(0);">宿州市</a>
+                            <a href="javascript:void(0);">山南地区</a><br/>
+                            <a style="margin:0 2px 0 52px;" href="javascript:void(0);">双鸭山市</a>
+                            <a href="javascript:void(0);">石嘴山市</a>
+                            <a href="javascript:void(0);">十堰市</a>
+                            <a href="javascript:void(0);">商洛市</a>
+                            <a href="javascript:void(0);">绥化市</a>
+                            <a href="javascript:void(0);">上饶市</a>
+                            <a href="javascript:void(0);">朔州市</a>
+                            <a href="javascript:void(0);">厦门市</a>
+                            <a href="javascript:void(0);">三明市</a><br/>
+                            <a style="margin-left: -137px;" href="javascript:void(0);">随州市</a>
+                            <a href="javascript:void(0);">宿迁市</a>
+                            <a href="javascript:void(0);">邵阳市</a>
+                            <a href="javascript:void(0);">遂宁市</a>
+                            <a href="javascript:void(0);">苏州市</a>
+                            <a href="javascript:void(0);">三门峡市</a>
+                        </p>
+                        <!--T-->
+                        <p id = "letter_T">
+                            <span class="letter">T</span>
+                            <a href="javascript:void(0);">天津</a>
+                            <a href="javascript:void(0);">塔城地区</a>
+                            <a href="javascript:void(0);">泰安市</a>
+                            <a href="javascript:void(0);">铜陵市</a>
+                            <a href="javascript:void(0);">屯昌县</a>
+                            <a href="javascript:void(0);">通化市</a>
+                            <a href="javascript:void(0);">吐鲁番地区</a>
+                            <a href="javascript:void(0);">铜仁市</a>
+                            <a href="javascript:void(0);">天门市</a><br/>
+                            <a style="margin-left: 27px;" href="javascript:void(0);">唐山市</a>
+                            <a href="javascript:void(0);">太原市</a>
+                            <a href="javascript:void(0);">天水市</a>
+                            <a href="javascript:void(0);">台州市</a>
+                            <a href="javascript:void(0);">铁岭市</a>
+                            <a href="javascript:void(0);">泰州市</a>
+                            <a href="javascript:void(0);">通辽市</a>
+                            <a href="javascript:void(0);">图木舒克市</a>
+                            <a href="javascript:void(0);">铜川市</a>
+                        </p>
+                        <!--W-->
+                        <p id = "letter_W">
+                            <span class="letter">W</span>
+                            <a href="javascript:void(0);">芜湖市</a>
+                            <a href="javascript:void(0);">潍坊市</a>
+                            <a href="javascript:void(0);">威海市</a>
+                            <a href="javascript:void(0);">五指山市</a>
+                            <a href="javascript:void(0);">文昌市</a>
+                            <a href="javascript:void(0);">温州市</a>
+                            <a href="javascript:void(0);">万宁市</a>
+                            <a href="javascript:void(0);">梧州市</a>
+                            <a href="javascript:void(0);">乌鲁木齐市</a><br/>
+                            <a style="margin-left: 27px;" href="javascript:void(0);">吴忠市</a>
+                            <a href="javascript:void(0);">乌兰察布市</a>
+                            <a href="javascript:void(0);">乌海市</a>
+                            <a href="javascript:void(0);">五家渠市</a>
+                            <a href="javascript:void(0);">武汉市</a>
+                            <a href="javascript:void(0);">武威市</a>
+                            <a href="javascript:void(0);">文州市</a>
+                            <a href="javascript:void(0);">无锡市</a>
+                            <a href="javascript:void(0);">渭南市</a>
+                        </p>
+                        <!--X-->
+                        <p id = "letter_X">
+                            <span class="letter">X</span>
+                            <a href="javascript:void(0);">信阳市</a>
+                            <a href="javascript:void(0);">湘西州</a>
+                            <a href="javascript:void(0);">西宁市</a>
+                            <a href="javascript:void(0);">邢台市</a>
+                            <a href="javascript:void(0);">仙桃市</a>
+                            <a href="javascript:void(0);">襄阳市</a>
+                            <a href="javascript:void(0);">宣城市</a>
+                            <a href="javascript:void(0);">忻州市</a>
+                            <a href="javascript:void(0);">兴安盟</a><br/>
+                            <a style="margin-left: 80px;" href="javascript:void(0);">新余市</a>
+                            <a href="javascript:void(0);">锡林郭勒盟</a>
+                            <a href="javascript:void(0);">湘潭市</a>
+                            <a href="javascript:void(0);">西双版纳州</a>
+                            <a href="javascript:void(0);">徐州市</a>
+                            <a href="javascript:void(0);">孝感市</a>
+                            <a href="javascript:void(0);">西安市</a>
+                            <a href="javascript:void(0);">新乡市</a>
+                            <a href="javascript:void(0);">咸宁市</a><br/>
+                            <a style="margin-left: -426px;" href="javascript:void(0);">咸阳市</a>
+                            <a href="javascript:void(0);">许昌市</a>
+                        </p>
+                        <!--Y-->
+                        <p id = "letter_Y">
+                            <span class="letter">Y</span>
+                            <a href="javascript:void(0);">伊犁州</a>
+                            <a href="javascript:void(0);">营口市</a>
+                            <a href="javascript:void(0);">玉溪市</a>
+                            <a href="javascript:void(0);">烟台市</a>
+                            <a href="javascript:void(0);">永州市</a>
+                            <a href="javascript:void(0);">益阳市</a>
+                            <a href="javascript:void(0);">延边州</a>
+                            <a href="javascript:void(0);">玉林市</a>
+                            <a href="javascript:void(0);">玉树州</a><br/>
+                            <a style="margin-left: 29px;" href="javascript:void(0);">云浮市</a>
+                            <a href="javascript:void(0);">伊春市</a>
+                            <a href="javascript:void(0);">阳江市</a>
+                            <a href="javascript:void(0);">银川市</a>
+                            <a href="javascript:void(0);">榆林市</a>
+                            <a href="javascript:void(0);">伊春市</a>
+                            <a href="javascript:void(0);">阳泉市</a>
+                            <a href="javascript:void(0);">鹰潭市</a>
+                            <a href="javascript:void(0);">扬州市</a><br/>
+                            <a style="margin-left: -100px;" href="javascript:void(0);">雅安市</a>
+                            <a href="javascript:void(0);">运城市</a>
+                            <a href="javascript:void(0);">盐城市</a>
+                            <a href="javascript:void(0);">岳阳市</a>
+                            <a href="javascript:void(0);">宜宾市</a>
+                            <a href="javascript:void(0);">宜昌市</a>
+                            <a href="javascript:void(0);">延安市</a>
+                        </p>
+                        <!--Z-->
+                        <p id = "letter_Z">
+                            <span class="letter">Z</span>
+                            <a href="javascript:void(0);">中山市</a>
+                            <a href="javascript:void(0);">珠海市</a>
+                            <a href="javascript:void(0);">周口市</a>
+                            <a href="javascript:void(0);">驻马店市</a>
+                            <a href="javascript:void(0);">邵通市</a>
+                            <a href="javascript:void(0);">张家界市</a>
+                            <a href="javascript:void(0);">资阳市</a>
+                            <a href="javascript:void(0);">湛江市</a>
+                            <a href="javascript:void(0);">张家口市</a><br/>
+                            <a style="margin-left: -7px;" href="javascript:void(0);">遵义市</a>
+                            <a href="javascript:void(0);">肇庆市</a>
+                            <a href="javascript:void(0);">舟山市</a>
+                            <a href="javascript:void(0);">中卫市</a>
+                            <a href="javascript:void(0);">漳州市</a>
+                            <a href="javascript:void(0);">张掖市</a>
+                            <a href="javascript:void(0);">株洲市</a>
+                            <a href="javascript:void(0);">郑州市</a>
+                            <a href="javascript:void(0);">淄博市</a><br/>
+                            <a style="margin-left: -397px;" href="javascript:void(0);">枣庄市</a>
+                            <a href="javascript:void(0);">自贡市</a>
+                            <a href="javascript:void(0);">镇江市</a>
+                        </p>
+                    </div>
+                    <span id = "close_div_address">&times;</span>
+                </div>
+            </li>
+            <li style="color:red;font-family: 宋体;font-size: 13px;margin-left:600px;position:absolute;right:305px;">Hi,请&ensp;<a href="javascript:void(0);" style="color:red;">登录</a></li>
+            <li style="position:absolute;right:265px;"><a href="javascript:void(0);" id = "nav_ul_li_a_register">注册</a></li>
+            <li style="margin-left:20px;position: absolute;right:185px;"><img id = "nav_ul_li_img_order" src="img/nav_order.png" alt=""><a href="">我的订单</a></li>
+            <li style="margin-left:10px;height:28px;width:70px;padding: 2px;position: absolute;right:95px;">
+                    <a href="javascript:void(0);" id = "customer_service" style="margin-top:-1px;display: block">客户服务<img src="img/nav_ul_li_img_down.png" alt="" id = "customer_service_img"></a>
+                    <ul>
+                        <li><a href="#">包裹跟踪</a></li>
+                        <li><a href="#">在线退换货</a></li>
+                    </ul>
+                </li>
+            <li style="width:87px;height:42px;position: absolute;right:5px;" id = "company_service"><a href="javascript:void(0);">企业服务</a></li>
+        </ul>
+    </nav>
+
+    <!--头部搜索框、logo以及购物车部分-->
+    <div id = "head_container">
+        <ul>
+            <li id = "head_container_left">
+                <img id = "head_container_left_logo" src="img/head_container_logo.png" alt="logo">
+            </li>
+            <li id = "head_container_center">
+                <div id = "head_container_center_search">
+                    <input type="text" placeholder="清洁用品部分满199减100">
+                    <span></span>
+                </div>
+                <div id = "head_container_center_center">
+                    <a href="javascript:void(0);">床品套件</a>
+                    <a href="javascript:void(0);">格兰仕</a>
+                    <a href="javascript:void(0);">澳橙</a>
+                    <a href="javascript:void(0);">蜜柚</a>
+                    <a href="javascript:void(0);">手拉车</a>
+                    <a href="javascript:void(0);">收纳</a>
+                    <a href="javascript:void(0);">启赋3</a>
+                    <a href="javascript:void(0);">智能手表</a>
+                    <a href="javascript:void(0);">沐浴</a>
+                    <a href="javascript:void(0);">黑色酱油</a>
+                </div>
+                <div id = "head_container_center_bottom">
+                    <a href="javascript:void(0);">1号抢购</a>
+                    <a href="javascript:void(0);">1号团</a>
+                    <a href="javascript:void(0);">领券中心</a>
+                    <a href="javascript:void(0);">捡便宜</a>
+                    <a href="javascript:void(0);">全球进口</a>
+                    <a href="javascript:void(0);">1号生鲜</a>
+                    <a href="javascript:void(0);">美妆馆</a>
+                    <a href="javascript:void(0);">家居馆</a>
+                    <a href="javascript:void(0);">电器城</a>
+                </div>
+            </li>
+            <li id = "head_container_right">
+                <div id = "head_container_right_shopCar">
+                    <span>购物车</span>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <!--中间主体菜单轮播图部分-->
+    <div id = "body_center">
+        <div id = "body_center_container">
+            <ul id = "body_center_container_ul">
+                <!--全国进口-->
+                <li>
+                    <img src="img/全国进口_gray.png" alt="">
+                    <a href="javascript:void(0);">全国进口</a>
+                    <div>
+                        <!--乳品生鲜-->
+                        <p>
+                            <span>乳品生鲜 <img style="height:16px;width:16px;margin-bottom: -5px;" src="img/big.png" alt=""></span>
+                            <span class="body_center_container_ul_div_p_span">
+                                <a href="javascript:void(0);">牛奶</a>
+                                <a href="javascript:void(0);">成人奶粉</a>
+                                <a href="javascript:void(0);">酸奶</a>
+                                <a href="javascript:void(0);">豆奶</a>
+                                <a href="javascript:void(0);">奶酪</a>
+                                <a href="javascript:void(0);">黄油/奶油</a>
+                                <a href="javascript:void(0);">水果</a>
+                                <a href="javascript:void(0);">肉类</a>
+                                <a href="javascript:void(0);">海鲜</a>
+                            </span>
+                        </p>
+                        <!--饼干糕点-->
+                        <p>
+                            <span>饼干糕点 <img style="height:16px;width:16px;margin-bottom: -5px;" src="img/big.png" alt=""></span>
+                             <span class="body_center_container_ul_div_p_span">
+                                <a href="javascript:void(0);">饼干</a>
+                                <a href="javascript:void(0);">曲奇</a>
+                                <a href="javascript:void(0);">威化</a>
+                                <a href="javascript:void(0);">夹心饼干</a>
+                                <a href="javascript:void(0);">苏打饼干</a>
+                                <a href="javascript:void(0);">糕点</a>
+                            </span>
+                        </p>
+                        <!--酒水饮料-->
+                        <p>
+                            <span>酒水饮料 <img style="height:16px;width:16px;margin-bottom: -5px;" src="img/big.png" alt=""></span>
+                            <span class="body_center_container_ul_div_p_span">
+                                <a href="javascript:void(0);">葡萄酒</a>
+                                <a href="javascript:void(0);">啤酒</a>
+                                <a href="javascript:void(0);">洋酒</a>
+                                <a href="javascript:void(0);">起泡酒</a>
+                                <a href="javascript:void(0);">饮用水</a>
+                                <a href="javascript:void(0);">碳酸饮料</a>
+                                <a href="javascript:void(0);">果蔬汁</a>
+                                <a href="javascript:void(0);">咖啡</a>
+                                <a href="javascript:void(0);">果味饮料</a>
+                                <a href="javascript:void(0);">茶饮料</a>
+                            </span>
+                        </p>
+                        <!--休闲零食-->
+                        <p>
+                            <span>休闲零食 <img style="height:16px;width:16px;margin-bottom: -5px;" src="img/big.png" alt=""></span>
+                            <span class="body_center_container_ul_div_p_span">
+                                <a href="javascript:void(0);">坚果</a>
+                                <a href="javascript:void(0);">果干</a>
+                                <a href="javascript:void(0);">海苔</a>
+                                <a href="javascript:void(0);">膨化</a>
+                                <a href="javascript:void(0);">巧克力</a>
+                                <a href="javascript:void(0);">糖果</a>
+                                <a href="javascript:void(0);">果冻/布丁</a>
+                                <a href="javascript:void(0);">海味零食</a>
+                            </span>
+                        </p>
+                        <!--粮油调味-->
+                        <p>
+                            <span>粮油调味 <img style="height:16px;width:16px;margin-bottom: -5px;" src="img/big.png" alt=""></span>
+                            <span class="body_center_container_ul_div_p_span">
+                                <a href="javascript:void(0);">橄榄油</a>
+                                <a href="javascript:void(0);">大米 </a>
+                                <a href="javascript:void(0);">方便面</a>
+                                <a href="javascript:void(0);">罐头</a>
+                                <a href="javascript:void(0);">食用油</a>
+                            </span>
+                        </p>
+                        <!--茶冲咖啡-->
+                        <p>
+                            <span>茶冲咖啡 <img style="height:16px;width:16px;margin-bottom: -5px;" src="img/big.png" alt=""></span>
+                            <span class="body_center_container_ul_div_p_span">
+                                <a href="javascript:void(0);">速溶咖啡</a>
+                                <a href="javascript:void(0);">咖啡伴侣</a>
+                                <a href="javascript:void(0);">咖啡豆/粉</a>
+                                <a href="javascript:void(0);">白咖啡</a>
+                            </span>
+                        </p>
+                        <!--母婴玩具-->
+                        <p>
+                            <span>母婴玩具 <img style="height:16px;width:16px;margin-bottom: -5px;" src="img/big.png" alt=""></span>
+                            <span class="body_center_container_ul_div_p_span">
+                                <a href="javascript:void(0);">奶粉</a>
+                                <a href="javascript:void(0);">尿布湿巾</a>
+                                <a href="javascript:void(0);">洗护清洁</a>
+                                <a href="javascript:void(0);">哺育喂养</a>
+                                <a href="javascript:void(0);">童车童床</a>
+                                <a href="javascript:void(0);">辅食</a>
+                            </span>
+                        </p>
+                        <!-- 美妆个护-->
+                        <p>
+                            <span>美妆个护 <img style="height:16px;width:16px;margin-bottom: -5px;" src="img/big.png" alt=""></span>
+                            <span class="body_center_container_ul_div_p_span">
+                                <a href="javascript:void(0);">洁面卸妆</a>
+                                <a href="javascript:void(0);">面膜</a>
+                                <a href="javascript:void(0);">彩妆</a>
+                                <a href="javascript:void(0);">香水</a>
+                                <a href="javascript:void(0);">洗发</a>
+                                <a href="javascript:void(0);">护发套装</a>
+                                <a href="javascript:void(0);">沐浴</a>
+                                <a href="javascript:void(0);">洗手液</a>
+                                <a href="javascript:void(0);">牙膏牙刷</a>
+                                <a href="javascript:void(0);">漱口水</a>
+                            </span>
+                        </p>
+                        <!--家具清洁-->
+                        <p>
+                            <span>家具清洁 <img style="height:16px;width:16px;margin-bottom: -5px;" src="img/big.png" alt=""></span>
+                            <span class="body_center_container_ul_div_p_span">
+                                <a href="javascript:void(0);">水具</a>
+                                <a href="javascript:void(0);">锅具</a>
+                                <a href="javascript:void(0);">刀具</a>
+                                <a href="javascript:void(0);">乳胶枕</a>
+                                <a href="javascript:void(0);">宠物用品</a>
+                            </span>
+                        </p>
+                        <img src="img/全国进口_img.png" alt="">
+                    </div>
+                </li>
+                <!--食品-->
+                <li>
+                    <img src="img/食品_gray.png" alt="">
+                    <a href="javascript:void(0);">食品</a>/
+                    <a style="margin-left: -4px;" href="javascript:void(0);">酒</a>/
+                    <a style="margin-left: -4px;" href="javascript:void(0);">生鲜</a>
+                    <div>
+                        <!--休闲食品-->
+                        <p>
+                            <span>休闲食品 <img style="height:16px;width:16px;margin-bottom: -5px;" src="img/big.png" alt=""></span>
+                            <span class="body_center_container_ul_div_p_span">
+                                <a href="javascript:void(0);">坚果</a>
+                                <a href="javascript:void(0);">膨化食品</a>
+                                <a href="javascript:void(0);">糖果</a>
+                                <a href="javascript:void(0);">巧克力</a>
+                                <a href="javascript:void(0);">肉感肉铺</a>
+                                <a href="javascript:void(0);">海味零食</a>
+                                <a href="javascript:void(0);">蜜饯/枣类/果干</a>
+                                <a href="javascript:void(0);">布丁/果冻</a>
+                            </span>
+                        </p>
+                        <!--饼干糕点-->
+                        <p>
+                            <span>饼干糕点 <img style="height:16px;width:16px;margin-bottom: -5px;" src="img/big.png" alt=""></span>
+                             <span class="body_center_container_ul_div_p_span">
+                                <a href="javascript:void(0);">饼干</a>
+                                <a href="javascript:void(0);">曲奇</a>
+                                <a href="javascript:void(0);">威化</a>
+                                <a href="javascript:void(0);">西式糕点</a>
+                                <a href="javascript:void(0);">传统糕点</a>
+                            </span>
+                        </p>
+                        <!--酒水/饮料-->
+                        <p>
+                            <span>酒水/饮料 <img style="height:16px;width:16px;margin-bottom: -5px;" src="img/big.png" alt=""></span>
+                            <span class="body_center_container_ul_div_p_span">
+                                <a href="javascript:void(0);">白酒</a>
+                                <a href="javascript:void(0);">葡萄酒</a>
+                                <a href="javascript:void(0);">洋酒</a>
+                                <a href="javascript:void(0);">啤酒</a>
+                                <a href="javascript:void(0);">黄酒</a>
+                                <a href="javascript:void(0);">茶饮料</a>
+                                <a href="javascript:void(0);">功能饮料</a>
+                                <a href="javascript:void(0);">果汁</a>
+                                <a href="javascript:void(0);">碳酸饮料</a>
+                                <a href="javascript:void(0);">咖啡</a>
+                            </span>
+                        </p>
+                        <!--牛奶乳品-->
+                        <p>
+                            <span>牛奶乳品 <img style="height:16px;width:16px;margin-bottom: -5px;" src="img/big.png" alt=""></span>
+                            <span class="body_center_container_ul_div_p_span">
+                                <a href="javascript:void(0);">纯牛奶</a>
+                                <a href="javascript:void(0);">儿童奶</a>
+                                <a href="javascript:void(0);">酸奶</a>
+                                <a href="javascript:void(0);">豆奶</a>
+                                <a href="javascript:void(0);">羊奶</a>
+                            </span>
+                        </p>
+                        <!--茶冲咖啡-->
+                        <p>
+                            <span>茶冲咖啡 <img style="height:16px;width:16px;margin-bottom: -5px;" src="img/big.png" alt=""></span>
+                            <span class="body_center_container_ul_div_p_span">
+                                <a href="javascript:void(0);">麦片</a>
+                                <a href="javascript:void(0);">速溶咖啡 </a>
+                                <a href="javascript:void(0);">成人奶粉</a>
+                                <a href="javascript:void(0);">普洱茶</a>
+                                <a href="javascript:void(0);">绿茶</a>
+                            </span>
+                        </p>
+                        <!--粮油干货-->
+                        <p>
+                            <span>粮油干货 <img style="height:16px;width:16px;margin-bottom: -5px;" src="img/big.png" alt=""></span>
+                            <span class="body_center_container_ul_div_p_span">
+                                <a href="javascript:void(0);">食用油</a>
+                                <a href="javascript:void(0);">枸杞</a>
+                                <a href="javascript:void(0);">银耳</a>
+                                <a href="javascript:void(0);">桂圆</a>
+                            </span>
+                        </p>
+                        <!--方便速食-->
+                        <p>
+                            <span>方便速食 <img style="height:16px;width:16px;margin-bottom: -5px;" src="img/big.png" alt=""></span>
+                            <span class="body_center_container_ul_div_p_span">
+                                <a href="javascript:void(0);">罐头</a>
+                                <a href="javascript:void(0);">火腿肠</a>
+                                <a href="javascript:void(0);">年糕</a>
+                                <a href="javascript:void(0);">意大利面</a>
+                                <a href="javascript:void(0);">粽子</a>
+                                <a href="javascript:void(0);">腊制品</a>
+                            </span>
+                        </p>
+                        <!-- 厨房调味-->
+                        <p>
+                            <span>厨房调味 <img style="height:16px;width:16px;margin-bottom: -5px;" src="img/big.png" alt=""></span>
+                            <span class="body_center_container_ul_div_p_span">
+                                <a href="javascript:void(0);">糖</a>
+                                <a href="javascript:void(0);">调味料</a>
+                                <a href="javascript:void(0);">调味酱</a>
+                                <a href="javascript:void(0);">淀粉</a>
+                                <a href="javascript:void(0);">烘焙作料</a>
+                                <a href="javascript:void(0);">盐</a>
+                                <a href="javascript:void(0);">果酱</a>
+                                <a href="javascript:void(0);">料酒</a>
+                                <a href="javascript:void(0);">鸡精</a>
+                                <a href="javascript:void(0);">腐乳</a>
+                            </span>
+                        </p>
+                        <!--乳品速食-->
+                        <p>
+                            <span>乳品速食 <img style="height:16px;width:16px;margin-bottom: -5px;" src="img/big.png" alt=""></span>
+                            <span class="body_center_container_ul_div_p_span">
+                                <a href="javascript:void(0);">火锅食材</a>
+                                <a href="javascript:void(0);">冷冻蔬菜</a>
+                                <a href="javascript:void(0);">半成品</a>
+                                <a href="javascript:void(0);">冰激凌</a>
+                                <a href="javascript:void(0);">鲜奶</a>
+                            </span>
+                        </p>
+                        <img src="img/食品_img.png" alt="">
+                    </div>
+                </li>
+                <!--母婴-->
+                <li>
+                    <img src="img/母婴_gray.png" alt="">
+                    <a href="javascript:void(0);">母婴</a>/
+                    <a style="margin-left: -4px;" href="javascript:void(0);">玩具</a>/
+                    <a style="margin-left: -4px;" href="javascript:void(0);">童装</a>
+                    <div>
+                        <!--奶粉-->
+                        <p>
+                            <span>奶粉 <img style="height:16px;width:16px;margin-bottom: -5px;" src="img/big.png" alt=""></span>
+                            <span class="body_center_container_ul_div_p_span">
+                                <a href="javascript:void(0);">1段奶粉</a>
+                                <a href="javascript:void(0);">2段奶粉</a>
+                                <a href="javascript:void(0);">3段奶粉</a>
+                                <a href="javascript:void(0);">4段奶粉</a>
+                                <a href="javascript:void(0);">婴儿奶粉</a>
+                                <a href="javascript:void(0);">特殊配方奶粉</a>
+                                <a href="javascript:void(0);">牛奶粉</a>
+                            </span>
+                        </p>
+                        <!--婴幼食品-->
+                        <p>
+                            <span>婴幼食品 <img style="height:16px;width:16px;margin-bottom: -5px;" src="img/big.png" alt=""></span>
+                             <span class="body_center_container_ul_div_p_span">
+                                <a href="javascript:void(0);">米粉粥</a>
+                                <a href="javascript:void(0);">果蔬/肉泥</a>
+                                <a href="javascript:void(0);">面条</a>
+                                <a href="javascript:void(0);">饼干/磨牙棒</a>
+                                <a href="javascript:void(0);">肉松</a>
+                            </span>
+                        </p>
+                        <!--童装/童鞋-->
+                        <p>
+                            <span>童装/童鞋 <img style="height:16px;width:16px;margin-bottom: -5px;" src="img/big.png" alt=""></span>
+                            <span class="body_center_container_ul_div_p_span">
+                                <a href="javascript:void(0);">袜子</a>
+                                <a href="javascript:void(0);">家居服</a>
+                                <a href="javascript:void(0);">外套/大衣</a>
+                                <a href="javascript:void(0);">羽绒服</a>
+                                <a href="javascript:void(0);">连体衣/爬服</a>
+                                <a href="javascript:void(0);">裤子</a>
+                                <a href="javascript:void(0);">亲子装</a>
+                                <a href="javascript:void(0);">运动装</a>
+                            </span>
+                        </p>
+                        <!--尿布湿巾-->
+                        <p>
+                            <span>尿布湿巾 <img style="height:16px;width:16px;margin-bottom: -5px;" src="img/big.png" alt=""></span>
+                            <span class="body_center_container_ul_div_p_span">
+                                <a href="javascript:void(0);">纸尿裤</a>
+                                <a href="javascript:void(0);">拉拉裤</a>
+                                <a href="javascript:void(0);">婴儿湿巾</a>
+                                <a href="javascript:void(0);">成人纸尿裤</a>
+                                <a href="javascript:void(0);">NB</a>
+                            </span>
+                        </p>
+                        <!--妈妈专区-->
+                        <p>
+                            <span>妈妈专区 <img style="height:16px;width:16px;margin-bottom: -5px;" src="img/big.png" alt=""></span>
+                            <span class="body_center_container_ul_div_p_span">
+                                <a href="javascript:void(0);">妈咪包</a>
+                                <a href="javascript:void(0);">产后塑身 </a>
+                                <a href="javascript:void(0);">文胸</a>
+                                <a href="javascript:void(0);">防辐射服</a>
+                                <a href="javascript:void(0);">孕妈装</a>
+                            </span>
+                        </p>
+                        <!--宝宝服饰-->
+                        <p>
+                            <span>宝宝服饰 <img style="height:16px;width:16px;margin-bottom: -5px;" src="img/big.png" alt=""></span>
+                            <span class="body_center_container_ul_div_p_span">
+                                <a href="javascript:void(0);">婴儿外出服</a>
+                                <a href="javascript:void(0);">婴儿内衣</a>
+                                <a href="javascript:void(0);">婴儿礼盒</a>
+                                <a href="javascript:void(0);">婴儿鞋帽袜</a>
+                            </span>
+                        </p>
+                        <!--童车安全-->
+                        <p>
+                            <span>童车安全 <img style="height:16px;width:16px;margin-bottom: -5px;" src="img/big.png" alt=""></span>
+                            <span class="body_center_container_ul_div_p_span">
+                                <a href="javascript:void(0);">安全座椅</a>
+                                <a href="javascript:void(0);">婴儿手推车</a>
+                                <a href="javascript:void(0);">餐椅摇椅</a>
+                                <a href="javascript:void(0);">婴儿床</a>
+                                <a href="javascript:void(0);">学步车</a>
+                                <a href="javascript:void(0);">三轮车</a>
+                            </span>
+                        </p>
+                        <!-- 宝宝喂养-->
+                        <p>
+                            <span>宝宝喂养 <img style="height:16px;width:16px;margin-bottom: -5px;" src="img/big.png" alt=""></span>
+                            <span class="body_center_container_ul_div_p_span">
+                                <a href="javascript:void(0);">牙胶安抚</a>
+                                <a href="javascript:void(0);">水壶水具</a>
+                                <a href="javascript:void(0);">儿童礼盒</a>
+                                <a href="javascript:void(0);">吸奶器</a>
+                                <a href="javascript:void(0);">暖奶消毒</a>
+                                <a href="javascript:void(0);">奶瓶奶嘴</a>
+                                <a href="javascript:void(0);">奶瓶刷</a>
+                            </span>
+                        </p>
+                        <!--洗护清洁-->
+                        <p>
+                            <span>洗护清洁<img style="height:16px;width:16px;margin-bottom: -5px;" src="img/big.png" alt=""></span>
+                            <span class="body_center_container_ul_div_p_span">
+                                <a href="javascript:void(0);">宝宝护肤</a>
+                                <a href="javascript:void(0);">理发</a>
+                                <a href="javascript:void(0);">口腔清洗</a>
+                                <a href="javascript:void(0);">洗衣皂</a>
+                                <a href="javascript:void(0);">洗衣液</a>
+                            </span>
+                        </p>
+                        <img src="img/母婴_img.png" alt="">
+                    </div>
+                </li>
+               <!-- 厨卫清洁-->
+                <li>
+                    <img src="img/厨卫清洁_gray.png" alt="">
+                    <a href="javascript:void(0);">宠物</a>/
+                    <a style="margin-left: -4px;" href="javascript:void(0);">纸巾</a>/
+                    <a style="margin-left: -4px;" href="javascript:void(0);">厨卫清洁</a>
+                    <div>
+                        <!--宠物生活-->
+                        <p>
+                            <span>宠物生活<img style="height:16px;width:16px;margin-bottom: -5px;" src="img/big.png" alt=""></span>
+                            <span class="body_center_container_ul_div_p_span">
+                                <a href="javascript:void(0);">水族世界</a>
+                                <a href="javascript:void(0);">狗粮</a>
+                                <a href="javascript:void(0);">猫粮</a>
+                                <a href="javascript:void(0);">猫罐头</a>
+                                <a href="javascript:void(0);">医疗保健</a>
+                                <a href="javascript:void(0);">猫零食</a>
+                                <a href="javascript:void(0);">狗零食</a>
+                            </span>
+                        </p>
+                        <!--绿植园艺-->
+                        <p>
+                            <span>绿植园艺 <img style="height:16px;width:16px;margin-bottom: -5px;" src="img/big.png" alt=""></span>
+                             <span class="body_center_container_ul_div_p_span">
+                                <a href="javascript:void(0);">绿植盆栽</a>
+                                <a href="javascript:void(0);">多肉植物</a>
+                                <a href="javascript:void(0);">花卉</a>
+                                <a href="javascript:void(0);">苗木</a>
+                                <a href="javascript:void(0);">种子种球</a>
+                            </span>
+                        </p>
+                        <!--一次性-->
+                        <p>
+                            <span>一次性 <img style="height:16px;width:16px;margin-bottom: -5px;" src="img/big.png" alt=""></span>
+                            <span class="body_center_container_ul_div_p_span">
+                                <a href="javascript:void(0);">保鲜袋</a>
+                                <a href="javascript:void(0);">垃圾袋</a>
+                                <a href="javascript:void(0);">纸杯</a>
+                                <a href="javascript:void(0);">牙签</a>
+                                <a href="javascript:void(0);">密实袋</a>
+                                <a href="javascript:void(0);">一次性餐具</a>
+                            </span>
+                        </p>
+                        <!--纸品湿巾-->
+                        <p>
+                            <span>纸品湿巾 <img style="height:16px;width:16px;margin-bottom: -5px;" src="img/big.png" alt=""></span>
+                            <span class="body_center_container_ul_div_p_span">
+                                <a href="javascript:void(0);">厨房用纸</a>
+                                <a href="javascript:void(0);">平板用纸</a>
+                                <a href="javascript:void(0);">手帕纸</a>
+                                <a href="javascript:void(0);">湿巾</a>
+                                <a href="javascript:void(0);">卷筒纸</a>
+                            </span>
+                        </p>
+                        <!--家庭清洁-->
+                        <p>
+                            <span>家庭清洁 <img style="height:16px;width:16px;margin-bottom: -5px;" src="img/big.png" alt=""></span>
+                            <span class="body_center_container_ul_div_p_span">
+                                <a href="javascript:void(0);">洗洁精</a>
+                                <a href="javascript:void(0);">消毒液 </a>
+                                <a href="javascript:void(0);">油污清洁剂</a>
+                                <a href="javascript:void(0);">防臭</a>
+                                <a href="javascript:void(0);">地板清洁</a>
+                            </span>
+                        </p>
+                        <!--衣物清洁-->
+                        <p>
+                            <span>衣物清洁 <img style="height:16px;width:16px;margin-bottom: -5px;" src="img/big.png" alt=""></span>
+                            <span class="body_center_container_ul_div_p_span">
+                                <a href="javascript:void(0);">洗衣粉</a>
+                                <a href="javascript:void(0);">洗衣皂</a>
+                                <a href="javascript:void(0);">洗衣液</a>
+                                <a href="javascript:void(0);">柔顺剂</a>
+                            </span>
+                        </p>
+                        <!--清洁用具-->
+                        <p>
+                            <span>清洁用具 <img style="height:16px;width:16px;margin-bottom: -5px;" src="img/big.png" alt=""></span>
+                            <span class="body_center_container_ul_div_p_span">
+                                <a href="javascript:void(0);">钢丝球</a>
+                                <a href="javascript:void(0);">抹布百洁布</a>
+                                <a href="javascript:void(0);">除尘工具</a>
+                                <a href="javascript:void(0);">擦窗器</a>
+                                <a href="javascript:void(0);">拖把</a>
+                                <a href="javascript:void(0);">垃圾桶</a>
+                            </span>
+                        </p>
+                        <!-- 驱虫除湿-->
+                        <p>
+                            <span>驱虫除湿 <img style="height:16px;width:16px;margin-bottom: -5px;" src="img/big.png" alt=""></span>
+                            <span class="body_center_container_ul_div_p_span">
+                                <a href="javascript:void(0);">防毒防蛀</a>
+                                <a href="javascript:void(0);">樟脑丸</a>
+                                <a href="javascript:void(0);">空气清新</a>
+                            </span>
+                        </p>
+                        <!--皮具护理-->
+                        <p>
+                            <span>皮具护理<img style="height:16px;width:16px;margin-bottom: -5px;" src="img/big.png" alt=""></span>
+                            <span class="body_center_container_ul_div_p_span">
+                                <a href="javascript:void(0);">擦鞋油</a>
+                                <a href="javascript:void(0);">鞋刷</a>
+                                <a href="javascript:void(0);">鞋油</a>
+                            </span>
+                        </p>
+                        <img src="img/厨卫清洁_img.png" alt="">
+                    </div>
+                </li>
+                <!--家居-->
+                <li>
+                    <img src="img/家居_gray.png" alt="">
+                    <a href="javascript:void(0);">家居</a>/
+                    <a style="margin-left: -4px;" href="javascript:void(0);">家纺</a>/
+                    <a style="margin-left: -4px;" href="javascript:void(0);">家装</a>
+                    <div>
+                        <!--床上用品-->
+                        <p>
+                            <span>床上用品<img style="height:16px;width:16px;margin-bottom: -5px;" src="img/big.png" alt=""></span>
+                            <span class="body_center_container_ul_div_p_span">
+                                <a href="javascript:void(0);">电热毯</a>
+                                <a href="javascript:void(0);">床褥</a>
+                                <a href="javascript:void(0);">被子</a>
+                                <a href="javascript:void(0);">毯子</a>
+                            </span>
+                        </p>
+                        <!--家纺布艺-->
+                        <p>
+                            <span>家纺布艺 <img style="height:16px;width:16px;margin-bottom: -5px;" src="img/big.png" alt=""></span>
+                             <span class="body_center_container_ul_div_p_span">
+                                <a href="javascript:void(0);">马桶装</a>
+                                <a href="javascript:void(0);">毛巾湿巾</a>
+                                <a href="javascript:void(0);">沙发垫</a>
+                            </span>
+                        </p>
+                        <!--收纳洗晒-->
+                        <p>
+                            <span>收纳洗晒 <img style="height:16px;width:16px;margin-bottom: -5px;" src="img/big.png" alt=""></span>
+                            <span class="body_center_container_ul_div_p_span">
+                                <a href="javascript:void(0);">压缩袋</a>
+                                <a href="javascript:void(0);">鞋架</a>
+                                <a href="javascript:void(0);">收纳箱</a>
+                                <a href="javascript:void(0);">衣物收纳</a>
+                            </span>
+                        </p>
+                        <!--居家日用-->
+                        <p>
+                            <span>居家日用 <img style="height:16px;width:16px;margin-bottom: -5px;" src="img/big.png" alt=""></span>
+                            <span class="body_center_container_ul_div_p_span">
+                                <a href="javascript:void(0);">杯垫</a>
+                                <a href="javascript:void(0);">抽屉</a>
+                                <a href="javascript:void(0);">雨伞</a>
+                                <a href="javascript:void(0);">雨具</a>
+                                <a href="javascript:void(0);">驱虫</a>
+                            </span>
+                        </p>
+                        <!--家饰-->
+                        <p>
+                            <span>家饰 <img style="height:16px;width:16px;margin-bottom: -5px;" src="img/big.png" alt=""></span>
+                            <span class="body_center_container_ul_div_p_span">
+                                <a href="javascript:void(0);">相册</a>
+                                <a href="javascript:void(0);">相簿 </a>
+                            </span>
+                        </p>
+                        <!--餐具水具-->
+                        <p>
+                            <span>餐具水具 <img style="height:16px;width:16px;margin-bottom: -5px;" src="img/big.png" alt=""></span>
+                            <span class="body_center_container_ul_div_p_span">
+                                <a href="javascript:void(0);">筷子</a>
+                                <a href="javascript:void(0);">碗碟盘</a>
+                            </span>
+                        </p>
+                        <!--厨具锅具-->
+                        <p>
+                            <span>厨具锅具 <img style="height:16px;width:16px;margin-bottom: -5px;" src="img/big.png" alt=""></span>
+                            <span class="body_center_container_ul_div_p_span">
+                                <a href="javascript:void(0);">奶锅</a>
+                                <a href="javascript:void(0);">抹布百洁布</a>
+                                <a href="javascript:void(0);">除尘工具</a>
+                            </span>
+                        </p>
+                        <!-- 家具-->
+                        <p>
+                            <span>家具 <img style="height:16px;width:16px;margin-bottom: -5px;" src="img/big.png" alt=""></span>
+                            <span class="body_center_container_ul_div_p_span">
+                                <a href="javascript:void(0);">防毒防蛀</a>
+                                <a href="javascript:void(0);">樟脑丸</a>
+                                <a href="javascript:void(0);">空气清新</a>
+                            </span>
+                        </p>
+                        <!--家装建材-->
+                        <p>
+                            <span>家装建材<img style="height:16px;width:16px;margin-bottom: -5px;" src="img/big.png" alt=""></span>
+                            <span class="body_center_container_ul_div_p_span">
+                                <a href="javascript:void(0);">擦鞋油</a>
+                                <a href="javascript:void(0);">鞋刷</a>
+                                <a href="javascript:void(0);">鞋油</a>
+                            </span>
+                        </p>
+                        <img src="img/家居_img.png" alt="">
+                    </div>
+                </li>
+                <!--美妆-->
+                <li>
+                    <img src="img/美妆_gray.png" alt="">
+                    <a href="javascript:void(0);">美妆个人清洁</a>
+                    <div>
+                        <!--美妆护发-->
+                        <p>
+                            <span>美妆护发<img style="height:16px;width:16px;margin-bottom: -5px;" src="img/big.png" alt=""></span>
+                            <span class="body_center_container_ul_div_p_span">
+                                <a href="javascript:void(0);">电热毯</a>
+                                <a href="javascript:void(0);">床褥</a>
+                                <a href="javascript:void(0);">被子</a>
+                                <a href="javascript:void(0);">毯子</a>
+                            </span>
+                        </p>
+                        <!--面部护理-->
+                        <p>
+                            <span>面部护理 <img style="height:16px;width:16px;margin-bottom: -5px;" src="img/big.png" alt=""></span>
+                             <span class="body_center_container_ul_div_p_span">
+                                <a href="javascript:void(0);">马桶装</a>
+                                <a href="javascript:void(0);">毛巾湿巾</a>
+                                <a href="javascript:void(0);">沙发垫</a>
+                            </span>
+                        </p>
+                        <!--女性护理-->
+                        <p>
+                            <span>女性护理 <img style="height:16px;width:16px;margin-bottom: -5px;" src="img/big.png" alt=""></span>
+                            <span class="body_center_container_ul_div_p_span">
+                                <a href="javascript:void(0);">压缩袋</a>
+                                <a href="javascript:void(0);">鞋架</a>
+                                <a href="javascript:void(0);">收纳箱</a>
+                                <a href="javascript:void(0);">衣物收纳</a>
+                            </span>
+                        </p>
+                        <!--口腔护理-->
+                        <p>
+                            <span>口腔护理 <img style="height:16px;width:16px;margin-bottom: -5px;" src="img/big.png" alt=""></span>
+                            <span class="body_center_container_ul_div_p_span">
+                                <a href="javascript:void(0);">杯垫</a>
+                                <a href="javascript:void(0);">抽屉</a>
+                                <a href="javascript:void(0);">雨伞</a>
+                                <a href="javascript:void(0);">雨具</a>
+                                <a href="javascript:void(0);">驱虫</a>
+                            </span>
+                        </p>
+                        <!--沐浴清洁-->
+                        <p>
+                            <span>沐浴清洁 <img style="height:16px;width:16px;margin-bottom: -5px;" src="img/big.png" alt=""></span>
+                            <span class="body_center_container_ul_div_p_span">
+                                <a href="javascript:void(0);">相册</a>
+                                <a href="javascript:void(0);">相簿 </a>
+                            </span>
+                        </p>
+                        <!--身体护理-->
+                        <p>
+                            <span>身体护理<img style="height:16px;width:16px;margin-bottom: -5px;" src="img/big.png" alt=""></span>
+                            <span class="body_center_container_ul_div_p_span">
+                                <a href="javascript:void(0);">筷子</a>
+                                <a href="javascript:void(0);">碗碟盘</a>
+                            </span>
+                        </p>
+                        <!--男士护理-->
+                        <p>
+                            <span>男士护理 <img style="height:16px;width:16px;margin-bottom: -5px;" src="img/big.png" alt=""></span>
+                            <span class="body_center_container_ul_div_p_span">
+                                <a href="javascript:void(0);">奶锅</a>
+                                <a href="javascript:void(0);">抹布百洁布</a>
+                                <a href="javascript:void(0);">除尘工具</a>
+                            </span>
+                        </p>
+                        <!-- 缤纷彩妆-->
+                        <p>
+                            <span>缤纷彩妆 <img style="height:16px;width:16px;margin-bottom: -5px;" src="img/big.png" alt=""></span>
+                            <span class="body_center_container_ul_div_p_span">
+                                <a href="javascript:void(0);">防毒防蛀</a>
+                                <a href="javascript:void(0);">樟脑丸</a>
+                                <a href="javascript:void(0);">空气清新</a>
+                            </span>
+                        </p>
+                        <!--美容工具-->
+                        <p>
+                            <span>美容工具<img style="height:16px;width:16px;margin-bottom: -5px;" src="img/big.png" alt=""></span>
+                            <span class="body_center_container_ul_div_p_span">
+                                <a href="javascript:void(0);">擦鞋油</a>
+                                <a href="javascript:void(0);">鞋刷</a>
+                                <a href="javascript:void(0);">鞋油</a>
+                            </span>
+                        </p>
+                        <img src="img/美妆_img.png" alt="">
+                    </div>
+                </li>
+                <!--女装-->
+                <li>
+                    <img src="img/女装_gray.png" alt="">
+                    <a href="javascript:void(0);">女装</a>/
+                    <a style="margin-left: -4px;" href="javascript:void(0);">男装</a>/
+                    <a style="margin-left: -4px;" href="javascript:void(0);">内衣</a>/
+                    <a style="margin-left: -4px;" href="javascript:void(0);">珠宝</a>
+                    <div>
+                        <!--女装-->
+                        <p>
+                            <span>女装<img style="height:16px;width:16px;margin-bottom: -5px;" src="img/big.png" alt=""></span>
+                            <span class="body_center_container_ul_div_p_span">
+                                <a href="javascript:void(0);">电热毯</a>
+                                <a href="javascript:void(0);">床褥</a>
+                                <a href="javascript:void(0);">被子</a>
+                                <a href="javascript:void(0);">毯子</a>
+                            </span>
+                        </p>
+                        <!--男装-->
+                        <p>
+                            <span>男装 <img style="height:16px;width:16px;margin-bottom: -5px;" src="img/big.png" alt=""></span>
+                             <span class="body_center_container_ul_div_p_span">
+                                <a href="javascript:void(0);">马桶装</a>
+                                <a href="javascript:void(0);">毛巾湿巾</a>
+                                <a href="javascript:void(0);">沙发垫</a>
+                            </span>
+                        </p>
+                        <!--内衣内裤-->
+                        <p>
+                            <span>内衣内裤 <img style="height:16px;width:16px;margin-bottom: -5px;" src="img/big.png" alt=""></span>
+                            <span class="body_center_container_ul_div_p_span">
+                                <a href="javascript:void(0);">压缩袋</a>
+                                <a href="javascript:void(0);">鞋架</a>
+                                <a href="javascript:void(0);">收纳箱</a>
+                                <a href="javascript:void(0);">衣物收纳</a>
+                            </span>
+                        </p>
+                        <!--睡衣配件-->
+                        <p>
+                            <span>睡衣配件 <img style="height:16px;width:16px;margin-bottom: -5px;" src="img/big.png" alt=""></span>
+                            <span class="body_center_container_ul_div_p_span">
+                                <a href="javascript:void(0);">杯垫</a>
+                                <a href="javascript:void(0);">抽屉</a>
+                                <a href="javascript:void(0);">雨伞</a>
+                                <a href="javascript:void(0);">雨具</a>
+                                <a href="javascript:void(0);">驱虫</a>
+                            </span>
+                        </p>
+                        <!--珠宝饰品-->
+                        <p>
+                            <span>珠宝饰品 <img style="height:16px;width:16px;margin-bottom: -5px;" src="img/big.png" alt=""></span>
+                            <span class="body_center_container_ul_div_p_span">
+                                <a href="javascript:void(0);">相册</a>
+                                <a href="javascript:void(0);">相簿 </a>
+                            </span>
+                        </p>
+                        <!--钟表/眼镜-->
+                        <p>
+                            <span>钟表/眼镜<img style="height:16px;width:16px;margin-bottom: -5px;" src="img/big.png" alt=""></span>
+                            <span class="body_center_container_ul_div_p_span">
+                                <a href="javascript:void(0);">筷子</a>
+                                <a href="javascript:void(0);">碗碟盘</a>
+                            </span>
+                        </p>
+                        <img style="margin-top:-252px;" src="img/女装_img.png" alt="">
+                    </div>
+                </li>
+                <!--箱包-->
+                <li>
+                    <img src="img/箱包_gray.png" alt="">
+                    <a href="javascript:void(0);">鞋靴</a>/
+                    <a style="margin-left: -4px;" href="javascript:void(0);">箱包</a>/
+                    <a style="margin-left: -4px;" href="javascript:void(0);">运动户外</a>
+                    <div>
+                        <!--男鞋-->
+                        <p>
+                            <span>男鞋<img style="height:16px;width:16px;margin-bottom: -5px;" src="img/big.png" alt=""></span>
+                            <span class="body_center_container_ul_div_p_span">
+                                <a href="javascript:void(0);">电热毯</a>
+                                <a href="javascript:void(0);">床褥</a>
+                                <a href="javascript:void(0);">被子</a>
+                                <a href="javascript:void(0);">毯子</a>
+                            </span>
+                        </p>
+                        <!--女鞋-->
+                        <p>
+                            <span>女鞋 <img style="height:16px;width:16px;margin-bottom: -5px;" src="img/big.png" alt=""></span>
+                             <span class="body_center_container_ul_div_p_span">
+                                <a href="javascript:void(0);">马桶装</a>
+                                <a href="javascript:void(0);">毛巾湿巾</a>
+                                <a href="javascript:void(0);">沙发垫</a>
+                            </span>
+                        </p>
+                        <!--运动鞋服-->
+                        <p>
+                            <span>运动鞋服 <img style="height:16px;width:16px;margin-bottom: -5px;" src="img/big.png" alt=""></span>
+                            <span class="body_center_container_ul_div_p_span">
+                                <a href="javascript:void(0);">压缩袋</a>
+                                <a href="javascript:void(0);">鞋架</a>
+                                <a href="javascript:void(0);">收纳箱</a>
+                                <a href="javascript:void(0);">衣物收纳</a>
+                            </span>
+                        </p>
+                        <!--户外装备-->
+                        <p>
+                            <span>户外装备 <img style="height:16px;width:16px;margin-bottom: -5px;" src="img/big.png" alt=""></span>
+                            <span class="body_center_container_ul_div_p_span">
+                                <a href="javascript:void(0);">杯垫</a>
+                                <a href="javascript:void(0);">抽屉</a>
+                                <a href="javascript:void(0);">雨伞</a>
+                                <a href="javascript:void(0);">雨具</a>
+                                <a href="javascript:void(0);">驱虫</a>
+                            </span>
+                        </p>
+                        <!--健身球具-->
+                        <p>
+                            <span>健身球具 <img style="height:16px;width:16px;margin-bottom: -5px;" src="img/big.png" alt=""></span>
+                            <span class="body_center_container_ul_div_p_span">
+                                <a href="javascript:void(0);">相册</a>
+                                <a href="javascript:void(0);">相簿 </a>
+                            </span>
+                        </p>
+                        <!--女包-->
+                        <img style="margin-top:-212px;" src="img/箱包_img.png" alt="">
+                    </div>
+                </li>
+               <!-- 手机数码-->
+                <li>
+                    <img src="img/手机数码_gray.png" alt="">
+                    <a href="javascript:void(0);">手机</a>/
+                    <a style="margin-left: -4px;" href="javascript:void(0);">数码</a>/
+                    <a style="margin-left: -4px;" href="javascript:void(0);">电脑办公</a>
+                    <div>
+                        <!--手机-->
+                        <p>
+                            <span>手机<img style="height:16px;width:16px;margin-bottom: -5px;" src="img/big.png" alt=""></span>
+                            <span class="body_center_container_ul_div_p_span">
+                                <a href="javascript:void(0);">电热毯</a>
+                                <a href="javascript:void(0);">床褥</a>
+                                <a href="javascript:void(0);">被子</a>
+                                <a href="javascript:void(0);">毯子</a>
+                            </span>
+                        </p>
+                        <!--手机配件-->
+                        <p>
+                            <span>手机配件 <img style="height:16px;width:16px;margin-bottom: -5px;" src="img/big.png" alt=""></span>
+                             <span class="body_center_container_ul_div_p_span">
+                                <a href="javascript:void(0);">马桶装</a>
+                                <a href="javascript:void(0);">毛巾湿巾</a>
+                                <a href="javascript:void(0);">沙发垫</a>
+                            </span>
+                        </p>
+                        <!--摄影摄像-->
+                        <p>
+                            <span>摄影摄像 <img style="height:16px;width:16px;margin-bottom: -5px;" src="img/big.png" alt=""></span>
+                            <span class="body_center_container_ul_div_p_span">
+                                <a href="javascript:void(0);">压缩袋</a>
+                                <a href="javascript:void(0);">鞋架</a>
+                                <a href="javascript:void(0);">收纳箱</a>
+                                <a href="javascript:void(0);">衣物收纳</a>
+                            </span>
+                        </p>
+                        <!--影音电教-->
+                        <p>
+                            <span>影音电教 <img style="height:16px;width:16px;margin-bottom: -5px;" src="img/big.png" alt=""></span>
+                            <span class="body_center_container_ul_div_p_span">
+                                <a href="javascript:void(0);">杯垫</a>
+                                <a href="javascript:void(0);">抽屉</a>
+                                <a href="javascript:void(0);">雨伞</a>
+                                <a href="javascript:void(0);">雨具</a>
+                                <a href="javascript:void(0);">驱虫</a>
+                            </span>
+                        </p>
+                        <!--智能设备-->
+                        <p>
+                            <span>智能设备 <img style="height:16px;width:16px;margin-bottom: -5px;" src="img/big.png" alt=""></span>
+                            <span class="body_center_container_ul_div_p_span">
+                                <a href="javascript:void(0);">相册</a>
+                                <a href="javascript:void(0);">相簿 </a>
+                            </span>
+                        </p>
+                        <img style="margin-top:-212px;" src="img/手机数码_img.png" alt="">
+                    </div>
+                </li>
+                <!--家用电器-->
+                <li>
+                    <img src="img/家用电器_gray.png" alt="">
+                     <a href="javascript:void(0);">家用电器</a>/
+                     <a style="margin-left: -4px;" href="javascript:void(0);">汽车用品</a>
+                    <div>
+                        <!--厨房小电-->
+                        <p>
+                            <span>厨房小电<img style="height:16px;width:16px;margin-bottom: -5px;" src="img/big.png" alt=""></span>
+                            <span class="body_center_container_ul_div_p_span">
+                                <a href="javascript:void(0);">电热毯</a>
+                                <a href="javascript:void(0);">床褥</a>
+                                <a href="javascript:void(0);">被子</a>
+                                <a href="javascript:void(0);">毯子</a>
+                            </span>
+                        </p>
+                        <!--生活电器-->
+                        <p>
+                            <span>生活电器 <img style="height:16px;width:16px;margin-bottom: -5px;" src="img/big.png" alt=""></span>
+                             <span class="body_center_container_ul_div_p_span">
+                                <a href="javascript:void(0);">马桶装</a>
+                                <a href="javascript:void(0);">毛巾湿巾</a>
+                                <a href="javascript:void(0);">沙发垫</a>
+                            </span>
+                        </p>
+                        <!--个护健康-->
+                        <p>
+                            <span>个护健康 <img style="height:16px;width:16px;margin-bottom: -5px;" src="img/big.png" alt=""></span>
+                            <span class="body_center_container_ul_div_p_span">
+                                <a href="javascript:void(0);">压缩袋</a>
+                                <a href="javascript:void(0);">鞋架</a>
+                                <a href="javascript:void(0);">收纳箱</a>
+                                <a href="javascript:void(0);">衣物收纳</a>
+                            </span>
+                        </p>
+                        <!--电视空调-->
+                        <p>
+                            <span>电视空调 <img style="height:16px;width:16px;margin-bottom: -5px;" src="img/big.png" alt=""></span>
+                            <span class="body_center_container_ul_div_p_span">
+                                <a href="javascript:void(0);">杯垫</a>
+                                <a href="javascript:void(0);">抽屉</a>
+                                <a href="javascript:void(0);">雨伞</a>
+                                <a href="javascript:void(0);">雨具</a>
+                                <a href="javascript:void(0);">驱虫</a>
+                            </span>
+                        </p>
+                        <!--厨卫大电-->
+                        <p>
+                            <span>厨卫大电 <img style="height:16px;width:16px;margin-bottom: -5px;" src="img/big.png" alt=""></span>
+                            <span class="body_center_container_ul_div_p_span">
+                                <a href="javascript:void(0);">相册</a>
+                                <a href="javascript:void(0);">相簿 </a>
+                            </span>
+                        </p>
+                        <img style="margin-top:-212px;" src="img/家用电器_img.png" alt="">
+                    </div>
+                </li>
+                <!--医药保健-->
+                <li>
+                    <img src="img/医药保健_gray.png" alt="">
+                    <a href="javascript:void(0);">医药</a>/
+                    <a style="margin-left: -4px;" href="javascript:void(0);">保健滋补</a>/
+                    <a style="margin-left: -4px;" href="javascript:void(0);">成人</a>
+                    <div>
+                        <!--营养健康-->
+                        <p>
+                            <span>营养健康<img style="height:16px;width:16px;margin-bottom: -5px;" src="img/big.png" alt=""></span>
+                            <span class="body_center_container_ul_div_p_span">
+                                <a href="javascript:void(0);">电热毯</a>
+                                <a href="javascript:void(0);">床褥</a>
+                                <a href="javascript:void(0);">被子</a>
+                                <a href="javascript:void(0);">毯子</a>
+                            </span>
+                        </p>
+                        <!--营养成分-->
+                        <p>
+                            <span>营养成分 <img style="height:16px;width:16px;margin-bottom: -5px;" src="img/big.png" alt=""></span>
+                             <span class="body_center_container_ul_div_p_span">
+                                <a href="javascript:void(0);">马桶装</a>
+                                <a href="javascript:void(0);">毛巾湿巾</a>
+                                <a href="javascript:void(0);">沙发垫</a>
+                            </span>
+                        </p>
+                        <!--传统滋补-->
+                        <p>
+                            <span>传统滋补 <img style="height:16px;width:16px;margin-bottom: -5px;" src="img/big.png" alt=""></span>
+                            <span class="body_center_container_ul_div_p_span">
+                                <a href="javascript:void(0);">压缩袋</a>
+                                <a href="javascript:void(0);">鞋架</a>
+                                <a href="javascript:void(0);">收纳箱</a>
+                                <a href="javascript:void(0);">衣物收纳</a>
+                            </span>
+                        </p>
+                        <!--成人用品-->
+                        <p>
+                            <span>成人用品 <img style="height:16px;width:16px;margin-bottom: -5px;" src="img/big.png" alt=""></span>
+                            <span class="body_center_container_ul_div_p_span">
+                                <a href="javascript:void(0);">杯垫</a>
+                                <a href="javascript:void(0);">抽屉</a>
+                                <a href="javascript:void(0);">雨伞</a>
+                                <a href="javascript:void(0);">雨具</a>
+                                <a href="javascript:void(0);">驱虫</a>
+                            </span>
+                        </p>
+                        <!--家用电器-->
+                        <p>
+                            <span>家用电器 <img style="height:16px;width:16px;margin-bottom: -5px;" src="img/big.png" alt=""></span>
+                            <span class="body_center_container_ul_div_p_span">
+                                <a href="javascript:void(0);">相册</a>
+                                <a href="javascript:void(0);">相簿 </a>
+                            </span>
+                        </p>
+                        <img style="margin-top:-212px;" src="img/医药保健_img.png" alt="">
+                    </div>
+                </li>
+                <li>
+                    <img src="img/图书_gray.png" alt="">
+                     <a href="javascript:void(0);">图书</a>
+                    <div>
+                        <!--少儿-->
+                        <p>
+                            <span>少儿<img style="height:16px;width:16px;margin-bottom: -5px;" src="img/big.png" alt=""></span>
+                            <span class="body_center_container_ul_div_p_span">
+                                <a href="javascript:void(0);">电热毯</a>
+                                <a href="javascript:void(0);">床褥</a>
+                                <a href="javascript:void(0);">被子</a>
+                                <a href="javascript:void(0);">毯子</a>
+                            </span>
+                        </p>
+                        <!--教育-->
+                        <p>
+                            <span>教育 <img style="height:16px;width:16px;margin-bottom: -5px;" src="img/big.png" alt=""></span>
+                             <span class="body_center_container_ul_div_p_span">
+                                <a href="javascript:void(0);">马桶装</a>
+                                <a href="javascript:void(0);">毛巾湿巾</a>
+                                <a href="javascript:void(0);">沙发垫</a>
+                            </span>
+                        </p>
+                        <!--文艺-->
+                        <p>
+                            <span>文艺 <img style="height:16px;width:16px;margin-bottom: -5px;" src="img/big.png" alt=""></span>
+                            <span class="body_center_container_ul_div_p_span">
+                                <a href="javascript:void(0);">压缩袋</a>
+                                <a href="javascript:void(0);">鞋架</a>
+                                <a href="javascript:void(0);">收纳箱</a>
+                                <a href="javascript:void(0);">衣物收纳</a>
+                            </span>
+                        </p>
+                        <!--经管励志-->
+                        <p>
+                            <span>经管励志 <img style="height:16px;width:16px;margin-bottom: -5px;" src="img/big.png" alt=""></span>
+                            <span class="body_center_container_ul_div_p_span">
+                                <a href="javascript:void(0);">杯垫</a>
+                                <a href="javascript:void(0);">抽屉</a>
+                                <a href="javascript:void(0);">雨伞</a>
+                                <a href="javascript:void(0);">雨具</a>
+                                <a href="javascript:void(0);">驱虫</a>
+                            </span>
+                        </p>
+                        <!--科技-->
+                        <p>
+                            <span>科技 <img style="height:16px;width:16px;margin-bottom: -5px;" src="img/big.png" alt=""></span>
+                            <span class="body_center_container_ul_div_p_span">
+                                <a href="javascript:void(0);">相册</a>
+                                <a href="javascript:void(0);">相簿 </a>
+                            </span>
+                        </p>
+                        <img style="margin-top:-212px;" src="img/图书_img.png" alt="">
+                    </div>
+                </li>
+            </ul>
+            <!--这里是轮播图部分-->
+            <div id="slide">
+                <div onmouseover="stopImg()" onmouseout="startImg()">
+                    <img src="img/slider_pic1.jpg" style="opacity: 1">
+                    <img src="img/slider_pic2.jpg">
+                    <img src="img/slider_pic3.jpg">
+                    <img src="img/slider_pic4.jpg">
+                    <img src="img/slider_pic5.jpg">
+                    <img src="img/slider_pic6.jpg">
+                    <img src="img/slider_pic7.jpg">
+                    <img src="img/slider_pic8.jpg">
+                    <ul>
+                        <li onmouseover="backColor(0)" style="background: red"></li>
+                        <li onmouseover="backColor(1)"></li>
+                        <li onmouseover="backColor(2)"></li>
+                        <li onmouseover="backColor(3)"></li>
+                        <li onmouseover="backColor(4)"></li>
+                        <li onmouseover="backColor(5)"></li>
+                        <li onmouseover="backColor(6)"></li>
+                        <li onmouseover="backColor(7)"></li>
+                    </ul>
+                    <a href="javascript:void(0)" class="aLeft" onclick="arrow('L')"><</a>
+                    <a href="javascript:void(0)" class="aRight" onclick="arrow('R')">></a>
+                </div>
+            </div>
+            <!--这里是登录注册部分-->
+            <div id="login_register">
+                <div></div>
+                <img style="width:100%;height:100%" src="img/vip_bg2.png" alt="">
+                <p>Hi~你好!</p>
+                <span class="login_register" style="position: absolute;top:90px;left:30px;">登录</span>
+                <span class="login_register" style="position: absolute;top:90px;left:130px;">注册</span>
+                <a href="javascript:void(0);" style="position: absolute;top:150px;left:10px;"><span style="color:red;">【优选】</span>超贴心的圣诞送礼手册</a>
+                <a href="javascript:void(0);" style="position: absolute;top:180px;left:10px;"><span>【优选】</span>暖心暖炊，冬日陪伴</a>
+                <a href="javascript:void(0);" style="position: absolute;top:210px;left:10px;"><span>【优选】</span>冬日抗霾指南</a>
+            </div>
+        </div>
+    </div>
+
+    <!--下面是倒计时部分-->
+    <div id = "countDown">
+        <div id = "countDown_container">
+            <ul>
+                <li style="width:205px;">
+                    <img style="width:100%;height:100%" src="img/1号抢购.png" alt="">
+                    <span style="font-family: 华文中宋;font-size: 16px;position: absolute;top:45px;left:65px;display: inline-block;">本场剩余</span><br/>
+                    <span id = "hour" class="countDown_container_ul_li_time" style="position: absolute;top:75px;left:35px;">00</span><b style="display:block;position:absolute;top:70px;left:75px;height:34px;line-height: 34px;">:</b><span id = "min" class="countDown_container_ul_li_time" style="position:absolute;top:75px;left:85px;">00</span><b style="display:block;position:absolute;top:70px;left:125px;height:34px;line-height: 34px;float:left;">:</b><span id = "sec" class="countDown_container_ul_li_time" style="position:absolute;top:75px;left:135px;">00</span>
+                    <a style="position: absolute;top:110px;left:-3px;" href="javascript:void(0);" id = "countDown_container_ul_li_a">查看更多 &gt;</a>
+                </li>
+                <li style="border-right:1px dotted rgba(0,0,0,0.2) ;">
+                    <div>
+                        <span class="countDown_container_ul_li_div_title">【限Plus会员抢购】乐高 幻影</span><br/>
+                        <span class="countDown_container_ul_li_div_money">¥49</span><br/>
+                        <span class="countDown_container_ul_li_div_refMoney">参考价:¥49</span>
+                    </div>
+                    <div>
+                        <img src="img/countDown_乐高幻影.jpg" alt="">
+                        <span class="countDown_container_ul_li_div_span">已售100%</span>
+                    </div>
+                </li>
+                <li style="border-right:1px dotted rgba(0,0,0,0.2) ;">
+                    <div>
+                        <span class="countDown_container_ul_li_div_title">金龙鱼 食用油原料欧洲进口</span><br/>
+                        <span class="countDown_container_ul_li_div_money">¥47.9</span><br/>
+                        <span class="countDown_container_ul_li_div_refMoney">参考价:¥59.9</span>
+                    </div>
+                    <div>
+                        <img src="img/countDown_食用油.jpg" alt="">
+                        <span class="countDown_container_ul_li_div_span">已售0%</span>
+                    </div>
+                </li>
+                <li style="border-right:1px solid rgba(0,0,0,0.2) ;">
+                    <div>
+                        <span class="countDown_container_ul_li_div_title">三只松鼠 零食特产干果礼盒</span><br/>
+                        <span class="countDown_container_ul_li_div_money">¥166</span><br/>
+                        <span class="countDown_container_ul_li_div_refMoney">参考价:¥188</span>
+                    </div>
+                    <div>
+                        <img src="img/countDown_三只松鼠果干.jpg" alt="">
+                        <span class="countDown_container_ul_li_div_span">已售0%</span>
+                    </div>
+                </li>
+                <li style="border-right:1px solid rgba(0,0,0,0.2) ;">
+                    <div>
+                        <span class="countDown_container_ul_li_div_title">金龙鱼 苏北米软香稻大米 5kg</span><br/>
+                        <span class="countDown_container_ul_li_div_money">¥27.9</span><br/>
+                        <span class="countDown_container_ul_li_div_refMoney">参考价:¥33.9</span>
+                    </div>
+                    <div>
+                        <img src="img/countDown_金龙鱼.jpg" alt="">
+                        <span class="countDown_container_ul_li_div_span">已售0%</span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!--下面制作吸顶式导航条-->
+    <div id = "topSuction_nav">
+        <img src="img/吸顶式导航条_logo.jpg" alt="">
+        <div>
+            <input type="text" placeholder="圣诞精选 低至5折">
+            <span></span>
+        </div>
+    </div>
+
+    <!--下面是1号选购、团购、排行版部分-->
+    <div id = "firstShopping">
+        <div id = "firstShopping_container">
+            <!--1号选购图片-->
+            <ul style="border:none;height: 402px;width:268px;;margin-left: 0">
+                <li>
+                <img style="height: 402px;width:268px;" src="img/1号闪购.jpg" alt="">
+                <p>
+                    <span style="margin:19px 0 5px 62px;font-size: 18px;display: inline-block;font-family: 华文中宋">1号闪购</span>
+                    <span style="margin:0 0 5px 78px;font-size: 16px;display: inline-block;font-family: 华文中宋">-----</span>
+                    <span style="margin:0 0 5px 48px;font-size: 16px;display: inline-block;font-family: 华文中宋">每日10:00上新</span>
+                </p>
+                </li>
+            </ul>
+            <!--团购-->
+            <ul>
+                <li class="firstShopping_container_ul_li_title" style="background: #f96233;">
+                        <img src="img/团购.png" alt="">
+                        <span>团购</span>
+                    <i style="left:-4px;border-bottom: 3px solid #d5063d;border-right: 3px solid #d5063d;"></i>
+                    <i style="right:-4px;border-bottom: 3px solid #d5063d;border-left: 3px solid #d5063d;;"></i>
+                </li>
+                <li style="height:362px;width:251px;border-right: 1px solid rgba(0,0,0,0.2);margin-top:40px;position: absolute">
+                    <img style="height:362px;width:251px;" src="img/团购_洁柔.jpg" alt="">
+                </li>
+                <!--量版团-->
+                <li id = "firstShopping_container_ul_li_group">
+                    <span style="display:inline-block;color:red;font-size: 18px;margin:15px 0 0 15px;">量版团</span><br/>
+                    <span style="display:inline-block;font-family: 华文中宋;font-size: 14px;color:rgba(0,0,0,0.8);margin:15px 0 0 15px;">限时直降</span>
+                    <img src="img/团购_酒.jpg" alt="">
+                </li>
+                <!--休闲零食-->
+                <li id = "firstShopping_container_ul_li_food">
+                    <span style="display:inline-block;color:red;font-size: 18px;margin:15px 0 0 15px;">休闲零食</span><br/>
+                    <span style="display:inline-block;font-family: 华文中宋;font-size: 14px;color:rgba(0,0,0,0.8);margin:15px 0 0 15px;">甜蜜圣诞节</span>
+                    <img src="img/团购_休闲零食.jpg" alt="">
+                </li>
+            </ul>
+            <!--排行版-->
+            <ul id = "firstShopping_container_ranking">
+                <li class="firstShopping_container_ul_li_title" style="background: #f12e31;">
+                    <img src="img/排行榜.png" alt="">
+                    <span>排行榜</span>
+                    <i style="left:-4px;border-bottom: 3px solid #d5063d;border-right: 3px solid #d5063d;"></i>
+                    <i style="right:-4px;border-bottom: 3px solid #d5063d;border-left: 3px solid #d5063d;;"></i>
+                </li>
+                <a href="javascript:void(0);">查看更多></a>
+                <li id = "firstShopping_container_ranking_tab" style="border-bottom: 1px solid rgba(0,0,0,0.3);width:415px;margin-left:20px;margin-top:44px;">
+                    <a style="border-bottom: 1px solid red;" onmouseover="showTab(0);" href="javascript:void(0);">粮油调味</a>
+                    <a onmouseover="showTab(1);" href="javascript:void(0);">进口食品</a>
+                    <a onmouseover="showTab(2);" href="javascript:void(0);">休闲食品</a>
+                    <a onmouseover="showTab(3);" href="javascript:void(0);">饮料冲调</a>
+                    <a onmouseover="showTab(4);" href="javascript:void(0);">清洁用品</a>
+                    <!--粮油调味-->
+                    <div style="display: block;">
+                        <p>
+                            <img src="img/排行榜_粮油调味_新疆特产.jpg" alt="">
+                            <i>0.8折</i>
+                            <a href = "javascript:void(0);">南稻北麦&ensp;新疆特产</a>
+                        </p>
+                        <p>
+                            <img src="img/排行榜_粮油调味_十谷米.jpg" alt="">
+                            <i>1.4折</i>
+                            <a href = "javascript:void(0);">北纯&ensp;十谷米</a>
+                        </p>
+                        <p>
+                            <img src="img/排行榜_粮油调味_玉米.jpg" alt="">
+                            <i>2.6折</i>
+                            <a href = "javascript:void(0);">美农美季&ensp;玉米糁苞</a>
+                        </p>
+                        <p>
+                            <img src="img/排行榜_粮油调味_薏米.jpg" alt="">
+                            <i>2.6折</i>
+                            <a href = "javascript:void(0);">乐食麦&ensp;薏仁米&ensp;无</a>
+                        </p>
+                        <p>
+                            <img src="img/排行榜_粮油调味_小米.jpg" alt="">
+                            <i>2.6折</i>
+                            <a href = "javascript:void(0);">黑土小镇&ensp;小米</a>
+                        </p>
+                        <p>
+                            <img src="img/排行榜_粮油调味_黑米.jpg" alt="">
+                            <i>2.7折</i>
+                            <a href = "javascript:void(0);">十月稻米&ensp;黑米</a>
+                        </p>
+                    </div>
+                    <!--进口食品-->
+                    <div>
+                        <p>
+                            <img src="img/排行榜_进口食品_巧克力.jpg" alt="">
+                            <i>2.3折</i>
+                            <a href = "javascript:void(0);">费列罗进口巧克力</a>
+                        </p>
+                        <p>
+                            <img src="img/排行榜_进口食品_NFC果.jpg" alt="">
+                            <i>3.3折</i>
+                            <a href = "javascript:void(0);">西班牙进口&ensp;NFC果</a>
+                        </p>
+                        <p>
+                            <img src="img/排行榜_进口食品_酸奶.jpg" alt="">
+                            <i>3.6折</i>
+                            <a href = "javascript:void(0);">德国进口酸奶&ensp;德亚</a>
+                        </p>
+                        <p>
+                            <img src="img/排行榜_进口食品_三特.jpg" alt="">
+                            <i>3.8折</i>
+                            <a href = "javascript:void(0);">波兰进口&ensp;三特</a>
+                        </p>
+                        <p>
+                            <img src="img/排行榜_进口食品_速溶咖啡.jpg" alt="">
+                            <i>4.3折</i>
+                            <a href = "javascript:void(0);">马来西亚咖啡速溶</a>
+                        </p>
+                        <p>
+                            <img src="img/排行榜_进口食品_牛奶.jpg" alt="">
+                            <i>4.4折</i>
+                            <a href = "javascript:void(0);">德国&ensp;进口牛奶&ensp;欧</a>
+                        </p>
+                    </div>
+                    <!--休闲食品-->
+                    <div>
+                        <p>
+                            <img src="img/排行榜_休闲食品_每日坚果.jpg" alt="">
+                            <i>1.1折</i>
+                            <a href = "javascript:void(0);">恰恰&ensp;每日坚果&ensp;8种</a>
+                        </p>
+                        <p>
+                            <img src="img/排行榜_休闲食品_兰花豆.jpg" alt="">
+                            <i>3.4折</i>
+                            <a href = "javascript:void(0);">口水娃&ensp;兰花豆&ensp;香</a>
+                        </p>
+                        <p>
+                            <img src="img/排行榜_休闲食品_酥脆.jpg" alt="">
+                            <i>3.5折</i>
+                            <a href = "javascript:void(0);">嘉友&ensp;嘴寂寞&ensp;酥脆</a>
+                        </p>
+                        <p>
+                            <img src="img/排行榜_休闲食品_休闲小零食.jpg" alt="">
+                            <i>3.7折</i>
+                            <a href = "javascript:void(0);">善味阁&ensp;休闲零食小</a>
+                        </p>
+                        <p>
+                            <img src="img/排行榜_休闲食品_休闲肉铺.jpg" alt="">
+                            <i>4.6折</i>
+                            <a href = "javascript:void(0);">科尔沁&ensp;休闲肉脯零</a>
+                        </p>
+                        <p>
+                            <img src="img/排行榜_休闲食品_鸭卤.jpg" alt="">
+                            <i>4.6折</i>
+                            <a href = "javascript:void(0);">善味阁&ensp;线路鸭屯鸭</a>
+                        </p>
+                    </div>
+                    <!--饮料冲调-->
+                    <div>
+                        <p>
+                            <img src="img/排行榜_饮料冲调_家乐氏.jpg" alt="">
+                            <i>0.6折</i>
+                            <a href = "javascript:void(0);">家乐氏(Kellogg's)</a>
+                        </p>
+                        <p>
+                            <img src="img/排行榜_饮料冲调_南瓜玉米糊.jpg" alt="">
+                            <i>2.9折</i>
+                            <a href = "javascript:void(0);">正香源&ensp;南瓜玉米糊</a>
+                        </p>
+                        <p>
+                            <img src="img/排行榜_饮料冲调_豆香.jpg" alt="">
+                            <i>4.3折</i>
+                            <a href = "javascript:void(0);">豆香韵&ensp;芈月传版</a>
+                        </p>
+                        <p>
+                            <img src="img/排行榜_饮料冲调_东北黑锋.jpg" alt="">
+                            <i>4.5折</i>
+                            <a href = "javascript:void(0);">东大荒&ensp;东北黑锋</a>
+                        </p>
+                        <p>
+                            <img src="img/排行榜_饮料冲调_运动饮料.jpg" alt="">
+                            <i>4.6折</i>
+                            <a href = "javascript:void(0);">日加满力运动饮</a>
+                        </p>
+                        <p>
+                            <img src="img/排行榜_饮料冲调_甜味奶.jpg" alt="">
+                            <i>4.6折</i>
+                            <a href = "javascript:void(0);">金健&ensp;霍斯坦甜味奶</a>
+                        </p>
+                    </div>
+                    <!--清洁用品-->
+                    <div>
+                        <p>
+                            <img src="img/排行榜_清洁用品_餐巾纸.jpg" alt="">
+                            <i>2.6折</i>
+                            <a href = "javascript:void(0);">洁柔手帕餐巾纸</a>
+                        </p>
+                        <p>
+                            <img src="img/排行榜_清洁用品_红贝缇.jpg" alt="">
+                            <i>2.8折</i>
+                            <a href = "javascript:void(0);">红贝缇(foretty)</a>
+                        </p>
+                        <p>
+                            <img src="img/排行榜_清洁用品_爱格.jpg" alt="">
+                            <i>3.4折</i>
+                            <a href = "javascript:void(0);">爱格(aige)爱格</a>
+                        </p>
+                        <p>
+                            <img src="img/排行榜_清洁用品_澳格菲.jpg" alt="">
+                            <i>3.5折</i>
+                            <a href = "javascript:void(0);">澳格菲</a>
+                        </p>
+                        <p>
+                            <img src="img/排行榜_清洁用品_拖把.jpg" alt="">
+                            <i>3.5折</i>
+                            <a href = "javascript:void(0);">谷雷诺斯&ensp;拖把&ensp;胶</a>
+                        </p>
+                        <p>
+                            <img src="img/排行榜_清洁用品_抽纸.jpg" alt="">
+                            <i>3.6折</i>
+                            <a href = "javascript:void(0);">韵能本色&ensp;本色抽纸</a>
+                        </p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!--下面是全国进口部分-->
+    <div id="global_import" class = "floor">
+        <p style="margin-top: -20px;height:40px;">
+            <span style="display:inline-block;font-family: 华文中宋;font-size:18px;height:30px;line-height: 30px;">全球进口</span>
+            <img src="img/全国进口_大于号图标.png" alt="">
+        </p>
+        <div id="global_import_1">
+            <img src="img/全国进口_左1.jpg">
+            <ul>
+                <li><a href="">进口饼干</a></li>
+                <li><a href="">进口坚果</a></li>
+                <li><a href="">进口糖巧</a></li>
+                <li><a href="">进口咖啡</a></li>
+                <li><a href="">进口水饮</a></li>
+                <li><a href="">进口方便面</a></li>
+            </ul>
+        </div>
+        <div id="global_import_2">
+            <div id="global_import_2_1">
+                <div>
+                    <img src="img/全国进口_冬日送好礼.jpg">
+                </div>
+            </div>
+            <div>
+                <div>
+                    <span>进口休闲零食<br/><span>满99元减50</span></span>
+                    <img src="img/全国进口_进口休闲零食.jpg">
+                </div>
+            </div>
+            <div>
+                <div>
+                    <span>进口粮油<br/><span>满99元减50</span></span>
+                    <img src="img/全国进口_进口粮油.jpg">
+                </div>
+            </div>
+            <div>
+                <div>
+                    <span>雀巢芭喜巧克力<br/><span>满99元减50</span></span>
+                    <img src="img/全国进口_雀巢巧克力.jpg">
+                </div>
+            </div>
+            <div>
+                <div>
+                    <span>进口水饮冲调<br/><span>满99元减50</span></span>
+                    <img src="img/全国进口_进口水饮冲调.jpg">
+                </div>
+            </div>
+        </div>
+        <div id="global_import_3">
+            <div style="background: #FFE6EE">
+                <p>冬日护肤计</p>
+                <span>199-100</span>
+                <b></b>
+                <img src="img/全国进口_冬日护肤计.png">
+            </div>
+            <div style="background: #fdf2e3">
+                <p>全球圣诞好物</p>
+                <span>满199-100</span>
+                <b></b>
+                <img src="img/全国进口_圣诞好礼.png">
+            </div>
+            <div style="background: #e8faef">
+                <p>进口生鲜</p>
+                <span>FRESH</span>
+                <b></b>
+                <img src="img/全国进口_进口生鲜.png">
+            </div>
+            <div style="background: #F9EEE9">
+                <p>进口家居</p>
+                <span>HOME</span>
+                <b></b>
+                <img src="img/全国进口_进口家居.png">
+            </div>
+            <div style="background: #F0F8FF">
+                <p>厨卫清洁进口馆</p>
+                <span>CLEANNING</span>
+                <b></b>
+                <img src="img/全国进口_进口馆.png">
+            </div>
+            <div style="background: #e1f7f1">
+                <p>进口保健品</p>
+                <span>HEALTH</span>
+                <b></b>
+                <img src="img/全国进口_保健品.png">
+            </div>
+        </div>
+    </div>
+
+    <!-- 母婴_厨卫 区域 -->
+    <div id = "infant_toys_kitchen" class = "floor">
+        <!--母婴部分-->
+        <div id = "infant_toys">
+            <div id = "infant_toys_head">
+                <span>母婴玩具</span>
+                <ul>
+                    <li class="infant_toys_head_ul_li">童车</li>
+                    <li>|</li>
+                    <li class="infant_toys_head_ul_li">玩具</li>
+                    <li>|</li>
+                    <li class="infant_toys_head_ul_li">辅食</li>
+                    <li>|</li>
+                    <li class="infant_toys_head_ul_li">奶瓶奶嘴</li>
+                    <li>|</li>
+                    <li class="infant_toys_head_ul_li">孕妈专区</li>
+                </ul>
+            </div>
+            <div id = "infant_toys_left">
+                <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+                <div id = "infant_toys_left_slider1">
+                    <p>童享年货盛宴</p>
+                    <span>满399减100</span>
+                    <img src="img/母婴玩具_轮播1.png" alt="">
+                </div>
+                <div id = "infant_toys_left_slider2">
+                    <p>营养辅食</p>
+                    <span>满139减30</span>
+                    <img src="img/母婴玩具_轮播2.png" alt="">
+                </div>
+                <div id = "infant_toys_left_slider3">
+                    <p>尿裤联盟</p>
+                    <span>满399减50</span>
+                    <img src="img/母婴玩具_轮播3.png" alt="">
+                </div>
+            </div>
+            <div id = "infant_toys_right">
+                <ul>
+                    <li style="border-right:1px solid rgba(0,0,0,0.2);">
+                        <p>奶粉大牌</p>
+                        <span>满399减150</span>
+                        <img src="img/母婴玩具_奶粉大牌.jpg" alt="">
+                    </li>
+                    <li>
+                        <p>酷爱宝贝</p>
+                        <span>部分299-40</span>
+                        <img src="img/母婴玩具_酷爱宝贝.jpg" alt="">
+                    </li>
+                    <li style="border-top:1px solid rgba(0,0,0,0.2);">
+                        <p>母婴用品中心</p>
+                        <span>满199减50</span>
+                        <img src="img/母婴玩具_母婴用品中心.jpg" alt="">
+                    </li>
+                    <li style="border-top:1px solid rgba(0,0,0,0.2);border-left:1px solid rgba(0,0,0,0.2);">
+                        <p>自营玩具</p>
+                        <span>满399减150</span>
+                        <img src="img/母婴玩具_自营玩具.jpg" alt="">
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!--厨卫部分-->
+        <div id = "kitchen">
+            <div id = "kitchen_head">
+                <span>厨卫清洁</span>
+                <ul>
+                    <li class="kitchen_head_ul_li">纸制品</li>
+                    <li>|</li>
+                    <li class="kitchen_head_ul_li">衣物清洁</li>
+                    <li>|</li>
+                    <li class="kitchen_head_ul_li">油污净</li>
+                    <li>|</li>
+                    <li class="kitchen_head_ul_li">洁厕灵</li>
+                    <li>|</li>
+                    <li class="kitchen_head_ul_li">一次性用具</li>
+                    <li>|</li>
+                    <li class="kitchen_head_ul_li">清洁工具</li>
+                </ul>
+            </div>
+            <div id = "kitchen_left">
+                <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+                <div id = "kitchen_left_slider1">
+                    <p>维达抽纸</p>
+                    <span>爆款低至5折</span>
+                    <img src="img/厨卫清洁_轮播1.png" alt="">
+                </div>
+                <div id = "kitchen_left_slider2">
+                    <p>蓝月亮</p>
+                    <span>部分每满99减50</span>
+                    <img src="img/厨卫清洁_轮播2.png" alt="">
+                </div>
+                <div id = "kitchen_left_slider3">
+                    <p>妮飘鼻贵族</p>
+                    <span>日本原装进口</span>
+                    <img src="img/厨卫清洁_轮播3.png" alt="">
+                </div>
+            </div>
+            <div id = "kitchen_right">
+                <ul>
+                    <li style="border-right:1px solid rgba(0,0,0,0.2);">
+                        <p>纸品中心</p>
+                        <span>量贩享好价</span>
+                        <img src="img/厨卫清洁_纸品中心.jpg" alt="">
+                    </li>
+                    <li>
+                        <p>家庭清洁</p>
+                        <span>爆款直降</span>
+                        <img src="img/厨卫清洁_家庭清洁.jpg" alt="">
+                    </li>
+                    <li style="border-top:1px solid rgba(0,0,0,0.2);">
+                        <p>潮流洗衣馆</p>
+                        <span>明星爆款直降</span>
+                        <img src="img/厨卫清洁_潮流洗衣馆.jpg" alt="">
+                    </li>
+                    <li style="border-top:1px solid rgba(0,0,0,0.2);border-left:1px solid rgba(0,0,0,0.2);">
+                        <p>清洁工具</p>
+                        <span>爆款低至9.9</span>
+                        <img src="img/厨卫清洁_清洁工具.jpg" alt="">
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!--家居生活区域-->
+    <div id="home_life" class = "floor">
+        <div id="home_life_1">
+            <h3>家居生活</h3>
+            <h4>HOME</h4>
+            <div class = "img1 div0">
+                <p>个性车品</p>
+                <span>爆款直降</span>
+                <img src="img/家居生活_左1.jpg" alt="">
+            </div>
+            <div class = "img2 div0">
+                <p>居家收纳</p>
+                <span>精选直降</span>
+                <img src="img/家居生活_左2.jpg" alt="">
+            </div>
+            <div class = "img3 div0">
+                <p>全友家居</p>
+                <span>加一元换好礼</span>
+                <img src="img/家居生活_左3.jpg" alt="">
+            </div>
+            <ul>
+                <li id = "left"></li>
+                <li id = "num">1</li>
+                <li style="margin:0 3px 0 3px;">/</li>
+                <li>3</li>
+                <li id = "right"></li>
+            </ul>
+            <div id = "home_life_1_div">
+                <div id = "home_life_1_div_div">
+                    <ul id = "home_life_1_div_div_ul">
+                        <li>小小收纳大学问</li>
+                        <li>灯饰点亮生活</li>
+                    </ul>
+                    <div id = "home_life_1_div_div_div"></div>
+                </div>
+            </div>
+        </div>
+        <div id="home_life_2">
+            <ul>
+                <li class="hov">床上用品 </li>
+                <li class="not">|</li>
+                <li class="hov">厨具锅具 </li>
+                <li class="not">|</li>
+                <li class="hov">厨房装修 </li>
+                <li class="not">|</li>
+                <li class="hov">收纳洗晒 </li>
+                <li class="not">|</li>
+                <li class="hov">大牌家具 </li>
+                <li class="not">|</li>
+                <li class="hov">汽车用品 </li>
+                <li class="not">|</li>
+                <li class="hov">鲜花 </li>
+                <li class="not">|</li>
+                <li class="hov">灯具五金 </li>
+                <li class="not">|</li>
+                <li class="hov">开关插座</li>
+            </ul>
+            <div>
+                <p>家居馆</p>
+                <span>两件八折</span>
+                <img src="img/家居生活_中1.png">
+            </div>
+            <div>
+                <p>自营厨具</p>
+                <span>3件8折</span>
+                <img src="img/家居生活_中2.jpg">
+            </div>
+            <div>
+                <p>德世朗厨具 传世品质</p>
+                <span>低至299元</span>
+                <img src="img/家居生活_中3.jpg">
+            </div>
+            <div class="notBorder">
+                <p>居家日用</p>
+                <span>爆款直降</span>
+                <img src="img/家居生活_中4.jpg">
+            </div>
+            <div class="notBorder">
+                <p>床品家纺</p>
+                <span>低至59</span>
+                <img src="img/家居生活_中5.jpg">
+            </div>
+            <div class="notBorder">
+                <p>灯具五金</p>
+                <span>圣诞满减钜惠</span>
+                <img src="img/家居生活_中6.jpg">
+            </div>
+        </div>
+        <div id="home_life_3">
+            <h4>热门商品</h4>
+            <ul>
+                <li>
+                    <img src="img/家居生活_热门商品1.jpg">
+                    <a href="javascript:void(0);">崔大煌不沾炒锅34cm无烟砂锅电磁炉通用</a>
+                    <span>¥89.00</span>
+                </li>
+                <li>
+                    <img src="img/家居生活_热门商品2.jpg">
+                    <a href="javascript:void(0);">朵兰 华纳红带鼠标准贴暖宝宝贴保暖贴发</a>
+                    <span>¥27.90</span>
+                </li>
+                <li>
+                    <img src="img/家居生活_热门商品3.jpg">
+                    <a href="javascript:void(0);">乐扣乐扣(locklock)收纳箱三件套60L*3自</a>
+                    <span>¥229.00</span>
+                </li>
+                <li>
+                    <img src="img/家居生活_热门商品4.jpg">
+                    <a href="javascript:void(0);">富安娜(FUANNA)家纺床品套件 纯棉斜纹床</a>
+                    <span>¥398.00</span>
+                </li>
+                <li>
+                    <img src="img/家居生活_热门商品5.jpg">
+                    <a href="javascript:void(0);">明创床品双层不锈钢保温杯轻巧</a>
+                    <span>¥24.90</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!--懂你想要部分-->
+    <div id = "known_you_want" class = "floor">
+        <p><img src="img/懂你想要_标题左侧.png" alt=""> 懂你想要 <img src="img/懂你想要_标题右侧.png" alt=""></p>
+        <ul>
+            <li>
+                <div>
+                    <img src="img/懂你想要_1.jpg" alt="">
+                    <p>
+                        百草味 蜜饯果干 芒果100g/袋
+                    </p>
+                    <span>¥18.90</span>
+                </div>
+        `   </li>
+            <li>
+                <div>
+                    <img src="img/懂你想要_2.jpg" alt="">
+                    <p>
+                        富居(FOOJO)地摊加柔长绒客厅卧室地毯70*160cm灰色
+                    </p>
+                    <span>¥59.00</span>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <img src="img/懂你想要_3.jpg" alt="">
+                    <p>
+                        赛亿（Shinee）暖手宝/电暖宝/热水袋/暖手袋/取暖器家用/取暖电器/电暖器/电暖
+                    </p>
+                    <span>¥39.90</span>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <img src="img/懂你想要_4.jpg" alt="">
+                    <p>
+                        歌希瑶春夏季莫代尔吊带背心女内搭穿短款小吊带打底衫修身掉带107-1 黑色 均码
+                    </p>
+                    <span> ¥58.00</span>
+                </div>
+            </li>
+            <li style="margin-right:0;">
+                <div>
+                    <img src="img/懂你想要_5.jpg" alt="">
+                    <p>
+                        魔铁（MOTIE） led强光手电筒 直充电式防水防身远射 20种变焦 骑行自行车应急
+                    </p>
+                    <span>¥59.00</span>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <img src="img/懂你想要_6.jpg" alt="">
+                    <p>
+                        追风筝的人
+                    </p>
+                    <span>¥17.70</span>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <img src="img/懂你想要_7.jpg" alt="">
+                    <p>
+                        【洁面乳+能量水+护肤霜】男士护肤化妆品套装 清洁补水 控油保湿滋润男护肤品
+                    </p>
+                    <span> ¥39.00</span>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <img src="img/懂你想要_8.jpg" alt="">
+                    <p>
+                        黑人（DARLIE）双重薄荷 牙膏 225g
+                    </p>
+                    <span> ¥13.90</span>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <img src="img/懂你想要_9.jpg" alt="">
+                    <p>
+                        特百惠（Tupperware）莹彩430ML塑料杯 随心运动防漏水杯子茶杯 酷炫黑
+                    </p>
+                    <span> ¥72.80</span>
+                </div>
+            </li>
+            <li style="margin-right:0;">
+                <div>
+                    <img src="img/懂你想要_10.jpg" alt="">
+                    <p>
+                        飞利浦（PHILIPS）电动剃须刀 全身水洗 刮胡刀 RQ311
+                    </p>
+                    <span>¥199.00</span>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <img src="img/懂你想要_11.jpg" alt="">
+                    <p>
+                        新西兰原装进口牛奶 安佳Anchor全脂牛奶UHT纯牛奶250ml*24 整箱装
+                    </p>
+                    <span>¥99.00</span>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <img src="img/懂你想要_12.jpg" alt="">
+                    <p>
+                        美依家（EveryHome） 美依家 厨师雕刻刀主刀 果蔬厨房泡沫食品雕刻刀厨师雕刻
+                    </p>
+                    <span>¥19.90</span>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <img src="img/懂你想要_13.jpg" alt="">
+                    <p>
+                        贝亲（Pigeon）细轴棉棒棉签 180支 KA01（耳孔清洁）
+                    </p>
+                    <span>¥11.30</span>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <img src="img/懂你想要_14.jpg" alt="">
+                    <p>
+                        休闲女鞋款女生韩版小白鞋松糕鞋女厚底英伦学生增高平底板鞋女士运动鞋子女
+                    </p>
+                    <span> ¥39.00</span>
+                </div>
+            </li>
+            <li style="margin-right:0;">
+                <div>
+                    <img src="img/懂你想要_15.jpg" alt="">
+                    <p>
+                        亿色(ESR)苹果x手机壳 iPhone x手机壳 5.8英寸 苹果X/10手机套 轻薄TPU硅胶透
+                    </p>
+                    <span>¥26.90</span>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <img src="img/懂你想要_16.jpg" alt="">
+                    <p>
+                        南极人（Nanjiren） 护膝自发热关节保暖(一对装)男女通用 均码
+                    </p>
+                    <span>¥79.00</span>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <img src="img/懂你想要_17.jpg" alt="">
+                    <p>
+                        美家星布衣柜 简易衣柜 时尚牛津布大容量 多功能组合衣橱 钢网加固型B002B
+                    </p>
+                    <span> ¥129.00</span>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <img src="img/懂你想要_18.jpg" alt="">
+                    <p>
+                        迪士尼DISNEY 宝宝爬行垫 婴儿拼接爬爬垫 泡沫拼图防滑地垫游戏毯加厚2CM
+                    </p>
+                    <span> ¥79.00</span>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <img src="img/懂你想要_19.jpg" alt="">
+                    <p>
+                        金龙鱼 食用油 非转基因 压榨 一级 纯正玉米油4L
+                    </p>
+                    <span> ¥39.90</span>
+                </div>
+            </li>
+            <li style="margin-right:0;">
+                <div>
+                    <img src="img/懂你想要_20.jpg" alt="">
+                    <p>
+                        欧莱雅（LOREAL）男士水能润泽双效洁面膏 100ml（男士洗面奶 清洁毛孔）
+                    </p>
+                    <span> ¥39.00</span>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <img src="img/懂你想要_21.jpg" alt="">
+                    <p>
+                        百草味 蜜饯果干 芒果100g/袋
+                    </p>
+                    <span>¥18.90</span>
+                </div>
+                `   </li>
+            <li>
+                <div>
+                    <img src="img/懂你想要_22.jpg" alt="">
+                    <p>
+                        富居(FOOJO)地摊加柔长绒客厅卧室地毯70*160cm灰色
+                    </p>
+                    <span>¥59.00</span>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <img src="img/懂你想要_23.jpg" alt="">
+                    <p>
+                        赛亿（Shinee）暖手宝/电暖宝/热水袋/暖手袋/取暖器家用/取暖电器/电暖器/电暖
+                    </p>
+                    <span>¥39.90</span>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <img src="img/懂你想要_24.jpg" alt="">
+                    <p>
+                        歌希瑶春夏季莫代尔吊带背心女内搭穿短款小吊带打底衫修身掉带107-1 黑色 均码
+                    </p>
+                    <span> ¥58.00</span>
+                </div>
+            </li>
+            <li style="margin-right:0;">
+                <div>
+                    <img src="img/懂你想要_25.jpg" alt="">
+                    <p>
+                        魔铁（MOTIE） led强光手电筒 直充电式防水防身远射 20种变焦 骑行自行车应急
+                    </p>
+                    <span>¥59.00</span>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <img src="img/懂你想要_26.jpg" alt="">
+                    <p>
+                        追风筝的人
+                    </p>
+                    <span>¥17.70</span>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <img src="img/懂你想要_27.jpg" alt="">
+                    <p>
+                        【洁面乳+能量水+护肤霜】男士护肤化妆品套装 清洁补水 控油保湿滋润男护肤品
+                    </p>
+                    <span> ¥39.00</span>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <img src="img/懂你想要_28.jpg" alt="">
+                    <p>
+                        黑人（DARLIE）双重薄荷 牙膏 225g
+                    </p>
+                    <span> ¥13.90</span>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <img src="img/懂你想要_29.jpg" alt="">
+                    <p>
+                        特百惠（Tupperware）莹彩430ML塑料杯 随心运动防漏水杯子茶杯 酷炫黑
+                    </p>
+                    <span> ¥72.80</span>
+                </div>
+            </li>
+            <li style="margin-right:0;">
+                <div>
+                    <img src="img/懂你想要_30.jpg" alt="">
+                    <p>
+                        飞利浦（PHILIPS）电动剃须刀 全身水洗 刮胡刀 RQ311
+                    </p>
+                    <span>¥199.00</span>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <img src="img/懂你想要_31.jpg" alt="">
+                    <p>
+                        新西兰原装进口牛奶 安佳Anchor全脂牛奶UHT纯牛奶250ml*24 整箱装
+                    </p>
+                    <span>¥99.00</span>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <img src="img/懂你想要_32.jpg" alt="">
+                    <p>
+                        美依家（EveryHome） 美依家 厨师雕刻刀主刀 果蔬厨房泡沫食品雕刻刀厨师雕刻
+                    </p>
+                    <span>¥19.90</span>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <img src="img/懂你想要_33.jpg" alt="">
+                    <p>
+                        贝亲（Pigeon）细轴棉棒棉签 180支 KA01（耳孔清洁）
+                    </p>
+                    <span>¥11.30</span>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <img src="img/懂你想要_34.jpg" alt="">
+                    <p>
+                        休闲女鞋款女生韩版小白鞋松糕鞋女厚底英伦学生增高平底板鞋女士运动鞋子女
+                    </p>
+                    <span> ¥39.00</span>
+                </div>
+            </li>
+            <li style="margin-right:0;">
+                <div>
+                    <img src="img/懂你想要_35.jpg" alt="">
+                    <p>
+                        亿色(ESR)苹果x手机壳 iPhone x手机壳 5.8英寸 苹果X/10手机套 轻薄TPU硅胶透
+                    </p>
+                    <span>¥26.90</span>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <img src="img/懂你想要_36.jpg" alt="">
+                    <p>
+                        南极人（Nanjiren） 护膝自发热关节保暖(一对装)男女通用 均码
+                    </p>
+                    <span>¥79.00</span>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <img src="img/懂你想要_37.jpg" alt="">
+                    <p>
+                        美家星布衣柜 简易衣柜 时尚牛津布大容量 多功能组合衣橱 钢网加固型B002B
+                    </p>
+                    <span> ¥129.00</span>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <img src="img/懂你想要_38.jpg" alt="">
+                    <p>
+                        迪士尼DISNEY 宝宝爬行垫 婴儿拼接爬爬垫 泡沫拼图防滑地垫游戏毯加厚2CM
+                    </p>
+                    <span> ¥79.00</span>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <img src="img/懂你想要_39.jpg" alt="">
+                    <p>
+                        金龙鱼 食用油 非转基因 压榨 一级 纯正玉米油4L
+                    </p>
+                    <span> ¥39.90</span>
+                </div>
+            </li>
+            <li style="margin-right:0;">
+                <div>
+                    <img src="img/懂你想要_40.jpg" alt="">
+                    <p>
+                        欧莱雅（LOREAL）男士水能润泽双效洁面膏 100ml（男士洗面奶 清洁毛孔）
+                    </p>
+                    <span> ¥39.00</span>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <img src="img/懂你想要_41.jpg" alt="">
+                    <p>
+                        百草味 蜜饯果干 芒果100g/袋
+                    </p>
+                    <span>¥18.90</span>
+                </div>
+                `   </li>
+            <li>
+                <div>
+                    <img src="img/懂你想要_42.jpg" alt="">
+                    <p>
+                        富居(FOOJO)地摊加柔长绒客厅卧室地毯70*160cm灰色
+                    </p>
+                    <span>¥59.00</span>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <img src="img/懂你想要_43.jpg" alt="">
+                    <p>
+                        赛亿（Shinee）暖手宝/电暖宝/热水袋/暖手袋/取暖器家用/取暖电器/电暖器/电暖
+                    </p>
+                    <span>¥39.90</span>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <img src="img/懂你想要_44.jpg" alt="">
+                    <p>
+                        歌希瑶春夏季莫代尔吊带背心女内搭穿短款小吊带打底衫修身掉带107-1 黑色 均码
+                    </p>
+                    <span> ¥58.00</span>
+                </div>
+            </li>
+            <li style="margin-right:0;">
+                <div>
+                    <img src="img/懂你想要_45.jpg" alt="">
+                    <p>
+                        魔铁（MOTIE） led强光手电筒 直充电式防水防身远射 20种变焦 骑行自行车应急
+                    </p>
+                    <span>¥59.00</span>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <img src="img/懂你想要_46.jpg" alt="">
+                    <p>
+                        追风筝的人
+                    </p>
+                    <span>¥17.70</span>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <img src="img/懂你想要_47.jpg" alt="">
+                    <p>
+                        【洁面乳+能量水+护肤霜】男士护肤化妆品套装 清洁补水 控油保湿滋润男护肤品
+                    </p>
+                    <span> ¥39.00</span>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <img src="img/懂你想要_48.jpg" alt="">
+                    <p>
+                        黑人（DARLIE）双重薄荷 牙膏 225g
+                    </p>
+                    <span> ¥13.90</span>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <img src="img/懂你想要_49.jpg" alt="">
+                    <p>
+                        特百惠（Tupperware）莹彩430ML塑料杯 随心运动防漏水杯子茶杯 酷炫黑
+                    </p>
+                    <span> ¥72.80</span>
+                </div>
+            </li>
+            <li style="margin-right:0;">
+                <div>
+                    <img src="img/懂你想要_50.jpg" alt="">
+                    <p>
+                        飞利浦（PHILIPS）电动剃须刀 全身水洗 刮胡刀 RQ311
+                    </p>
+                    <span>¥199.00</span>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <img src="img/懂你想要_51.jpg" alt="">
+                    <p>
+                        新西兰原装进口牛奶 安佳Anchor全脂牛奶UHT纯牛奶250ml*24 整箱装
+                    </p>
+                    <span>¥99.00</span>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <img src="img/懂你想要_52.jpg" alt="">
+                    <p>
+                        美依家（EveryHome） 美依家 厨师雕刻刀主刀 果蔬厨房泡沫食品雕刻刀厨师雕刻
+                    </p>
+                    <span>¥19.90</span>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <img src="img/懂你想要_53.jpg" alt="">
+                    <p>
+                        贝亲（Pigeon）细轴棉棒棉签 180支 KA01（耳孔清洁）
+                    </p>
+                    <span>¥11.30</span>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <img src="img/懂你想要_54.jpg" alt="">
+                    <p>
+                        休闲女鞋款女生韩版小白鞋松糕鞋女厚底英伦学生增高平底板鞋女士运动鞋子女
+                    </p>
+                    <span> ¥39.00</span>
+                </div>
+            </li>
+            <li style="margin-right:0;">
+                <div>
+                    <img src="img/懂你想要_55.jpg" alt="">
+                    <p>
+                        亿色(ESR)苹果x手机壳 iPhone x手机壳 5.8英寸 苹果X/10手机套 轻薄TPU硅胶透
+                    </p>
+                    <span>¥26.90</span>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <img src="img/懂你想要_56.jpg" alt="">
+                    <p>
+                        南极人（Nanjiren） 护膝自发热关节保暖(一对装)男女通用 均码
+                    </p>
+                    <span>¥79.00</span>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <img src="img/懂你想要_57.jpg" alt="">
+                    <p>
+                        美家星布衣柜 简易衣柜 时尚牛津布大容量 多功能组合衣橱 钢网加固型B002B
+                    </p>
+                    <span> ¥129.00</span>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <img src="img/懂你想要_58.jpg" alt="">
+                    <p>
+                        迪士尼DISNEY 宝宝爬行垫 婴儿拼接爬爬垫 泡沫拼图防滑地垫游戏毯加厚2CM
+                    </p>
+                    <span> ¥79.00</span>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <img src="img/懂你想要_59.jpg" alt="">
+                    <p>
+                        金龙鱼 食用油 非转基因 压榨 一级 纯正玉米油4L
+                    </p>
+                    <span> ¥39.90</span>
+                </div>
+            </li>
+            <li style="margin-right:0;">
+                <div>
+                    <img src="img/懂你想要_60.jpg" alt="">
+                    <p>
+                        欧莱雅（LOREAL）男士水能润泽双效洁面膏 100ml（男士洗面奶 清洁毛孔）
+                    </p>
+                    <span> ¥39.00</span>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <img src="img/懂你想要_61.jpg" alt="">
+                    <p>
+                        百草味 蜜饯果干 芒果100g/袋
+                    </p>
+                    <span>¥18.90</span>
+                </div>
+                `   </li>
+            <li>
+                <div>
+                    <img src="img/懂你想要_62.jpg" alt="">
+                    <p>
+                        富居(FOOJO)地摊加柔长绒客厅卧室地毯70*160cm灰色
+                    </p>
+                    <span>¥59.00</span>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <img src="img/懂你想要_63.jpg" alt="">
+                    <p>
+                        赛亿（Shinee）暖手宝/电暖宝/热水袋/暖手袋/取暖器家用/取暖电器/电暖器/电暖
+                    </p>
+                    <span>¥39.90</span>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <img src="img/懂你想要_64.jpg" alt="">
+                    <p>
+                        歌希瑶春夏季莫代尔吊带背心女内搭穿短款小吊带打底衫修身掉带107-1 黑色 均码
+                    </p>
+                    <span> ¥58.00</span>
+                </div>
+            </li>
+            <li style="margin-right:0;">
+                <div>
+                    <img src="img/懂你想要_65.png" alt="">
+                    <p>
+                        魔铁（MOTIE） led强光手电筒 直充电式防水防身远射 20种变焦 骑行自行车应急
+                    </p>
+                    <span>¥59.00</span>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <img src="img/懂你想要_66.jpg" alt="">
+                    <p>
+                        追风筝的人
+                    </p>
+                    <span>¥17.70</span>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <img src="img/懂你想要_67.jpg" alt="">
+                    <p>
+                        【洁面乳+能量水+护肤霜】男士护肤化妆品套装 清洁补水 控油保湿滋润男护肤品
+                    </p>
+                    <span> ¥39.00</span>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <img src="img/懂你想要_68.jpg" alt="">
+                    <p>
+                        黑人（DARLIE）双重薄荷 牙膏 225g
+                    </p>
+                    <span> ¥13.90</span>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <img src="img/懂你想要_69.jpg" alt="">
+                    <p>
+                        特百惠（Tupperware）莹彩430ML塑料杯 随心运动防漏水杯子茶杯 酷炫黑
+                    </p>
+                    <span> ¥72.80</span>
+                </div>
+            </li>
+            <li style="margin-right:0;">
+                <div>
+                    <img src="img/懂你想要_70.jpg" alt="">
+                    <p>
+                        飞利浦（PHILIPS）电动剃须刀 全身水洗 刮胡刀 RQ311
+                    </p>
+                    <span>¥199.00</span>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <img src="img/懂你想要_71.jpg" alt="">
+                    <p>
+                        新西兰原装进口牛奶 安佳Anchor全脂牛奶UHT纯牛奶250ml*24 整箱装
+                    </p>
+                    <span>¥99.00</span>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <img src="img/懂你想要_72.jpg" alt="">
+                    <p>
+                        美依家（EveryHome） 美依家 厨师雕刻刀主刀 果蔬厨房泡沫食品雕刻刀厨师雕刻
+                    </p>
+                    <span>¥19.90</span>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <img src="img/懂你想要_73.jpg" alt="">
+                    <p>
+                        贝亲（Pigeon）细轴棉棒棉签 180支 KA01（耳孔清洁）
+                    </p>
+                    <span>¥11.30</span>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <img src="img/懂你想要_74.jpg" alt="">
+                    <p>
+                        休闲女鞋款女生韩版小白鞋松糕鞋女厚底英伦学生增高平底板鞋女士运动鞋子女
+                    </p>
+                    <span> ¥39.00</span>
+                </div>
+            </li>
+            <li style="margin-right:0;">
+                <div>
+                    <img src="img/懂你想要_75.jpg" alt="">
+                    <p>
+                        亿色(ESR)苹果x手机壳 iPhone x手机壳 5.8英寸 苹果X/10手机套 轻薄TPU硅胶透
+                    </p>
+                    <span>¥26.90</span>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <img src="img/懂你想要_76.jpg" alt="">
+                    <p>
+                        南极人（Nanjiren） 护膝自发热关节保暖(一对装)男女通用 均码
+                    </p>
+                    <span>¥79.00</span>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <img src="img/懂你想要_77.jpg" alt="">
+                    <p>
+                        美家星布衣柜 简易衣柜 时尚牛津布大容量 多功能组合衣橱 钢网加固型B002B
+                    </p>
+                    <span> ¥129.00</span>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <img src="img/懂你想要_78.jpg" alt="">
+                    <p>
+                        迪士尼DISNEY 宝宝爬行垫 婴儿拼接爬爬垫 泡沫拼图防滑地垫游戏毯加厚2CM
+                    </p>
+                    <span> ¥79.00</span>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <img src="img/懂你想要_79.jpg" alt="">
+                    <p>
+                        金龙鱼 食用油 非转基因 压榨 一级 纯正玉米油4L
+                    </p>
+                    <span> ¥39.90</span>
+                </div>
+            </li>
+            <li style="margin-right:0;">
+                <div>
+                    <img src="img/懂你想要_80.jpg" alt="">
+                    <p>
+                        欧莱雅（LOREAL）男士水能润泽双效洁面膏 100ml（男士洗面奶 清洁毛孔）
+                    </p>
+                    <span> ¥39.00</span>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <img src="img/懂你想要_81.jpg" alt="">
+                    <p>
+                        黑人（DARLIE）双重薄荷 牙膏 225g
+                    </p>
+                    <span> ¥13.90</span>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <img src="img/懂你想要_82.jpg" alt="">
+                    <p>
+                        特百惠（Tupperware）莹彩430ML塑料杯 随心运动防漏水杯子茶杯 酷炫黑
+                    </p>
+                    <span> ¥72.80</span>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <img src="img/懂你想要_83.jpg" alt="">
+                    <p>
+                        飞利浦（PHILIPS）电动剃须刀 全身水洗 刮胡刀 RQ311
+                    </p>
+                    <span>¥199.00</span>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <img src="img/懂你想要_84.jpg" alt="">
+                    <p>
+                        新西兰原装进口牛奶 安佳Anchor全脂牛奶UHT纯牛奶250ml*24 整箱装
+                    </p>
+                    <span>¥99.00</span>
+                </div>
+            </li>
+            <li style="margin-right:0;">
+                <div>
+                    <img src="img/懂你想要_85.jpg" alt="">
+                    <p>
+                        美依家（EveryHome） 美依家 厨师雕刻刀主刀 果蔬厨房泡沫食品雕刻刀厨师雕刻
+                    </p>
+                    <span>¥19.90</span>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <img src="img/懂你想要_86.jpg" alt="">
+                    <p>
+                        贝亲（Pigeon）细轴棉棒棉签 180支 KA01（耳孔清洁）
+                    </p>
+                    <span>¥11.30</span>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <img src="img/懂你想要_87.jpg" alt="">
+                    <p>
+                        休闲女鞋款女生韩版小白鞋松糕鞋女厚底英伦学生增高平底板鞋女士运动鞋子女
+                    </p>
+                    <span> ¥39.00</span>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <img src="img/懂你想要_88.jpg" alt="">
+                    <p>
+                        亿色(ESR)苹果x手机壳 iPhone x手机壳 5.8英寸 苹果X/10手机套 轻薄TPU硅胶透
+                    </p>
+                    <span>¥26.90</span>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <img src="img/懂你想要_89.jpg" alt="">
+                    <p>
+                        南极人（Nanjiren） 护膝自发热关节保暖(一对装)男女通用 均码
+                    </p>
+                    <span>¥79.00</span>
+                </div>
+            </li>
+            <li style="margin-right:0;">
+                <div>
+                    <img src="img/懂你想要_90.jpg" alt="">
+                    <p>
+                        美家星布衣柜 简易衣柜 时尚牛津布大容量 多功能组合衣橱 钢网加固型B002B
+                    </p>
+                    <span> ¥129.00</span>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <img src="img/懂你想要_91.jpg" alt="">
+                    <p>
+                        迪士尼DISNEY 宝宝爬行垫 婴儿拼接爬爬垫 泡沫拼图防滑地垫游戏毯加厚2CM
+                    </p>
+                    <span> ¥79.00</span>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <img src="img/懂你想要_92.jpg" alt="">
+                    <p>
+                        金龙鱼 食用油 非转基因 压榨 一级 纯正玉米油4L
+                    </p>
+                    <span> ¥39.90</span>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <img src="img/懂你想要_93.jpg" alt="">
+                    <p>
+                        赛亿（Shinee）暖手宝/电暖宝/热水袋/暖手袋/取暖器家用/取暖电器/电暖器/电暖
+                    </p>
+                    <span>¥39.90</span>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <img src="img/懂你想要_94.jpg" alt="">
+                    <p>
+                        歌希瑶春夏季莫代尔吊带背心女内搭穿短款小吊带打底衫修身掉带107-1 黑色 均码
+                    </p>
+                    <span> ¥58.00</span>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <!--下面是底部-->
+    <div id = "footer_outer">
+        <div id = "footer">
+            <p><i></i> &ensp;已经到底啦&ensp; <i></i></p>
+            <div id = "footer_container">
+                <div id = "footer_container_pic">
+                    <ul>
+                        <li><img src="img/底部_正品保障.jpg" alt=""></li>
+                        <li>
+                            <p>正品保障</p>
+                            <span>正品行货 放心选购</span>
+                        </li>
+                        <li style="margin-left: 35px;"><img src="img/底部_包邮.jpg" alt=""></li>
+                        <li>
+                            <p>满86包邮</p>
+                            <span>满86元 免运费</span>
+                        </li>
+                        <li style="margin-left: 35px;"><img src="img/底部_搜后无忧.jpg" alt=""></li>
+                        <li>
+                            <p>售后无忧</p>
+                            <span>7天无理由退货</span>
+                        </li>
+                        <li style="margin-left: 35px;"><img src="img/底部_准时送达.jpg" alt=""></li>
+                        <li>
+                            <p>准时送达</p>
+                            <span>收货时间由你做主</span>
+                        </li>
+                    </ul>
+                </div>
+                <div id = "footer_container_letter">
+                    <ul>
+                        <li>
+                            <p>新手入门</p>
+                            <span>购物流程</span><br>
+                            <span>会员制度</span><br>
+                            <span>订单查询</span><br>
+                            <span>发票制度</span>
+                        </li>
+                        <li>
+                            <p>支付方式</p>
+                            <span>货到付款</span><br>
+                            <span>网上支付</span><br>
+                            <span>银行转账</span><br>
+                            <span>礼品卡支付</span><br>
+                            <span>其他支付</span>
+                        </li>
+                        <li>
+                        <p>配送服务</p>
+                            <span>配送进度查询</span><br>
+                            <span>商品验货与签收</span>
+                        </li>
+                        <li>
+                            <p>售后保障</p>
+                            <span>退换货政策</span><br>
+                            <span>联系客服</span>
+                        </li>
+                        <li>
+                            <p>APP更优惠</p>
+                            <img style="height:84px;width:87px;" src="img/APP更优惠.png" alt="">
+                        </li>
+                        <li>
+                            <p>加微信查订单</p>
+                            <img style="height:77px;width:80px;" src="img/微信查订单.jpg" alt="">
+                        </li>
+                    </ul>
+                </div>
+                <div id = "footer_container_footer">
+                    <a href="javascript:void(0);">沪ICP备16050468号</a> |
+                    <a href="javascript:void(0);">经营证照</a> |
+                    <a href="javascript:void(0);">互联网药品信息服务资格证</a> |
+                    <a href="javascript:void(0);">违法和不良信息举报电话：0527-88100253</a> |
+                    <a href="javascript:void(0);">沪B2-20170039</a><br>
+                    <span>Copyright© 1号店网上超市 2007-2017，All Rights Reserved</span>
+                    <p>
+                        <img src="img/底部图片_1.jpg" alt="">
+                        <img src="img/底部图片_2.jpg" alt="">
+                        <img src="img/底部图片_3.jpg" alt="">
+                        <img src="img/底部图片_4.jpg" alt="">
+                        <img src="img/底部图片_5.png" alt="">
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--下面是左侧楼层跳跃部分-->
+    <div id = "floor">
+        <ul>
+            <li>全国进口</li>
+            <li>母婴玩具</li>
+            <li>家居生活</li>
+            <li style="background: red;color:white;">懂你想要</li>
+        </ul>
+    </div>
+
+    <!--下面是右侧导航部分-->
+    <div id = "right_nav">
+        <ul>
+            <li style="height:162px;width:36px;"><img style="height:100%;width:100%;margin:0 0;" src="img/右侧导航_圣诞快乐.jpg" alt=""></li>
+            <li style="height:34px;width:36px;margin-top:5px;"><img src="img/联系人.png" alt="">
+                <div>个人中心</div>
+            </li>
+            <li class="right_nav_shopCar" style="height:106px;width:36px;"><img style="margin:5px 5px 5px 5px;" src="img/购物车.png" alt=""><span>购<br>物<br>车</span></li>
+            <li style="height:33px;width:36px;"><img src="img/抵用券.png" alt="">
+                <div>抵用券</div>
+            </li>
+            <li style="height:34px;width:36px;margin-top:165px;"><img src="img/用户反馈.png" alt="">
+                <div>用户反馈</div>
+            </li>
+            <li style="height:37px;width:36px;"><img src="img/二维码.png" alt="">
+                <div style="width:154px;height:175px;background:white;position: absolute;top:-90px;right:46px;">
+                    <span>手机购物更优惠</span>
+                    <img src="img/手机扫码.png" alt="">
+                </div>
+            </li>
+            <li id = "backTop" style="height:35px;width:36px;"><img src="img/返回顶部.png" alt="">
+                <div>返回顶部</div>
+            </li>
+        </ul>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+<script src = "1号店首页.js" type="text/javascript" language="JavaScript"></script>
+</body>
+</html>

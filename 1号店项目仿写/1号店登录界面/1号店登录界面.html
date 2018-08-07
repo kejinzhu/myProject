@@ -1,0 +1,100 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>1号店登录界面</title>
+    <link rel="stylesheet" href="1号店登录界面.css" type="text/css">
+</head>
+<body>
+<!--这是登录界面的头部-->
+<div id = "login_head">
+    <img src="img/login_logo.jpg" alt="logo">
+    <ul>
+        <li id = "login_head_ul_li_1">你好，欢迎光临1号店！</li>
+        <li id = "login_head_ul_li_2">请登录</li>
+        <li id = "login_head_ul_li_3">
+            <span>帮助中心</span>
+            <img src="img/login_pic_help_list.png" alt="">
+            <ul>
+                <li>包裹跟踪</li>
+                <li>常见问题</li>
+                <li>在线退换货</li>
+                <li>在线投诉</li>
+            </ul>
+        </li>
+    </ul>
+</div>
+<!--登录内容部分-->
+<div>
+    <div id = "login_content">
+        <!--当用户名、密码为空时出现的提示-->
+        <div id = "tip">请输入账号和密码</div>
+        <!--当用户名或密码不正确的时候提示-->
+        <div id = "errorInput">账号和密码不匹配，请重新输入</div>
+        <!--登录成功-->
+        <div id = "loginSuccess">恭喜你登录成功!!!</div>
+        <!--标题头部部分-->
+        <p>
+            <span>1号店用户登录</span>
+            <a href="https://passport.yhd.com/passport/register_input.do">注册新账号</a>
+        </p>
+        <!--登录内容、用户名密码部分-->
+        <form action="#">
+            <div class="login_content_wrap">
+                <div id = "login_content_wrap_user">
+                    <input type="text" id = "userName" placeholder="邮箱/手机/用户名" value = "">
+                </div>
+                <div id = "login_content_wrap_pwd">
+                    <input type="password" id = "passWord" placeholder="密码" value = "">
+                </div>
+                <!--自动登录、忘记密码部分-->
+                <div id = "login_content_wrap_autoLogin">
+                    <a href="javascript:void(0);" id = "autoLogin">
+                        <span onclick="autoLogin1();" onmouseover="autoLogin_on()"onmouseout="autoLogin_out()" id = "autoLogin_choose"><img src="img/autoLogin_check.png" alt=""></span>
+                        <a href="#" class="autoLogin_choose">自动登录</a>
+                        <span id = "autoLogin_choose_hidden">请勿在共用电脑上启用</span>
+                    </a>
+                    <a href="javascript:void(0);" id = "forgetPwd">忘记密码？</a>
+                </div>
+                <!--登录框部分-->
+                <button type = "button" id = "login_button">登录</button>
+            </div>
+        </form>
+        <!--下面是合作网站部分-->
+        <div id = "more_op_web">
+            <p>更多合作网站账号登录</p>
+            <ul>
+                <li><img style="margin-top:15px;margin-right:12px;" src="img/more_op_web_qq.png" alt=""></li>
+                <li><img style="margin-top:18px;margin-right:12px;" src="img/more_op_web_jd.png" alt=""></li>
+                <li><img style="margin-top:18px;margin-right:12px;" src="img/more_op_web_weixin.png" alt=""></li>
+                <li><img style="margin-top:18px;margin-right:42px;" src="img/more_op_web_weibo.png" alt=""></li>
+                <li id = "more_op_web_unfold"><span>更多合作网站</span><img style="position: relative;top:5px;" src="img/more_op_web_down.png" alt=" "></li>
+            </ul>
+        </div>
+       <!-- 隐藏的更多网站部分-->
+        <div id = "more_op_web_unfold_content">
+            <ul>
+                <li><img src="img/more_op_web_zhifubao.png" alt=""><span>支付宝</span></li>
+                <li><img src="img/more_op_web_wangyi.png" alt=""><span>网易</span></li>
+                <li><img src="img/more_op_web_baidu.png" alt=""><span>百度</span></li>
+                <li><img src="img/more_op_web_yidong.png" alt=""><span>中国移动</span></li>
+                <li><img src="img/more_op_web_kaixinwang.png" alt=""><span>开心网</span></li>
+                <li><img src="img/more_op_web_renrenwang.png" alt=""><span>人人网</span></li>
+                <li><img src="img/more_op_web_pingan.png" alt=""><span>平安万里通</span></li>
+                <li><img src="img/more_op_web_mogujie.png" alt=""><span>蘑菇街</span></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!--下面是底下的页脚部分-->
+<div id = "footer">
+    <span style="cursor: pointer" class="footer_span">沪ICP备16050468号</span>
+    <span>|</span>
+    <span class="footer_span">沪B2-20170039</span>
+    <span>|</span>
+    <span style="cursor: pointer" class="footer_span">营业执照</span><br/>
+    <span style="color: #333333;">Copyright © 1号店网上超市 2007-2017，All Rights Reserved</span>
+</div>
+<script src = "1号店登录界面.js" type="text/javascript" language="JavaScript"></script>
+</body>
+</html>
